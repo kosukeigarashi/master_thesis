@@ -1,0 +1,184 @@
+%==================================================
+% 修士論文 基本テンプレート (thesis.tex の例)
+%==================================================
+\documentclass[a4paper,11pt]{report} % 必要なら jsreport, bxjsreport などに変更
+
+% ---------- パッケージ類 ----------
+\usepackage[utf8]{inputenc}   % 文字コード（LuaLaTeX/XeLaTeXなら通常不要）
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}          % 欧文フォント
+\usepackage{geometry}         % 余白設定
+\geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+\usepackage{setspace}         % 行間
+\onehalfspacing               % 1.5倍行間
+
+\usepackage{amsmath,amssymb,amsthm} % 数式関連
+\usepackage{bm}               % 太字ベクトルなど
+\usepackage{graphicx}         % 図
+\usepackage{booktabs}         % きれいな表
+\usepackage{caption}
+\usepackage{subcaption}       % 図の(a)(b)など
+\usepackage{here}             % [H]指定で図表を「ここ」に出す
+\usepackage{hyperref}         % 目次や参照をハイパーリンクに
+
+% ---------- 和文向けに使う場合の例 ----------
+% pLaTeX / upLaTeX を使うなら inputenc, fontenc, lmodern は不要なことが多いです。
+% ドライバや環境に応じて調整してください。
+% jsreport を使う場合:
+% \documentclass[uplatex,a4paper,11pt]{jsreport}
+% などに差し替える。
+
+% ---------- 定理環境など（必要なら） ----------
+\newtheorem{theorem}{定理}[chapter]
+\newtheorem{lemma}{補題}[chapter]
+\newtheorem{proposition}{命題}[chapter]
+\theoremstyle{definition}
+\newtheorem{definition}{定義}[chapter]
+
+% ---------- タイトルなど ----------
+\title{修士論文タイトル（仮）}
+\author{氏名}
+\date{\today}  % 提出日が決まっていれば固定の日付を書く
+
+%==================================================
+\begin{document}
+%==================================================
+
+% --- 表紙 ---
+\begin{titlepage}
+  \begin{center}
+    \vspace*{2cm}
+    {\Large 修士論文}\\[1cm]
+    {\huge \textbf{修士論文タイトル（仮）}}\\[3cm]
+
+    {\Large 氏名}\\[0.5cm]
+    {\large 指導教員：XXXX 教授}\\[3cm]
+
+    {\large ○○大学大学院 △△研究科}\\[0.5cm]
+    {\large 2025年度}\\[1cm]
+  \end{center}
+\end{titlepage}
+
+% --- 前付け（目次・概要など） ---
+\pagenumbering{roman} % ローマ数字
+
+\tableofcontents      % 目次
+\listoffigures        % 図目次（不要ならコメントアウト）
+\listoftables         % 表目次（不要ならコメントアウト）
+
+\chapter*{概要}       % 日本語の要約
+\addcontentsline{toc}{chapter}{概要} % 目次に載せる
+ここに日本語の概要を書く。研究の背景、目的、方法、主要な結果、結論を簡潔にまとめる。
+
+\chapter*{Abstract}   % 英語要約
+\addcontentsline{toc}{chapter}{Abstract}
+Here you write the English abstract of your master thesis.
+
+\clearpage
+\pagenumbering{arabic} % ここから本文はアラビア数字
+
+%==================================================
+% 本文
+%==================================================
+
+\chapter{序論}
+\label{chap:intro}
+本章では、研究の背景、問題意識、目的、貢献などを述べる。
+
+\section{研究背景}
+テキストテキストテキスト。
+
+\section{研究目的}
+テキストテキストテキスト。
+
+\section{本論文の構成}
+本論文の構成を説明する。
+
+%--------------------------------------------------
+
+\chapter{関連研究}
+\label{chap:literature}
+関連する先行研究のサーベイを行う。
+
+%--------------------------------------------------
+
+\chapter{理論モデル / 分析枠組み}
+\label{chap:model}
+ここに理論モデルや分析の枠組みを書く。
+
+\section{モデルの設定}
+数式環境の例：
+\begin{equation}
+  y_{it} = \alpha + \beta x_{it} + \varepsilon_{it}.
+\end{equation}
+
+%--------------------------------------------------
+
+\chapter{データと実証方法}
+\label{chap:data_method}
+データの説明、推定方法、識別戦略などを書く。
+
+\section{データ}
+図・表の例：
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figure_example} % figure_example.pdf など
+  \caption{サンプル図のキャプション}
+  \label{fig:sample}
+\end{figure}
+
+\begin{table}[H]
+  \centering
+  \caption{サンプル表のキャプション}
+  \label{tab:sample}
+  \begin{tabular}{lrr}
+    \toprule
+    項目 & 値1 & 値2 \\
+    \midrule
+    A    & 1.0 & 2.0 \\
+    B    & 3.0 & 4.0 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{推定手法}
+DID、イベントスタディなどの推定式を書く。
+
+%--------------------------------------------------
+
+\chapter{実証結果}
+\label{chap:results}
+推定結果の提示と解釈を行う。
+
+\section{ベースライン結果}
+テキストテキストテキスト。
+
+\section{ロバストネスチェック}
+感度分析やロバストネスチェックを記述。
+
+%--------------------------------------------------
+
+\chapter{結論}
+\label{chap:conclusion}
+本研究の結論、政策的含意、今後の課題などをまとめる。
+
+%==================================================
+% 付録
+%==================================================
+\appendix
+
+\chapter{追加の表・図}
+追加の結果、感度分析など。
+
+\chapter{証明}
+理論部分の証明など。
+
+%==================================================
+% 参考文献
+%==================================================
+
+\bibliographystyle{plain} % 和文向けに jplain などに変更可
+\bibliography{thesis}     % thesis.bib を別途用意する
+
+\end{document}
