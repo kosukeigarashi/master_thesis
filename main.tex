@@ -1,32 +1,35 @@
 %==================================================
-% 修士論文 基本テンプレート (thesis.tex の例)
+% 修士論文_五十嵐康佑
 %==================================================
-\documentclass[a4paper,11pt]{report} % 必要なら jsreport, bxjsreport などに変更
+\documentclass[uplatex,a4paper,11pt]{jsreport}
 
-% ---------- パッケージ類 ----------
-\usepackage[utf8]{inputenc}   % 文字コード（LuaLaTeX/XeLaTeXなら通常不要）
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}          % 欧文フォント
-\usepackage{geometry}         % 余白設定
+% ---- Packages ----
+% ---- 欧文 pdfLaTeX 向けの設定は消す or コメントアウト ----
+% \usepackage[utf8]{inputenc}
+% \usepackage[T1]{fontenc}
+% \usepackage{lmodern}
+
+\usepackage{geometry}
 \geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
 
-\usepackage{setspace}         % 行間
-\onehalfspacing               % 1.5倍行間
+\usepackage{setspace}
+\onehalfspacing
 
-\usepackage{amsmath,amssymb,amsthm} % 数式関連
-\usepackage{bm}               % 太字ベクトルなど
-\usepackage{graphicx}         % 図
-\usepackage{booktabs}         % きれいな表
-\usepackage{caption}
-\usepackage{subcaption}       % 図の(a)(b)など
-\usepackage{here}             % [H]指定で図表を「ここ」に出す
-\usepackage{hyperref}         % 目次や参照をハイパーリンクに
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage[dvipdfmx]{graphicx}  % ここポイント
+\usepackage{booktabs}
+\usepackage{here}
+\usepackage[dvipdfmx]{hyperref}  % ここも dvipdfmx を指定
 
 % ---------- 和文向けに使う場合の例 ----------
 % pLaTeX / upLaTeX を使うなら inputenc, fontenc, lmodern は不要なことが多いです。
 % ドライバや環境に応じて調整してください。
 % jsreport を使う場合:
 % \documentclass[uplatex,a4paper,11pt]{jsreport}
+% などに差し替える。
+% report を使う場合(英文向け):
+% \documentclass[a4paper,11pt]{report} 
 % などに差し替える。
 
 % ---------- 定理環境など（必要なら） ----------
@@ -37,8 +40,8 @@
 \newtheorem{definition}{定義}[chapter]
 
 % ---------- タイトルなど ----------
-\title{修士論文タイトル（仮）}
-\author{氏名}
+\title{紹介状を持たない患者に対する選定療養費徴収義務化が外来患者の受診行動に与えた影響}
+\author{五十嵐 康佑}
 \date{\today}  % 提出日が決まっていれば固定の日付を書く
 
 %==================================================
@@ -50,13 +53,13 @@
   \begin{center}
     \vspace*{2cm}
     {\Large 修士論文}\\[1cm]
-    {\huge \textbf{修士論文タイトル（仮）}}\\[3cm]
+    {\huge \textbf{紹介状を持たない患者に対する選定療養費徴収義務化が外来患者の受診行動に与えた影響}}\\[3cm]
 
-    {\Large 氏名}\\[0.5cm]
-    {\large 指導教員：XXXX 教授}\\[3cm]
+    {\Large 五十嵐 康佑}\\[0.5cm]
+    % {\large 指導教員：XXXX 教授}\\[3cm]
 
-    {\large ○○大学大学院 △△研究科}\\[0.5cm]
-    {\large 2025年度}\\[1cm]
+    {\large 東京大学大学院経済学研究科経済専攻経済学コース}\\[0.5cm]
+    % {\large 2025年度}\\[1cm]
   \end{center}
 \end{titlepage}
 
@@ -71,9 +74,9 @@
 \addcontentsline{toc}{chapter}{概要} % 目次に載せる
 ここに日本語の概要を書く。研究の背景、目的、方法、主要な結果、結論を簡潔にまとめる。
 
-\chapter*{Abstract}   % 英語要約
-\addcontentsline{toc}{chapter}{Abstract}
-Here you write the English abstract of your master thesis.
+% \chapter*{Abstract}   % 英語要約
+% \addcontentsline{toc}{chapter}{Abstract}
+% Here you write the English abstract of your master thesis.
 
 \clearpage
 \pagenumbering{arabic} % ここから本文はアラビア数字
@@ -86,93 +89,145 @@ Here you write the English abstract of your master thesis.
 \label{chap:intro}
 本章では、研究の背景、問題意識、目的、貢献などを述べる。
 
-\section{研究背景}
-テキストテキストテキスト。
+\section{研究の背景、問題意識}
+ここに研究の背景、制度・政策上の問題意識、実務的な課題などを書く。
 
-\section{研究目的}
-テキストテキストテキスト。
+\section{研究目的、リサーチクエスチョン}
+本研究の目的と、具体的なリサーチクエスチョン（RQ）を明示する。
+例えば、
+\begin{itemize}
+  \item RQ1: ～に対して、制度改定はどのような影響を与えたか。
+  \item RQ2: その効果はどのような異質性を持つか。
+\end{itemize}
+のように列挙してもよい。
 
-\section{本論文の構成}
-本論文の構成を説明する。
+\section{研究意義、本稿の貢献}
+既存研究・政策実務の中での位置づけ、本稿の学術的・実務的貢献を整理する。
 
 %--------------------------------------------------
 
-\chapter{関連研究}
-\label{chap:literature}
-関連する先行研究のサーベイを行う。
+\chapter{制度背景と先行研究}
+\label{chap:background_lit}
+本章では、本研究の対象となる制度の背景と、関連する先行研究を整理する。
+
+\section{制度の経緯}
+制度導入の歴史的経緯、導入前の問題状況、検討過程などを記述する。
+
+\section{関連制度との比較}
+対象制度と類似・関連する他の制度との比較を行い、本研究対象の制度の特徴を明確にする。
+
+\section{国内外の先行研究レビュー}
+国内外の関連研究を整理し、本研究との関係（ギャップ・位置づけ）を示す。
 
 %--------------------------------------------------
 
-\chapter{理論モデル / 分析枠組み}
-\label{chap:model}
-ここに理論モデルや分析の枠組みを書く。
+\chapter{制度改定の概要}
+\label{chap:institution}
+本章では、制度制定から2022年10月の改定に至るまでの制度内容を整理する。
 
-\section{モデルの設定}
-数式環境の例：
+\section{制度制定時}
+制度制定時点での制度内容、対象、負担構造などを記述する。
+
+\section{制度改定}
+これまでの制度改定（2022年10月以前）の内容とその背景を整理する。
+
+\section{2022年10月の制度改定}
+2022年10月の制度改定の具体的内容（対象拡大、負担額の変更など）を詳細に記述する。
+
+\section{政策目的と理論的期待効果}
+制度導入・改定の政策目的と、理論的に期待される行動変容・経済的効果を整理する。
+
+%--------------------------------------------------
+
+\chapter{データと変数定義}
+\label{chap:data}
+本章では、本研究で用いるデータセットと主要変数の定義を説明する。
+
+\section{データ概要}
+データの出所、カバレッジ、観測単位（患者レベル／医療機関レベルなど）、観測期間などを記述する。
+
+\section{主要変数}
+従属変数、主要説明変数、統制変数などの定義と構築方法を詳述する。
+
+\section{記述統計・分布}
+主要変数の記述統計量や分布（ヒストグラム、箱ひげ図など）を提示し、データの特徴を説明する。
+
+%--------------------------------------------------
+
+\chapter{分析方法}
+\label{chap:method}
+本章では、制度改定の効果を識別するための分析枠組みと推定方法を説明する。
+
+\section{定式化}
+本研究で用いる回帰式・DIDモデル・イベントスタディ仕様などを明示する。
 \begin{equation}
-  y_{it} = \alpha + \beta x_{it} + \varepsilon_{it}.
+  y_{it} = \alpha + \beta \,\text{Post}_t \times \text{Treat}_i + \gamma_i + \delta_t + X_{it}'\theta + \varepsilon_{it}.
 \end{equation}
 
-%--------------------------------------------------
+\section{パラレルトレンドチェックと検証方法}
+DIDの識別仮定（パラレルトレンド）と、その検証方法（プレトレンドの確認、イベントスタディなど）を説明する。
 
-\chapter{データと実証方法}
-\label{chap:data_method}
-データの説明、推定方法、識別戦略などを書く。
-
-\section{データ}
-図・表の例：
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.7\textwidth]{figure_example} % figure_example.pdf など
-  \caption{サンプル図のキャプション}
-  \label{fig:sample}
-\end{figure}
-
-\begin{table}[H]
-  \centering
-  \caption{サンプル表のキャプション}
-  \label{tab:sample}
-  \begin{tabular}{lrr}
-    \toprule
-    項目 & 値1 & 値2 \\
-    \midrule
-    A    & 1.0 & 2.0 \\
-    B    & 3.0 & 4.0 \\
-    \bottomrule
-  \end{tabular}
-\end{table}
-
-\section{推定手法}
-DID、イベントスタディなどの推定式を書く。
+\section{推定方法}
+推定に用いる手法（固定効果推定、クラスタ化標準誤差、重み付けなど）と実装上の詳細を書く。
 
 %--------------------------------------------------
 
-\chapter{実証結果}
+\chapter{分析結果}
 \label{chap:results}
-推定結果の提示と解釈を行う。
+本章では、DIDおよびイベントスタディの推定結果を提示し、その解釈を行う。
 
-\section{ベースライン結果}
-テキストテキストテキスト。
+\section{DID}
+ベースラインのDID推定結果を提示し、係数の符号・統計的有意性・経済的な大きさを議論する。
 
-\section{ロバストネスチェック}
-感度分析やロバストネスチェックを記述。
+\section{イベントスタディ}
+イベントスタディの結果を図示し、制度改定前後の動学的な効果やプレトレンドの有無を検討する。
+
+\section{異質性分析}
+医療機関の属性、患者属性、地域特性などによる効果の異質性を分析する。
+
+%--------------------------------------------------
+
+\chapter{考察}
+\label{chap:discussion}
+本章では、得られた結果の含意を理論・先行研究・制度目的との関係で考察する。
+
+\section{結果の解釈}
+主要な推定結果を整理し、直感的・理論的な解釈を行う。
+
+\section{外国との比較}
+海外の類似制度・研究結果との比較を行い、日本の制度的特徴や結果の位置づけを議論する。
+
+\section{政策的含意}
+得られた知見が政策にとって持つ含意（制度設計、運用、見直しなど）を整理する。
+
+\section{限界と今後の課題}
+データ・手法・識別の限界を率直に述べ、今後の研究課題を示す。
 
 %--------------------------------------------------
 
 \chapter{結論}
 \label{chap:conclusion}
-本研究の結論、政策的含意、今後の課題などをまとめる。
+本章では、本研究の結論を簡潔にまとめる。
+
+\section{要約}
+論文全体の流れと主要な分析内容を簡潔にまとめる。
+
+\section{主な結果}
+主要な実証結果と、それが示すメッセージを整理して提示する。
 
 %==================================================
 % 付録
 %==================================================
 \appendix
 
-\chapter{追加の表・図}
-追加の結果、感度分析など。
+\chapter{表・図の補足}
+本文中では掲載しきれなかった表・図や詳細な定義・分類表などを示す。
 
-\chapter{証明}
-理論部分の証明など。
+\chapter{ロバストネスチェック}
+推定仕様の変更、サンプル制限、代替変数などによるロバストネスチェックの結果をまとめる。
+
+\chapter{使用データ・コード一覧}
+使用したデータセットの一覧、前処理・推定に用いたコード（概要またはリポジトリへのリンク）を整理する。
 
 %==================================================
 % 参考文献
