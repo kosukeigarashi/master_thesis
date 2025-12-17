@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.4.13)  17 DEC 2025 12:50
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.4.13)  17 DEC 2025 13:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -426,18 +426,18 @@ LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <20.74> not available
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 19.17792pt on input line 76.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 81.
+(Font)              scaled to size 11.09619pt on input line 79.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 81.
+(Font)              scaled to size 11.09619pt on input line 79.
 
 
 [1
 
 ]
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 89.
+(Font)              scaled to size 9.24683pt on input line 100.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 89.
+(Font)              scaled to size 9.24683pt on input line 100.
  (./main.toc
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
 (Font)              scaled to size 6.47278pt on input line 3.
@@ -472,9 +472,9 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 ]
 第1章
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 111.
+(Font)              scaled to size 13.31541pt on input line 122.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 111.
+(Font)              scaled to size 13.31541pt on input line 122.
 
 
 [1
@@ -487,9 +487,9 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 [3]
 第2章
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 205.
+(Font)              scaled to size 11.09619pt on input line 216.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 205.
+(Font)              scaled to size 11.09619pt on input line 216.
 
 
 [4
@@ -599,4 +599,4 @@ Here is how much of TeX's memory you used:
  934 hyphenation exceptions out of 8191
  72i,6n,79p,595b,569s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (26 pages, 102924 bytes).
+Output written on main.dvi (26 pages, 103268 bytes).
