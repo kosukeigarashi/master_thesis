@@ -1,4 +1,4 @@
-\contentsline {chapter}{概要}{v}{chapter*.4}%
+\contentsline {chapter}{概要}{iv}{chapter*.4}%
 \contentsline {chapter}{\numberline {第1章}序論}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}背景：情報の非対称性と医療資源配分}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}本研究の目的とリサーチクエスチョン}{2}{section.1.2}%
@@ -33,25 +33,34 @@
 \contentsline {subsection}{\numberline {3.3.3}先行研究の限界と本研究の貢献}{10}{subsection.3.3.3}%
 \contentsline {chapter}{\numberline {第4章}データ}{11}{chapter.4}%
 \contentsline {section}{\numberline {4.1}データソース}{11}{section.4.1}%
-\contentsline {section}{\numberline {4.2}サンプル構築}{11}{section.4.2}%
-\contentsline {section}{\numberline {4.3}変数定義}{11}{section.4.3}%
-\contentsline {section}{\numberline {4.4}記述統計}{11}{section.4.4}%
-\contentsline {chapter}{\numberline {第5章}実証戦略}{12}{chapter.5}%
-\contentsline {section}{\numberline {5.1}DID}{12}{section.5.1}%
-\contentsline {section}{\numberline {5.2}イベントスタディ}{12}{section.5.2}%
-\contentsline {section}{\numberline {5.3}識別の仮定}{12}{section.5.3}%
-\contentsline {chapter}{\numberline {第6章}分析結果}{13}{chapter.6}%
-\contentsline {section}{\numberline {6.1}イベントスタディ結果}{13}{section.6.1}%
-\contentsline {section}{\numberline {6.2}DID結果}{13}{section.6.2}%
-\contentsline {section}{\numberline {6.3}異質性分析（Heterogeneity）}{13}{section.6.3}%
-\contentsline {section}{\numberline {6.4}ロバストネスチェック}{13}{section.6.4}%
-\contentsline {chapter}{\numberline {第7章}考察}{14}{chapter.7}%
-\contentsline {section}{\numberline {7.1}メカニズムの解釈}{14}{section.7.1}%
-\contentsline {section}{\numberline {7.2}政策的含意}{14}{section.7.2}%
-\contentsline {section}{\numberline {7.3}限界}{14}{section.7.3}%
-\contentsline {chapter}{\numberline {第8章}結論}{15}{chapter.8}%
-\contentsline {chapter}{\numberline {付録A}表・図の補足}{16}{appendix.A}%
-\contentsline {section}{\numberline {A.1}イベントスタディ係数表、プレトレンドF-test}{16}{section.A.1}%
-\contentsline {chapter}{\numberline {付録B}ロバストネスチェック}{17}{appendix.B}%
-\contentsline {chapter}{\numberline {付録C}使用データ・コード一覧}{18}{appendix.C}%
-\contentsline {chapter}{参考文献}{19}{appendix*.5}%
+\contentsline {subsection}{\numberline {4.1.1}データの特性と限界}{11}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}本データを使用する妥当性}{11}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}サンプル構築}{12}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}集計単位}{12}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}除外基準}{12}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}最終的な分析サンプル}{12}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}変数定義}{12}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}被説明変数}{13}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}説明変数}{13}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}共変量と固定効果}{13}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}記述統計}{13}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}要約統計量}{14}{subsection.4.4.1}%
+\contentsline {chapter}{\numberline {第5章}実証戦略}{15}{chapter.5}%
+\contentsline {section}{\numberline {5.1}DID}{15}{section.5.1}%
+\contentsline {section}{\numberline {5.2}イベントスタディ}{15}{section.5.2}%
+\contentsline {section}{\numberline {5.3}識別の仮定}{15}{section.5.3}%
+\contentsline {chapter}{\numberline {第6章}分析結果}{16}{chapter.6}%
+\contentsline {section}{\numberline {6.1}イベントスタディ結果}{16}{section.6.1}%
+\contentsline {section}{\numberline {6.2}DID結果}{16}{section.6.2}%
+\contentsline {section}{\numberline {6.3}異質性分析（Heterogeneity）}{16}{section.6.3}%
+\contentsline {section}{\numberline {6.4}ロバストネスチェック}{16}{section.6.4}%
+\contentsline {chapter}{\numberline {第7章}考察}{17}{chapter.7}%
+\contentsline {section}{\numberline {7.1}メカニズムの解釈}{17}{section.7.1}%
+\contentsline {section}{\numberline {7.2}政策的含意}{17}{section.7.2}%
+\contentsline {section}{\numberline {7.3}限界}{17}{section.7.3}%
+\contentsline {chapter}{\numberline {第8章}結論}{18}{chapter.8}%
+\contentsline {chapter}{\numberline {付録A}表・図の補足}{19}{appendix.A}%
+\contentsline {section}{\numberline {A.1}イベントスタディ係数表、プレトレンドF-test}{19}{section.A.1}%
+\contentsline {chapter}{\numberline {付録B}ロバストネスチェック}{20}{appendix.B}%
+\contentsline {chapter}{\numberline {付録C}使用データ・コード一覧}{21}{appendix.C}%
+\contentsline {chapter}{参考文献}{22}{appendix*.5}%
