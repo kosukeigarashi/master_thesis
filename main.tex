@@ -18,7 +18,7 @@
 % \usepackage[haranoaji]{luatexja-preset} % 日本語フォント設定
 
 \usepackage{setspace}
-\onehalfspacing
+%\onehalfspacing
 
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{bm}
@@ -27,6 +27,30 @@
 \usepackage{here}
 \usepackage[dvipdfmx]{hyperref}  % 同上
 \usepackage{url}     % URL 表示用
+
+% 1. 章タイトルのデザイン変更（改行させず1行にする・余白を詰める）
+\usepackage{titlesec}
+
+% 章タイトルのフォーマット定義
+% [hang] : ラベル（第1章）とタイトル（序論）を1行に並べる設定
+\titleformat{\chapter}[hang]
+  {\normalfont\huge\bfseries} % フォント（太字・巨大）
+  {第\thechapter 章}         % ラベルの形式
+  {1em}                       % ラベルとタイトルの間の空白
+  {}
+
+% 章タイトルの周囲の余白調整
+% \titlespacing*{コマンド}{左余白}{上余白}{下余白}
+\titlespacing*{\chapter}{0pt}{-20pt}{20pt} 
+% ※ 上余白をマイナスにすると、ページのかなり上の方から始まります。
+%    デフォルトより詰めたい場合は -10pt や 0pt などで調整してください。
+
+% 2. 本文の行間の調整
+% 現在 \onehalfspacing（約1.5倍）が入っていますが、これが「広い」原因です。
+% 削除するか、以下のように \setstretch で数値を指定して調整してください。
+
+% \onehalfspacing  % ← これを削除またはコメントアウト
+\setstretch{1.1}   % 1.0が標準。0.9〜1.1くらいでお好みに調整してください。
 
 % ---------- 定理環境など（必要なら） ----------
 \newtheorem{theorem}{定理}[chapter]

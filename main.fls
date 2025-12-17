@@ -119,6 +119,8 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/atveryend-ltx.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/atveryend-ltx.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
 INPUT ./main.aux
@@ -148,12 +150,6 @@ OUTPUT main.dvi
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-v.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-h.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-v.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss17.tfm
 INPUT ./main.toc
 INPUT ./main.toc
 INPUT main.toc
@@ -185,7 +181,6 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
 OUTPUT main.toc
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss17.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-v.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss12.tfm

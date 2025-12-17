@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.4.13)  17 DEC 2025 12:41
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.4.13)  17 DEC 2025 12:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -316,6 +316,17 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip58
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box75
+\beforetitleunit=\skip59
+\aftertitleunit=\skip60
+\ttl@plus=\dimen199
+\ttl@minus=\dimen256
+\ttl@toksa=\toks33
+\titlewidth=\dimen257
+\titlewidthlast=\dimen258
+\titlewidthfirst=\dimen259
 )
 \c@theorem=\count305
 \c@lemma=\count306
@@ -323,9 +334,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \c@definition=\count308
  (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
 File: l3backend-dvips.def 2024-05-08 L3 backend support: dvips
-\l__pdf_internal_box=\box75
-\l__pdf_backend_content_box=\box76
-\l__pdf_backend_model_box=\box77
+\l__pdf_internal_box=\box76
+\l__pdf_backend_content_box=\box77
+\l__pdf_backend_model_box=\box78
 \g__pdf_backend_annotation_int=\count309
 \g__pdf_backend_link_int=\count310
 \g__pdf_backend_link_sf_int=\count311
@@ -336,28 +347,28 @@ LaTeX Warning: Label `sec:approach' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: dvips
@@ -393,48 +404,40 @@ LaTeX Font Info:    ... okay on input line 44.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 44.
+Package hyperref Info: Link coloring OFF on input line 68.
 (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 51.
+(Font)              scaled to size 13.31541pt on input line 75.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 51.
+(Font)              scaled to size 13.31541pt on input line 75.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 52.
+(Font)              scaled to size 19.17792pt on input line 76.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 52.
+(Font)              scaled to size 19.17792pt on input line 76.
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <20.74> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 52.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 76.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 52.
+(Font)              scaled to size 19.17792pt on input line 76.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <20.74> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 52.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 76.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 52.
+(Font)              scaled to size 19.17792pt on input line 76.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 57.
+(Font)              scaled to size 11.09619pt on input line 81.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 57.
+(Font)              scaled to size 11.09619pt on input line 81.
 
 
 [1
 
 ]
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 65.
+(Font)              scaled to size 9.24683pt on input line 89.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 65.
-LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 23.0061pt on input line 65.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 23.0061pt on input line 65.
-LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 23.0061pt on input line 65.
-LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 23.0061pt on input line 65.
+(Font)              scaled to size 9.24683pt on input line 89.
  (./main.toc
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
 (Font)              scaled to size 6.47278pt on input line 3.
@@ -469,9 +472,9 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 ]
 第1章
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 87.
+(Font)              scaled to size 13.31541pt on input line 111.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 87.
+(Font)              scaled to size 13.31541pt on input line 111.
 
 
 [1
@@ -484,9 +487,9 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 [3]
 第2章
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 181.
+(Font)              scaled to size 11.09619pt on input line 205.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 181.
+(Font)              scaled to size 11.09619pt on input line 205.
 
 
 [4
@@ -518,48 +521,46 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 [12]
 
 [13]
-
-[14]
 第5章
 
 
-[15
+[14
 
 ]
 第6章
 
 
-[16
+[15
 
 ]
 第7章
 
 
-[17
+[16
 
 ]
 第8章
 
 
-[18
+[17
 
 ]
 付録A
 
 
-[19
+[18
 
 ]
 付録B
 
 
-[20
+[19
 
 ]
 付録C
 (./main.bbl
 
-[21
+[20
 
 ]
 LaTeX Font Info:    Font shape `JT2/gt/m/it' in size <10> not available
@@ -572,11 +573,11 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 9.24683pt on input line 11.
 
 
-[22
+[21
 
 ])
 
-[23] (./main.aux)
+[22] (./main.aux)
  ***********
 pLaTeX2e <2023-02-14u04>+1, based on
 LaTeX2e <2024-11-01> patch level 2
@@ -590,12 +591,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: E4F8F8E30F8B71621933B6947CC56DBA;4623.
  ) 
 Here is how much of TeX's memory you used:
- 10486 strings out of 473836
- 158904 string characters out of 5731190
- 578908 words of memory out of 5000000
- 33608 multiletter control sequences out of 15000+600000
- 573480 words of font info for 109 fonts, out of 8000000 for 9000
+ 10772 strings out of 473836
+ 162721 string characters out of 5731190
+ 588469 words of memory out of 5000000
+ 33891 multiletter control sequences out of 15000+600000
+ 571995 words of font info for 102 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 72i,6n,79p,595b,561s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,6n,79p,595b,569s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (27 pages, 104176 bytes).
+Output written on main.dvi (26 pages, 102924 bytes).
