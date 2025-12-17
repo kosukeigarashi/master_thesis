@@ -1,4 +1,4 @@
-\contentsline {chapter}{概要}{v}{chapter*.4}%
+\contentsline {chapter}{概要}{iii}{chapter*.2}%
 \contentsline {chapter}{\numberline {第1章}序論}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}背景：情報の非対称性と医療資源配分}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}本研究の目的とリサーチクエスチョン}{2}{section.1.2}%
@@ -63,4 +63,4 @@
 \contentsline {section}{\numberline {A.1}イベントスタディ係数表、プレトレンドF-test}{19}{section.A.1}%
 \contentsline {chapter}{\numberline {付録B}ロバストネスチェック}{20}{appendix.B}%
 \contentsline {chapter}{\numberline {付録C}使用データ・コード一覧}{21}{appendix.C}%
-\contentsline {chapter}{参考文献}{22}{appendix*.5}%
+\contentsline {chapter}{参考文献}{22}{appendix*.3}%

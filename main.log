@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.4.13)  17 DEC 2025 12:35
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.4.13)  17 DEC 2025 12:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -462,25 +462,9 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 
 
 
-[2] (./main.lof)
-\tf@lof=\write5
-\openout5 = `main.lof'.
-
-
+[2]
 
 [3
-
-] (./main.lot)
-\tf@lot=\write6
-\openout6 = `main.lot'.
-
-
-
-[4
-
-]
-
-[5
 
 ]
 第1章
@@ -603,15 +587,15 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 01AFF1AB5BB8254FFCE58046E75E47B2;4623.
+(rerunfilecheck)             Checksum: E4F8F8E30F8B71621933B6947CC56DBA;4623.
  ) 
 Here is how much of TeX's memory you used:
- 10500 strings out of 473836
- 159058 string characters out of 5731190
+ 10486 strings out of 473836
+ 158904 string characters out of 5731190
  578908 words of memory out of 5000000
- 33616 multiletter control sequences out of 15000+600000
+ 33608 multiletter control sequences out of 15000+600000
  573480 words of font info for 109 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  72i,6n,79p,595b,561s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (29 pages, 104788 bytes).
+Output written on main.dvi (27 pages, 104176 bytes).
