@@ -1,4 +1,4 @@
-\contentsline {chapter}{概要}{iv}{chapter*.4}%
+\contentsline {chapter}{概要}{v}{chapter*.4}%
 \contentsline {chapter}{\numberline {第1章}序論}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}背景：情報の非対称性と医療資源配分}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}本研究の目的とリサーチクエスチョン}{2}{section.1.2}%
@@ -52,7 +52,7 @@
 \contentsline {chapter}{\numberline {第6章}分析結果}{16}{chapter.6}%
 \contentsline {section}{\numberline {6.1}イベントスタディ結果}{16}{section.6.1}%
 \contentsline {section}{\numberline {6.2}DID結果}{16}{section.6.2}%
-\contentsline {section}{\numberline {6.3}異質性分析（Heterogeneity）}{16}{section.6.3}%
+\contentsline {section}{\numberline {6.3}異質性分析}{16}{section.6.3}%
 \contentsline {section}{\numberline {6.4}ロバストネスチェック}{16}{section.6.4}%
 \contentsline {chapter}{\numberline {第7章}考察}{17}{chapter.7}%
 \contentsline {section}{\numberline {7.1}メカニズムの解釈}{17}{section.7.1}%

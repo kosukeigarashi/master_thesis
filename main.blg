@@ -1,0 +1,50 @@
+This is upBibTeX, Version 0.99d-j0.36-u2.00 (utf8.euc) (TeX Live 2025)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: jplain.bst
+Database file #1: thesis.bib
+Warning--there's a number but no volume in KawaguchiSugahara2015
+Warning--there's a number but no volume in Yuda2023
+You've used 18 entries,
+            2620 wiz_defined-function locations,
+            735 strings with 7784 characters,
+and the built_in function-call counts, 8601 in all, are:
+= -- 791
+> -- 261
+< -- 43
++ -- 111
+- -- 90
+* -- 520
+:= -- 1143
+add.period$ -- 56
+call.type$ -- 18
+change.case$ -- 100
+chr.to.int$ -- 0
+cite$ -- 20
+duplicate$ -- 460
+empty$ -- 681
+format.name$ -- 135
+if$ -- 1985
+int.to.chr$ -- 0
+int.to.str$ -- 18
+missing$ -- 16
+newline$ -- 95
+num.names$ -- 36
+pop$ -- 131
+preamble$ -- 1
+purify$ -- 81
+quote$ -- 0
+skip$ -- 444
+stack$ -- 0
+substring$ -- 568
+swap$ -- 172
+text.length$ -- 43
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 72
+warning$ -- 2
+while$ -- 81
+width$ -- 20
+write$ -- 203
+is.kanji.str$ -- 204
+(There were 2 warnings)

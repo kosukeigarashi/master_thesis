@@ -1,10 +1,11 @@
 %==================================================
 % 修士論文_五十嵐康佑
 %==================================================
+% \documentclass[uplatex,a4paper,11pt]{jsreport}
 \documentclass[uplatex,a4paper,11pt]{jsreport}
 
 % ---- Packages ----
-% ---- 欧文 pdfLaTeX 向けの設定は消す or コメントアウト ----
+% pdfLaTeX 用の設定は使わない（uplatex では不要）
 % \usepackage[utf8]{inputenc}
 % \usepackage[T1]{fontenc}
 % \usepackage{lmodern}
@@ -12,25 +13,20 @@
 \usepackage{geometry}
 \geometry{left=25mm,right=25mm,top=25mm,bottom=25mm}
 
+% ★ LuaLaTeX 用のパッケージは削除する
+% \usepackage{luatexja}
+% \usepackage[haranoaji]{luatexja-preset} % 日本語フォント設定
+
 \usepackage{setspace}
 \onehalfspacing
 
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{bm}
-\usepackage[dvipdfmx]{graphicx}  % ここポイント
+\usepackage[dvipdfmx]{graphicx}  % uplatex + dvipdfmx 用
 \usepackage{booktabs}
 \usepackage{here}
-\usepackage[dvipdfmx]{hyperref}  % ここも dvipdfmx を指定
-
-% ---------- 和文向けに使う場合の例 ----------
-% pLaTeX / upLaTeX を使うなら inputenc, fontenc, lmodern は不要なことが多いです。
-% ドライバや環境に応じて調整してください。
-% jsreport を使う場合:
-% \documentclass[uplatex,a4paper,11pt]{jsreport}
-% などに差し替える。
-% report を使う場合(英文向け):
-% \documentclass[a4paper,11pt]{report} 
-% などに差し替える。
+\usepackage[dvipdfmx]{hyperref}  % 同上
+\usepackage{url}     % URL 表示用
 
 % ---------- 定理環境など（必要なら） ----------
 \newtheorem{theorem}{定理}[chapter]
@@ -433,36 +429,36 @@ Kobayashi et al. \cite{Kobayashi2019} などの記述的な分析においても
 \section{変数定義}
 \label{sec:variables}
 以下では、構築した分析用データセットに含まれる主要な変数の定義について述べる。本データセットは、観測単位を病院 $i$ 、診療年月 $t$ とする
-パネルデータである。病院ID(hospital_id)については、「レセプト」テーブルの都道府県コード、点数表コード、医療機関コードの組み合わせにより
+パネルデータである。病院ID(hospital\_id)については、「レセプト」テーブルの都道府県コード、点数表コード、医療機関コードの組み合わせにより
 作成した。これは協会けんぽのガイドラインに沿った作成方法である。
 
 \subsection{被説明変数}
 \label{sec:dependent_variables}
 本研究では、選定療養費の導入および拡大が患者の受診行動に与える影響を検証するため、以下の4つの変数を被説明変数として設定した。外来件数に
 ついては分析では自然対数変換を施した値を用いた。\\
-第一の被説明変数は対数初診外来件数(log_shoshin_outpatients)である。これは、「レセプト診療行為」テーブルに初診料を表す診療行為コードが
-記録されているレセプトの枚数を病院・年月ごとにグループ化して集計して shoshin_outpatients とし、その自然対数をとったものである。選定
+第一の被説明変数は対数初診外来件数(log\_shoshin\_outpatients)である。これは、「レセプト診療行為」テーブルに初診料を表す診療行為コードが
+記録されているレセプトの枚数を病院・年月ごとにグループ化して集計して shoshin\_outpatients とし、その自然対数をとったものである。選定
 療養費の対象となるのは初診患者であるため、この変数を主要な被説明変数とした。\\
-第二の被説明変数は対数総外来件数 (log_total_outpatients) である。これは、「レセプト」テーブルの「入外区分」列の値により外来レセプトの
-総枚数 (total_outpatients) をカウントし、対数変換したものである。初診だけでなく再診を含めた外来全体への影響を確認するために使用する。\\
-さらに機能分化の進展を評価する第三の被説明変数として、紹介率 (referral_ratio) も作成した。これは、「レセプト診療行為」テーブルに
+第二の被説明変数は対数総外来件数 (log\_total\_outpatients) である。これは、「レセプト」テーブルの「入外区分」列の値により外来レセプトの
+総枚数 (total\_outpatients) をカウントし、対数変換したものである。初診だけでなく再診を含めた外来全体への影響を確認するために使用する。\\
+さらに機能分化の進展を評価する第三の被説明変数として、紹介率 (referral\_ratio) も作成した。これは、「レセプト診療行為」テーブルに
 「初診料(文書による紹介がない患者)」を表す診療行為コードが記録されているレセプトの枚数を病院・年月ごとにグループ化して集計して「紹介状なし
-初診外来件数 (no_referral_outpatients)」とする。次に、初診外来件数 (shoshin_outpatients) からこの紹介状なし初診外来件数を差し
-引くことで「紹介状あり初診外来患者数 (referral_outpatients)」を推定し、これを初診外来件数で除すことで紹介率を算出した。\\
-また、第四の被説明変数として紹介状あり初診外来患者数の対数値 (log_referral_outpatients) も用いる。
+初診外来件数 (no\_referral\_outpatients)」とする。次に、初診外来件数 (shoshin\_outpatients) からこの紹介状なし初診外来件数を差し
+引くことで「紹介状あり初診外来患者数 (referral\_outpatients)」を推定し、これを初診外来件数で除すことで紹介率を算出した。\\
+また、第四の被説明変数として紹介状あり初診外来患者数の対数値 (log\_referral\_outpatients) も用いる。
 
 \subsection{説明変数}
 \label{sec:explanatory_variables}
 差の差分析およびイベントスタディのために、つぎの変数を定義する。処置群ダミー (treated) は、選定療養費の徴収義務化対象病院を識別
 するダミー変数である。具体的には2022年10月から2024年3月までの全期間において、毎月継続して「レセプト診療行為」テーブルに「初診料
 （文書による紹介がない患者）」を表す診療行為コードが記録されている病院を $1$、そうでない病院を $0$ と定義する。また、イベント
-スタディのために経過時間変数を作成した。event_timeは2022年10月を基準時点（$0$）として経過月数を表す変数である。
+スタディのために経過時間変数を作成した。event\_timeは2022年10月を基準時点（$0$）として経過月数を表す変数である。
 
 \subsection{共変量と固定効果}
 \label{sec:covariates_fixed_effects}
-病院の規模や機能の代理変数として診療科数 (department_count) を使用する。これは、各病院について「レセプト」テーブルの診療科
+病院の規模や機能の代理変数として診療科数 (department\_count) を使用する。これは、各病院について「レセプト」テーブルの診療科
 コード（診療科1〜3）に記録されたユニークな診療科の数をカウントしたものである。 また、地域特有のショックを制御するため病院所在地の
-郵便番号の上2桁（postal_2）を用いて地域を識別し、地域×月固定効果としてモデルに組み込む。
+郵便番号の上2桁（postal\_2）を用いて地域を識別し、地域×月固定効果としてモデルに組み込む。
 
 \section{記述統計}
 \label{sec:descriptive}
@@ -478,19 +474,15 @@ Kobayashi et al. \cite{Kobayashi2019} などの記述的な分析においても
 
 \section{DID}
 \label{sec:did}
-DID の基本仕様を提示する。
-\begin{equation}
-  y_{it} = \alpha + \beta \,\text{Post}_t \times \text{Treat}_i
-  + \gamma_i + \delta_t + X_{it}'\theta + \varepsilon_{it}.
-\end{equation}
+
 
 \section{イベントスタディ}
 \label{sec:eventstudy}
-イベントスタディ仕様と推定の要点を書く。
+
 
 \section{識別の仮定}
 \label{sec:identification}
-パラレルトレンド等の識別仮定と検証方法を書く。
+
 
 %--------------------------------------------------
 
@@ -499,19 +491,19 @@ DID の基本仕様を提示する。
 
 \section{イベントスタディ結果}
 \label{sec:results_eventstudy}
-イベントスタディの図示と解釈を書く。
+
 
 \section{DID結果}
 \label{sec:results_did}
-ベースラインDIDの推定結果と解釈を書く。
 
-\section{異質性分析（Heterogeneity）}
+
+\section{異質性分析}
 \label{sec:heterogeneity}
-病院属性・地域・患者属性などでの効果の違いを示す。
+
 
 \section{ロバストネスチェック}
 \label{sec:robustness}
-仕様変更、サンプル制限、代替変数等の結果をまとめる。
+
 
 %--------------------------------------------------
 
@@ -520,21 +512,21 @@ DID の基本仕様を提示する。
 
 \section{メカニズムの解釈}
 \label{sec:mechanism}
-結果が生じた行動・制度的メカニズムを議論する。
+
 
 \section{政策的含意}
 \label{sec:policy_implication}
-制度設計・運用への含意を整理する。
+
 
 \section{限界}
 \label{sec:limitations}
-データ・識別・外的妥当性などの限界を書く。
+
 
 %--------------------------------------------------
 
 \chapter{結論}
 \label{chap:conclusion}
-本研究の要点を簡潔にまとめる。
+
 
 %==================================================
 % 付録
@@ -546,15 +538,15 @@ DID の基本仕様を提示する。
 
 \section{イベントスタディ係数表、プレトレンドF-test}
 \label{app:eventstudy_tables}
-本文では省略したイベントスタディの係数表やプレトレンド検定結果を掲載する。
+
 
 \chapter{ロバストネスチェック}
 \label{app:robustness}
-追加のロバストネス結果をまとめる。
+
 
 \chapter{使用データ・コード一覧}
 \label{app:data_code_list}
-使用データの一覧、前処理・推定コードの概要（または管理方法）を書く。
+
 
 %==================================================
 % 参考文献

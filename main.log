@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.4.13)  17 DEC 2025 12:01
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.4.13)  17 DEC 2025 12:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -329,32 +329,36 @@ File: l3backend-dvips.def 2024-05-08 L3 backend support: dvips
 \g__pdf_backend_annotation_int=\count309
 \g__pdf_backend_link_int=\count310
 \g__pdf_backend_link_sf_int=\count311
+) (./main.aux
+
+LaTeX Warning: Label `sec:approach' multiply defined.
+
 )
-No file main.aux.
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: dvips
 *geometry* verbose mode - [ preamble ] result:
@@ -389,87 +393,101 @@ LaTeX Font Info:    ... okay on input line 48.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 48.
+Package hyperref Info: Link coloring OFF on input line 44.
+(./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 55.
+(Font)              scaled to size 13.31541pt on input line 51.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 55.
+(Font)              scaled to size 13.31541pt on input line 51.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 56.
+(Font)              scaled to size 19.17792pt on input line 52.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 56.
+(Font)              scaled to size 19.17792pt on input line 52.
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <20.74> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 56.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 52.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 56.
+(Font)              scaled to size 19.17792pt on input line 52.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <20.74> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 56.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 52.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 56.
+(Font)              scaled to size 19.17792pt on input line 52.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 61.
+(Font)              scaled to size 11.09619pt on input line 57.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 61.
+(Font)              scaled to size 11.09619pt on input line 57.
 
 
 [1
 
 ]
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 69.
+(Font)              scaled to size 9.24683pt on input line 65.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 69.
+(Font)              scaled to size 9.24683pt on input line 65.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 23.0061pt on input line 69.
+(Font)              scaled to size 23.0061pt on input line 65.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 23.0061pt on input line 69.
+(Font)              scaled to size 23.0061pt on input line 65.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 23.0061pt on input line 69.
+(Font)              scaled to size 23.0061pt on input line 65.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 23.0061pt on input line 69.
+(Font)              scaled to size 23.0061pt on input line 65.
+ (./main.toc
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 6.47278pt on input line 3.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 4.62341pt on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 6.47278pt on input line 3.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 4.62341pt on input line 3.
 
-No file main.toc.
+
+[1
+
+])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
 
 
-[1
-
-]
-No file main.lof.
+[2] (./main.lof)
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
 
 
-[2
+[3
 
-]
-No file main.lot.
+] (./main.lot)
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
 
 
-[3
+[4
 
 ]
 
-[4
+[5
 
 ]
 第1章
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 91.
+(Font)              scaled to size 13.31541pt on input line 87.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 91.
+(Font)              scaled to size 13.31541pt on input line 87.
 
 
 [1
@@ -482,9 +500,9 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 [3]
 第2章
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 185.
+(Font)              scaled to size 11.09619pt on input line 181.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 185.
+(Font)              scaled to size 11.09619pt on input line 181.
 
 
 [4
@@ -497,89 +515,13 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 
 [7]
 第3章
-LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 301.
-LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 301.
-LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 301.
-LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 301.
-
-LaTeX Warning: Citation `Arrow1963' on page 8 undefined on input line 301.
-
-
-LaTeX Warning: Citation `Grossman1972' on page 8 undefined on input line 305.
-
-
-LaTeX Warning: Citation `Manning1987' on page 8 undefined on input line 310.
-
-
-LaTeX Warning: Citation `Finkelstein2012' on page 8 undefined on input line 313.
-
-
-LaTeX Warning: Citation `BrotGoldberg2017' on page 8 undefined on input line 314.
-
-
-LaTeX Warning: Citation `Bhattacharya1996' on page 8 undefined on input line 321.
-
-
-LaTeX Warning: Citation `Shigeoka2014' on page 8 undefined on input line 322.
-
-
-LaTeX Warning: Citation `IizukaShigeoka2022' on page 8 undefined on input line 324.
-
-
-LaTeX Warning: Citation `Yuda2023' on page 8 undefined on input line 325.
-
-
-LaTeX Warning: Citation `Izumida2004' on page 8 undefined on input line 326.
-
 
 
 [8
 
 ]
 
-LaTeX Warning: Citation `Acton1973' on page 9 undefined on input line 338.
-
-
-LaTeX Warning: Citation `Tay2003' on page 9 undefined on input line 341.
-
-
-LaTeX Warning: Citation `Yamamoto2002' on page 9 undefined on input line 346.
-
-
-LaTeX Warning: Citation `Yagi2008' on page 9 undefined on input line 348.
-
-
-
 [9]
-
-LaTeX Warning: Citation `Sugahara2015Rep' on page 10 undefined on input line 357.
-
-
-LaTeX Warning: Citation `KawaguchiSugahara2015' on page 10 undefined on input line 357.
-
-
-LaTeX Warning: Citation `Iba2023' on page 10 undefined on input line 365.
-
-
-LaTeX Warning: Citation `Kobayashi2019' on page 10 undefined on input line 368.
-
-
-LaTeX Warning: Citation `Sugahara2015Rep' on page 10 undefined on input line 372.
-
-
-LaTeX Warning: Citation `Iba2023' on page 10 undefined on input line 373.
-
-
-LaTeX Warning: Citation `Izumida2004' on page 10 undefined on input line 376.
-
-
-LaTeX Warning: Citation `Iba2023' on page 10 undefined on input line 377.
-
-
 
 [10]
 第4章
@@ -588,100 +530,13 @@ LaTeX Warning: Citation `Iba2023' on page 10 undefined on input line 377.
 [11
 
 ]
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 6.47278pt on input line 435.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 4.62341pt on input line 435.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 435.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 435.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 6.47278pt on input line 435.
-LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 4.62341pt on input line 435.
-
-/Users/igarashi_kosuke/Documents/Github/master_thesis/main.tex:436: Missing $ inserted.
-<inserted text> 
-                $
-l.436 ...データである。病院ID(hospital_
-                                                id)については、「レセ
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/igarashi_kosuke/Documents/Github/master_thesis/main.tex:438: Missing $ inserted.
-<inserted text> 
-                $
-l.438 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/igarashi_kosuke/Documents/Github/master_thesis/main.tex:443: Missing $ inserted.
-<inserted text> 
-                $
-l.443 ...明変数は対数初診外来件数(log_
-                                                  shoshin_outpatients)であ...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/igarashi_kosuke/Documents/Github/master_thesis/main.tex:453: Missing $ inserted.
-<inserted text> 
-                $
-l.453 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
 
 [12]
-/Users/igarashi_kosuke/Documents/Github/master_thesis/main.tex:459: Missing $ inserted.
-<inserted text> 
-                $
-l.459 ...過時間変数を作成した。event_
-                                                timeは2022年10月を基準
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/igarashi_kosuke/Documents/Github/master_thesis/main.tex:460: Missing $ inserted.
-<inserted text> 
-                $
-l.460 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/igarashi_kosuke/Documents/Github/master_thesis/main.tex:463: Missing $ inserted.
-<inserted text> 
-                $
-l.463 ...変数として診療科数 (department_
-                                                 count) を使用する。こ
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/igarashi_kosuke/Documents/Github/master_thesis/main.tex:466: Missing $ inserted.
-<inserted text> 
-                $
-l.466 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
 
 [13]
 
 [14]
 第5章
-LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 6.47278pt on input line 483.
-LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 4.62341pt on input line 483.
 
 
 [15
@@ -745,27 +600,18 @@ L3 programming layer <2025-01-18>
  ***********
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: There were multiply-defined labels.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  0473BB3752F1881F8ACD611BFDAB4B6D;4704.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 01AFF1AB5BB8254FFCE58046E75E47B2;4623.
  ) 
 Here is how much of TeX's memory you used:
- 10477 strings out of 473836
- 158824 string characters out of 5731190
- 570579 words of memory out of 5000000
- 33605 multiletter control sequences out of 15000+600000
- 573698 words of font info for 111 fonts, out of 8000000 for 9000
+ 10500 strings out of 473836
+ 159058 string characters out of 5731190
+ 578908 words of memory out of 5000000
+ 33616 multiletter control sequences out of 15000+600000
+ 573480 words of font info for 109 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 72i,5n,79p,595b,561s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,6n,79p,595b,561s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (28 pages, 81824 bytes).
+Output written on main.dvi (29 pages, 104788 bytes).
