@@ -515,7 +515,7 @@ Kobayashi et al. \cite{Kobayashi2019} などの記述的な分析においても
 されている必要がある。すなわち、処置群を $D=1$、対照群を $D=0$、時点 $t$ における潜在的アウトカムを $Y_{it}(0)$（処置なし）
 としたとき、制度導入後の任意の時点 $t$ において以下が成立することを要請する。
 \begin{align*}
-  E[Y_{it}(0) - Y_{i,t-1}(0) | D=1] = E[Y_{it}(0) - Y_{i,t-1}(0) | D=0]
+  E[Y_{it}(0) - Y_{i,t-1}(0) | D=1, X_{it}] = E[Y_{it}(0) - Y_{i,t-1}(0) | D=0, X_{it}]
 \end{align*}
 
 \section{推定モデル}
@@ -524,17 +524,19 @@ Kobayashi et al. \cite{Kobayashi2019} などの記述的な分析においても
 \label{sec:did}
 選定療養費の導入が初診外来件数等のアウトカムに与える平均的な効果を推定するため、以下の Two-Way Fixed Effectsモデルを推定する。
 \begin{align*}
-  \ln Y_{it} = \gamma (\text{Treat}_i \cdot \text{Post}_t) + \alpha_i + \delta_t + \epsilon_{it}
+  \ln Y_{it} = \gamma (\text{Treat}_i \cdot \text{Post}_{it}) + \beta X_{it} + \alpha_i + \delta_t + \epsilon_{it}
 \end{align*}
 ここで、$Y_{it}$ は病院 $i$ の月 $t$ におけるアウトカムである。$\text{Treat}_i$ は処置群ダミー、$\text{Post}_t$ は制度
-改定後（2022年10月以降）を示すダミー変数である。DID推定量は交差項の係数 $\gamma$ であり、これが制度導入による平均処置効果
-（ATT）を表す。
+改定後（2022年10月以降）を示すダミー変数である。モデルには、病院固定効果 $\alpha_i$ および月固定効果 $\delta_t$ を含める。
+さらに、時間を通じて変化する病院属性を制御するため、コントロール変数 $X_{it}$ を導入する。具体的には、病院の規模や機能を反映して
+いる診療科数を含める。また、月次固定効果に代わり地域（郵便番号上2桁）$\times$ 月固定効果を導入した推定も行う。DID推定量は交差項の
+係数 $\gamma$ であり、これが制度導入による平均処置効果（ATT）を表す。標準誤差については病院レベルでのクラスターロバスト標準誤差を使用する。
 
 \subsection{イベントスタディ}
 \label{sec:eventstudy}
 処置効果の動的な推移を明らかにするため、以下のイベントスタディモデルを推定する。
 \begin{align*}
-  \ln Y_{it} = \sum_{k=-12, k \neq -1}^{17} \beta_k \cdot \mathbb{1}(t = E_i + k) \cdot \text{Treat}_i + \alpha_i + \delta_t + \epsilon_{it}
+  \ln Y_{it} = \sum_{k=-12, k \neq -1}^{17} \beta_k \cdot \mathbb{1}(t = E_i + k) \cdot \text{Treat}_i + \theta X_{it} + \alpha_i + \delta_t + \epsilon_{it}
 \end{align*}
 ここで、$E_i$ は制度改定が行われた年月（2022年10月）を表す。$\mathbb{1}(\cdot)$ は指示関数であり、括弧内の条件が満たされる
 場合に1をとる。すなわち、$\mathbb{1}(t = E_i + k) \times \text{Treat}_i$ は、処置群の病院において、制度改定から
