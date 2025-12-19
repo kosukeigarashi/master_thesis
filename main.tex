@@ -504,19 +504,56 @@ Kobayashi et al. \cite{Kobayashi2019} などの記述的な分析においても
 
 %--------------------------------------------------
 
-\chapter{実証戦略}
-\label{chap:empirical_strategy}
+\chapter{分析方法}
+\label{chap:analysis_method}
+本章では構築したパネルデータを用いて選定療養費の徴収義務化が患者の受診行動に与える影響を推定するための実証戦略について述べる。
 
-\section{DID}
+\section{識別戦略}
+\label{sec:identification_strategy}
+本研究の目的は選定療養費の徴収義務化が対象病院のアウトカムに与える平均処置効果（ATT）を推定することである。 本研究では2022年10月
+の制度改定を外生的なショックと見なし、差の差分析（DID）を行う。DID推定量が因果効果として解釈できるためには平行トレンド仮定が満た
+されている必要がある。すなわち、処置群を $D=1$、対照群を $D=0$、時点 $t$ における潜在的アウトカムを $Y_{it}(0)$（処置なし）
+としたとき、制度導入後の任意の時点 $t$ において以下が成立することを要請する。
+\begin{align*}
+  E[Y_{it}(0) - Y_{i,t-1}(0) | D=1] = E[Y_{it}(0) - Y_{i,t-1}(0) | D=0]
+\end{align*}
+
+\section{推定モデル}
+\label{sec:models}
+\subsection{差の差分析 (Difference-in-Differences)}
 \label{sec:did}
+選定療養費の導入が初診外来件数等のアウトカムに与える平均的な効果を推定するため、以下の Two-Way Fixed Effectsモデルを推定する。
+\begin{align*}
+  \ln Y_{it} = \gamma (\text{Treat}_i \cdot \text{Post}_t) + \alpha_i + \delta_t + \epsilon_{it}
+\end{align*}
+ここで、$Y_{it}$ は病院 $i$ の月 $t$ におけるアウトカムである。$\text{Treat}_i$ は処置群ダミー、$\text{Post}_t$ は制度
+改定後（2022年10月以降）を示すダミー変数である。DID推定量は交差項の係数 $\gamma$ であり、これが制度導入による平均処置効果
+（ATT）を表す。
 
-
-\section{イベントスタディ}
+\subsection{イベントスタディ}
 \label{sec:eventstudy}
+処置効果の動的な推移を明らかにするため、以下のイベントスタディモデルを推定する。
+\begin{align*}
+  \ln Y_{it} = \sum_{k=-12, k \neq -1}^{17} \beta_k \cdot \mathbb{1}(t = E_i + k) \cdot \text{Treat}_i + \alpha_i + \delta_t + \epsilon_{it}
+\end{align*}
+ここで、$E_i$ は制度改定が行われた年月（2022年10月）を表す。$\mathbb{1}(\cdot)$ は指示関数であり、括弧内の条件が満たされる
+場合に1をとる。すなわち、$\mathbb{1}(t = E_i + k) \times \text{Treat}_i$ は、処置群の病院において、制度改定から
+ $k$ ヶ月経過した時点（$k$ が負の場合は改定前）であることを示すダミー変数である。 改定直前 $k = -1$ の月は分析の基準点として
+ 除外しており、イベントスタディ係数は係数は指示関数の係数 $\beta_k$ であり、基準月と比較した際のアウトカムの差分を表す。これに
+ より制度の動学的な効果を推定する。
 
+\section{識別仮定の検証と頑健性}
+\label{sec:hypothesis_robustness}
+\subsection{事前トレンドの検証}
+\label{sec:test_pretrend}
+平行トレンド仮定の妥当性を検証するため、前述したイベントスタディモデルの推定結果を利用する。 具体的には、制度導入前の期間
+$k < -1$における係数 $\beta_k$ に注目し、 $\beta_k$ が統計的にゼロと有意に異なっていない場合制度導入前の処置群と対照群の
+トレンドに有意な差はなかったことになり、平行トレンドの仮定はデータと矛盾しない。
 
-\section{識別の仮定}
-\label{sec:identification}
+\subsection{プラセボテスト}
+\label{sec:placebo_test}
+また、偽の処置時点を用いたプラシーボテストを行う。 具体的には制度改定の影響を受けていない期間、例えば2019年4月を偽の処置時点と
+して同様のDID推定を行う。この分析において偽の処置効果が統計的に有意でなければ、仮定成立が支持される。
 
 
 %--------------------------------------------------

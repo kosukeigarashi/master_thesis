@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.4.13)  17 DEC 2025 13:48
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.4.13)  19 DEC 2025 15:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -522,45 +522,51 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 
 [13]
 第5章
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 6.47278pt on input line 528.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 4.62341pt on input line 528.
 
 
 [14
 
 ]
+
+[15]
 第6章
-
-
-[15
-
-]
-第7章
 
 
 [16
 
 ]
-第8章
+第7章
 
 
 [17
 
 ]
-付録A
+第8章
 
 
 [18
 
 ]
-付録B
+付録A
 
 
 [19
 
 ]
+付録B
+
+
+[20
+
+]
 付録C
 (./main.bbl
 
-[20
+[21
 
 ]
 LaTeX Font Info:    Font shape `JT2/gt/m/it' in size <10> not available
@@ -573,11 +579,11 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 9.24683pt on input line 11.
 
 
-[21
+[22
 
 ])
 
-[22] (./main.aux)
+[23] (./main.aux)
  ***********
 pLaTeX2e <2023-02-14u04>+1, based on
 LaTeX2e <2024-11-01> patch level 2
@@ -588,15 +594,15 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E4F8F8E30F8B71621933B6947CC56DBA;4623.
+(rerunfilecheck)             Checksum: 69C01C7847C5D1E499D739C7D4464899;4664.
  ) 
 Here is how much of TeX's memory you used:
- 10772 strings out of 473836
- 162721 string characters out of 5731190
- 588469 words of memory out of 5000000
- 33891 multiletter control sequences out of 15000+600000
- 571995 words of font info for 102 fonts, out of 8000000 for 9000
+ 10778 strings out of 473836
+ 162859 string characters out of 5731190
+ 588711 words of memory out of 5000000
+ 33897 multiletter control sequences out of 15000+600000
+ 572213 words of font info for 104 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 72i,6n,79p,595b,569s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,10n,79p,595b,569s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (26 pages, 103268 bytes).
+Output written on main.dvi (27 pages, 109088 bytes).
