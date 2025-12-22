@@ -1,0 +1,175 @@
+% !TEX program = uplatex
+\documentclass[11pt,a4paper]{bxjsarticle}
+
+% \usepackage[margin=25mm]{geometry}
+\geometry{margin=25mm}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{amsmath,amssymb}
+\usepackage[dvipdfmx]{hyperref}
+
+\title{論文概要：紹介状を持たない患者に対する選定療養費徴収義務化が外来受診行動に与えた影響}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{序論}
+
+日本の医療制度は、国民皆保険制度とフリーアクセスを二大支柱として発展し、世界最高水準の平均寿命と保健衛生水準を達成してきた。
+特にフリーアクセス下では患者は居住地や症状の軽重に関わらず自身の選好に基づいて自由に医療機関を選択することが可能である。しかし、この高いアクセス性は
+医療資源配分における深刻な非効率性、とりわけ大病院への軽症患者の集中という問題を引き起こしている。本来高度急性期医療を担うべき特定機能病院や地域医療支援病院
+（以下、大病院）に対し、軽微な傷病や慢性疾患の安定期にある患者が選好して受診することで長時間待機や勤務医の疲弊、重症患者へのリソース不足といった負の外部性が
+生じている。\\
+この問題に対処するため、諸外国（イギリスのGP制度等）で見られるような強力なゲートキーパー制度を持たない日本では、価格メカニズムを通じた誘導策として「選定療養費」
+制度が導入された。これは紹介状を持たずに大病院を受診する患者に対し、保険診療の一部負担金とは別に定額の追加負担（初診時7,000円以上等）を義務付けるものである。
+本研究の目的は、この選定療養費の徴収義務化が実際に患者の受診行動を変容させ病院の機能分化に寄与したかを定量的に明らかにすることである。
+具体的には、2022年10月に実施された制度改正を自然実験として利用し、全国規模のレセプトデータを用いた差の差分析（DID）により、その因果効果を検証する。
+
+\section{分析手法とデータ}
+
+\subsection{データ}
+
+本研究では、全国健康保険協会（協会けんぽ）が管理する2015年4月から2024年3月までの医科外来レセプトデータを使用する。\\
+分析に先立ち、処置群の定義の妥当性を確認するため、選定療養費（紹介状なし加算）の算定件数の推移を確認した（図\ref{fig:manipulation}）。図\ref{fig:manipulation}に示す通り、
+本研究で特定した処置群においては制度改定が行われた2022年10月を境に算定件数が劇的に増加しており、制度介入が確実に発生したことが確認できる。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\linewidth]{figure1_manipulation_check.png}
+  \caption{選定療養費徴収件数の爆発的増加}
+  \label{fig:manipulation}
+\end{figure}
+
+\subsection{分析手法}
+
+2022年10月の制度改定により新たに選定療養費の徴収義務化対象となった病院を「処置群」、期間を通じて対象外であった病院を「対照群」とし、
+差の差分析（Difference-in-Differences: DID）を行った。また、処置効果の動的な推移と事前トレンドの平行性を検証するため、イベントスタディモデル（Event Study）も
+併用した。推定モデルには病院固定効果と月次固定効果、および共変量（診療科数）を含めている。
+
+\subsection{被説明変数}
+
+患者の受診行動の変化を捉えるため、以下の3つを被説明変数とした（いずれも対数変換値）。\\
+対数初診外来件数: 制度の直接的なターゲットである最初の受診行動。\\
+対数再診外来件数: 既存患者の逆紹介への影響を見るための指標。\\
+対数総外来件数: 病院全体への影響。
+
+\subsection{説明変数}
+
+主要な説明変数は、処置群ダミー（$Treated_i$）と制度改定後ダミー（$Post_t$）の交差項（$Treated_i \times Post_t$）である。この係数が、制度導入による平均処置効果
+（ATT）を表す。また、病院規模の代理変数として診療科数（$Department\_Count_{it}$）をコントロール変数として使用した。
+
+\subsection{記述統計量}
+
+分析に使用したUnbalanced Panel Dataの要約統計量を表\ref{tab:summary}に示す。月平均の総外来件数は約1,491件であり、そのうち初診は約266件、再診は約1,225件となっている。
+
+% --- Table 1 (generated from table1_summary.csv) ---
+\begin{table}[htbp]
+\centering
+\caption{要約統計量}\label{tab:summary}
+\begin{tabular}{lrrrrr}
+\toprule
+ & count & mean & sd & min & max \\
+\midrule
+shoshin\_outpatients & 154886 & 265.7033 & 206.4181 & 10 & 3796 \\
+saishin\_outpatients & 154886 & 1224.928 & 1123.344 & 10 & 10450 \\
+total\_outpatients & 154886 & 1490.632 & 1260.681 & 20 & 11261 \\
+department\_count & 154886 & 13.1589 & 6.847548 & 1 & 102 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{結果}
+
+\subsection{事前トレンドの検証と動的効果}
+
+まず、DID分析の前提となる平行トレンドの仮定について検証した。図\ref{fig:trends}に示す通り、制度導入前の期間において処置群と対照群のアウトカム（初診・再診・総数）
+の推移は概ね平行しており、仮定は満たされていると考えられる。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.95\linewidth]{figure2_trends_combined.png}
+  \caption{平行トレンド仮定の成立}
+  \label{fig:trends}
+\end{figure}
+
+さらに詳細な動的効果をイベントスタディ（図\ref{fig:eventstudy}）で確認すると、初診外来件数（Panel A）は制度導入直後に急激に減少し、その後部分的な回復を見せつつも
+負の水準で推移していることがわかる。一方、再診外来件数（Panel B）への影響は極めて限定的であり、明確なトレンドの変化は見られない。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.95\linewidth]{figure3_event_study.png}
+  \caption{イベントスタディ結果}
+  \label{fig:eventstudy}
+\end{figure}
+
+\subsection{平均処置効果の推定}
+
+DID推定の結果を表\ref{tab:did}に示す。初診外来件数は統計的に有意に約12.3\%減少し、制度がゲートキーピング機能として強力に作用したことが示された。一方で、再診外来の減少は
+約1.7\%に留まり、統計的には有意であるものの経済的なインパクトは限定的であった。これらが合成された総外来件数は約4.0\%の減少となった。
+
+% --- Table 2 (generated from table2_did_results.csv) ---
+\begin{table}[htbp]
+\centering
+\caption{DID推定結果}\label{tab:did}
+\begin{threeparttable}
+\begin{tabular}{lccc}
+\toprule
+ & \multicolumn{1}{c}{Log First} & \multicolumn{1}{c}{Log Return} & \multicolumn{1}{c}{Log Total} \\
+\midrule
+did\_term & -0.1230*** & -0.0174** & -0.0401*** \\
+ & (0.0103) & (0.0084) & (0.0079) \\
+\addlinespace
+department\_count & 0.0076* & 0.0080* & 0.0074* \\
+ & (0.0042) & (0.0044) & (0.0042) \\
+\addlinespace
+\_cons & 5.1138*** & 6.5632*** & 6.8153*** \\
+ & (0.0558) & (0.0584) & (0.0556) \\
+\addlinespace
+\midrule
+Observations & 154886 & 154886 & 154886 \\
+Adj. R-squared & 0.944 & 0.983 & 0.980 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Note: All models include hospital and month fixed effects.
+\item Standard errors clustered at the hospital level are in parentheses.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\subsection{異質性分析}
+
+制度の影響がどのような病院に強く現れたかを検証するため、地域別および病院規模別の異質性分析を行った（図\ref{fig:hetero_region}, 図\ref{fig:hetero_size}）。
+地域別（図\ref{fig:hetero_region}）では、地方圏（Rural）において初診外来の減少幅が顕著に大きく（約15\%減）、都市部（約9\%減）を上回った。これは地方部における
+アクセスコストや所得効果の影響を示唆している。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\linewidth]{figure4a_heterogeneity_region.png}
+  \caption{異質性分析の結果1}
+  \label{fig:hetero_region}
+\end{figure}
+
+病院規模別（図\ref{fig:hetero_size}）の結果はさらに劇的である。大規模病院群（Large）では初診・再診ともに患者数は維持されている（効果なし）のに対し、中規模病院群
+（Small）では初診が約18\%減、再診も約4\%減と大きな影響を受けている。これは、大規模病院に対する患者のブランド選好（需要の非弾力性）と、中規模病院における代替可能性
+（弾力性）の違いを浮き彫りにしている。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\linewidth]{figure4b_heterogeneity_size.png}
+  \caption{異質性分析の結果2}
+  \label{fig:hetero_size}
+\end{figure}
+
+\section{結論}
+
+本研究の結果、選定療養費の義務化拡大は、初診患者の抑制に対しては即効性のある強力な効果を持つ一方で、再診患者の逆紹介を促す効果は限定的であることが
+明らかになった。また、その影響は地方部の中規模病院に集中しており、本来のターゲットである都市部の大規模病院へのアクセス抑制効果は不十分である可能性が示唆された。\\
+これらの知見は、日本の医療機能分化を推進するためには、単なる初診時の定額負担だけでなく、再診時の負担見直しや、地域・病院機能に応じたきめ細やかな制度設計が必要である
+ことを示唆している。
+
+\end{document}

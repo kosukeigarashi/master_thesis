@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}図表一覧}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}図一覧}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}表一覧}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {2}図}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}図1：選定療養費徴収件数の爆発的増加}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}図2：平行トレンド仮定の成立}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}図3：イベントスタディ結果}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}図4：異質性分析の結果1（地域別）}{8}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}図5：異質性分析の結果2（病院規模別）}{9}{subsection.2.5}%
+\contentsline {section}{\numberline {3}表}{10}{section.3}%
+\contentsline {subsection}{\numberline {3.1}表1：要約統計量}{10}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}表2：DID推定結果}{11}{subsection.3.2}%

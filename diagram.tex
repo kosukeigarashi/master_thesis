@@ -1,0 +1,147 @@
+% !TEX program = uplatex
+\documentclass[dvipdfmx,11pt,a4paper]{bxjsarticle}
+
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx]{hyperref}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{amsmath,amssymb}
+
+% geometryはbxjsarticleが先に読み込むため、再ロードしない
+\geometry{margin=25mm}
+
+\title{付録：図表リスト}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+% \tableofcontents
+% \clearpage
+
+\section{図表一覧}
+
+\subsection{図一覧}
+\begin{enumerate}
+  \item 図1. 選定療養費徴収件数の爆発的増加（Manipulation check）
+  \item 図2. 平行トレンド仮定の成立（Trends plot）
+  \item 図3. イベントスタディ結果（Event study）
+  \item 図4. 異質性分析の結果1：地域別（Urban vs Rural）
+  \item 図5. 異質性分析の結果2：病院規模別（Large vs Small）
+\end{enumerate}
+
+\subsection{表一覧}
+\begin{enumerate}
+  \item 表1. 要約統計量
+  \item 表2. DID推定結果
+\end{enumerate}
+
+\clearpage
+
+\section{図}
+
+\subsection{図1：選定療養費徴収件数の爆発的増加}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.90\linewidth]{figure1_manipulation_check.png}
+  \caption{選定療養費徴収件数の爆発的増加}
+  \label{fig:app_manipulation}
+\end{figure}
+\clearpage
+
+\subsection{図2：平行トレンド仮定の成立}
+\begin{figure}[htbp]
+  \centering
+  % 大きすぎる場合は0.72などに調整
+  \includegraphics[width=0.72\linewidth]{figure2_trends_combined.png}
+  \caption{平行トレンド仮定の成立}
+  \label{fig:app_trends}
+\end{figure}
+\clearpage
+
+\subsection{図3：イベントスタディ結果}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.72\linewidth]{figure3_event_study.png}
+  \caption{イベントスタディ結果}
+  \label{fig:app_eventstudy}
+\end{figure}
+\clearpage
+
+\subsection{図4：異質性分析の結果1（地域別）}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.90\linewidth]{figure4a_heterogeneity_region.png}
+  \caption{異質性分析の結果1（地域別）}
+  \label{fig:app_hetero_region}
+\end{figure}
+\clearpage
+
+\subsection{図5：異質性分析の結果2（病院規模別）}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.90\linewidth]{figure4b_heterogeneity_size.png}
+  \caption{異質性分析の結果2（病院規模別）}
+  \label{fig:app_hetero_size}
+\end{figure}
+\clearpage
+
+\section{表}
+
+% =========================
+% 表1：要約統計量（table1_summary.csv から生成済み）
+% =========================
+\subsection{表1：要約統計量}
+\begin{table}[htbp]
+\centering
+\caption{要約統計量}\label{tab:app_summary}
+\begin{tabular}{lrrrrr}
+\toprule
+ & count & mean & sd & min & max \\
+\midrule
+shoshin\_outpatients & 154886 & 265.7033 & 206.4181 & 10 & 3796 \\
+saishin\_outpatients & 154886 & 1224.928 & 1123.344 & 10 & 10450 \\
+total\_outpatients & 154886 & 1490.632 & 1260.681 & 20 & 11261 \\
+department\_count & 154886 & 13.1589 & 6.847548 & 1 & 102 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\clearpage
+
+% =========================
+% 表2：DID推定結果（table2_did_results.csv から生成済み）
+% =========================
+\subsection{表2：DID推定結果}
+\begin{table}[htbp]
+\centering
+\caption{DID推定結果}\label{tab:app_did}
+\begin{threeparttable}
+\begin{tabular}{lccc}
+\toprule
+ & \multicolumn{1}{c}{Log First} & \multicolumn{1}{c}{Log Return} & \multicolumn{1}{c}{Log Total} \\
+\midrule
+did\_term & -0.1230*** & -0.0174** & -0.0401*** \\
+ & (0.0103) & (0.0084) & (0.0079) \\
+\addlinespace
+department\_count & 0.0076* & 0.0080* & 0.0074* \\
+ & (0.0042) & (0.0044) & (0.0042) \\
+\addlinespace
+\_cons & 5.1138*** & 6.5632*** & 6.8153*** \\
+ & (0.0558) & (0.0584) & (0.0556) \\
+\addlinespace
+\midrule
+Observations & 154886 & 154886 & 154886 \\
+Adj. R-squared & 0.944 & 0.983 & 0.980 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Note: All models include hospital and month fixed effects.
+\item Standard errors clustered at the hospital level are in parentheses.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+\clearpage
+
+\end{document}
