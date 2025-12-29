@@ -70,8 +70,8 @@
 \contentsline {section}{\numberline {7.3}政策的含意}{28}{section.7.3}%
 \contentsline {section}{\numberline {7.4}本研究の限界と今後の課題}{28}{section.7.4}%
 \contentsline {chapter}{\numberline {第8章}結論}{30}{chapter.8}%
-\contentsline {chapter}{\numberline {付録A}表・図の補足}{31}{appendix.A}%
-\contentsline {section}{\numberline {A.1}イベントスタディ係数表、プレトレンドF-test}{31}{section.A.1}%
-\contentsline {chapter}{\numberline {付録B}ロバストネスチェック}{32}{appendix.B}%
-\contentsline {chapter}{\numberline {付録C}使用データ・コード一覧}{33}{appendix.C}%
-\contentsline {chapter}{参考文献}{34}{appendix*.2}%
+\contentsline {chapter}{\numberline {付録A}表・図の補足}{32}{appendix.A}%
+\contentsline {section}{\numberline {A.1}イベントスタディ係数表、プレトレンドF-test}{32}{section.A.1}%
+\contentsline {chapter}{\numberline {付録B}ロバストネスチェック}{33}{appendix.B}%
+\contentsline {chapter}{\numberline {付録C}使用データ・コード一覧}{34}{appendix.C}%
+\contentsline {chapter}{参考文献}{35}{appendix*.2}%

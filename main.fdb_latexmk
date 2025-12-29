@@ -1,19 +1,19 @@
 # Fdb version 4
-["bibtex main"] 1766930374.84576 "main.aux" "main.bbl" "main" 1766931760.30625 0
+["bibtex main"] 1766997563.63113 "main.aux" "main.bbl" "main" 1766997564.72107 0
   "./thesis.bib" 1766629036.12827 7131 3d6966c92715d112ee56ff6903d687bb ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1766931760.13817 22354 5191b8e1a63c46ecd08164292c558437 "latex"
+  "main.aux" 1766997564.5529 22354 be74de0df71075beb6adc616d3cc1710 "latex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
 ["dvipdf"] 0 "main.dvi" "main.pdf" "main" 0 -1
-  "main.dvi" 1766931760.14093 161264 4fdc9dedbefeb7daeaace8673fd4a56d "latex"
+  "main.dvi" 1766997564.55554 170292 da956a536b901ec907c85863000dc6f9 "latex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["latex"] 1766931759.31428 "/Users/igarashi_kosuke/Documents/Github/master_thesis/main.tex" "main.dvi" "main" 1766931760.30638 2
-  "/Users/igarashi_kosuke/Documents/Github/master_thesis/main.tex" 1766931759.09035 90202 b2b74f252e79c51f034e8d94b18fd3b2 ""
+["latex"] 1766997563.7235 "/Users/igarashi_kosuke/Documents/Github/master_thesis/main.tex" "main.dvi" "main" 1766997564.7212 2
+  "/Users/igarashi_kosuke/Documents/Github/master_thesis/main.tex" 1766997563.27705 96540 50ea94903a7b9c8692f399edd43d47e7 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -121,11 +121,11 @@
   "figure4b_heterogeneity_size.png" 0 -1 0 ""
   "figures/figure3_event_study.png" 1766827674 139612 b0e5282d65dd9fd444c77ad7e5042b00 ""
   "figures/figure4b_matrix_combined.png" 0 -1 0 ""
-  "main.aux" 1766931760.13817 22354 5191b8e1a63c46ecd08164292c558437 "latex"
-  "main.bbl" 1766930374.9288 4964 70e6b0c8e5c76049316f3f8525d4021a "bibtex main"
-  "main.out" 1766931760.14053 4863 12133b613b9714fb9085e33414cf5eef "latex"
-  "main.tex" 1766931759.09035 90202 b2b74f252e79c51f034e8d94b18fd3b2 ""
-  "main.toc" 1766931760.14079 7341 e576fe40bfff7db6d12a3f1a531f5e84 "latex"
+  "main.aux" 1766997564.5529 22354 be74de0df71075beb6adc616d3cc1710 "latex"
+  "main.bbl" 1766997563.72122 4964 70e6b0c8e5c76049316f3f8525d4021a "bibtex main"
+  "main.out" 1766997564.55522 4863 12133b613b9714fb9085e33414cf5eef "latex"
+  "main.tex" 1766997563.27705 96540 50ea94903a7b9c8692f399edd43d47e7 ""
+  "main.toc" 1766997564.55545 7341 00ac5953c106b3a4f80d4ca8e0233a42 "latex"
   (generated)
   "main.aux"
   "main.dvi"
