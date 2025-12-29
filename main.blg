@@ -1,4 +1,4 @@
-This is upBibTeX, Version 0.99d-j0.36-u2.00 (utf8.uptex) (TeX Live 2025)
+This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: plain.bst
@@ -7,7 +7,7 @@ Warning--there's a number but no volume in KawaguchiSugahara2015
 Warning--there's a number but no volume in Yuda2023
 You've used 22 entries,
             2118 wiz_defined-function locations,
-            656 strings with 7958 characters,
+            655 strings with 7945 characters,
 and the built_in function-call counts, 6838 in all, are:
 = -- 695
 > -- 292
@@ -46,5 +46,4 @@ warning$ -- 2
 while$ -- 76
 width$ -- 24
 write$ -- 244
-is.kanji.str$ -- 0
 (There were 2 warnings)

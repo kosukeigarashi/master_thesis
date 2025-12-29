@@ -214,17 +214,28 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm
-INPUT extractbb -B cropbox -O figure3_event_study.png
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmti8.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-INPUT extractbb -B cropbox -O figure4a_heterogeneity_region.png
-INPUT extractbb -B cropbox -O figure4b_heterogeneity_size.png
 INPUT ./figures/figure3_event_study.png
 INPUT ./figures/figure3_event_study.png
 INPUT ./figures/figure3_event_study.png
 INPUT extractbb -B cropbox -O figures/figure3_event_study.png
-INPUT extractbb -B cropbox -O figures/figure4b_matrix_combined.png
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmti8.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT ./figures/figure4a_heterogeneity_region.png
+INPUT ./figures/figure4a_heterogeneity_region.png
+INPUT ./figures/figure4a_heterogeneity_region.png
+INPUT extractbb -B cropbox -O figures/figure4a_heterogeneity_region.png
+INPUT ./figures/figure4b_heterogeneity_size.png
+INPUT ./figures/figure4b_heterogeneity_size.png
+INPUT ./figures/figure4b_heterogeneity_size.png
+INPUT extractbb -B cropbox -O figures/figure4b_heterogeneity_size.png
+INPUT ./figures/figure3_event_study.png
+INPUT ./figures/figure3_event_study.png
+INPUT ./figures/figure3_event_study.png
+INPUT ./figures/figure4c_matrix_combined.png
+INPUT ./figures/figure4c_matrix_combined.png
+INPUT ./figures/figure4c_matrix_combined.png
+INPUT extractbb -B cropbox -O figures/figure4c_matrix_combined.png
 INPUT ./main.bbl
 INPUT ./main.bbl
 INPUT main.bbl
