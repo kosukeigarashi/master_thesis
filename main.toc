@@ -70,8 +70,16 @@
 \contentsline {section}{\numberline {7.3}政策的含意}{27}{section.7.3}%
 \contentsline {section}{\numberline {7.4}本研究の限界と今後の課題}{27}{section.7.4}%
 \contentsline {chapter}{\numberline {第8章}結論}{29}{chapter.8}%
-\contentsline {chapter}{\numberline {付録A}表・図の補足}{31}{appendix.A}%
-\contentsline {section}{\numberline {A.1}イベントスタディ係数表、プレトレンドF-test}{31}{section.A.1}%
-\contentsline {chapter}{\numberline {付録B}ロバストネスチェック}{32}{appendix.B}%
-\contentsline {chapter}{\numberline {付録C}使用データ・コード一覧}{33}{appendix.C}%
-\contentsline {chapter}{参考文献}{34}{appendix*.2}%
+\contentsline {chapter}{\numberline {付録A}データ構築の詳細}{31}{appendix.A}%
+\contentsline {section}{\numberline {A.1}サンプル選択の詳細プロセス}{31}{section.A.1}%
+\contentsline {section}{\numberline {A.2}変数の分布}{31}{section.A.2}%
+\contentsline {section}{\numberline {A.3}外部データとの比較}{33}{section.A.3}%
+\contentsline {chapter}{\numberline {付録B}頑健性確認}{34}{appendix.B}%
+\contentsline {section}{\numberline {B.1}異なる固定効果仕様でのDID結果}{34}{section.B.1}%
+\contentsline {section}{\numberline {B.2}異なる標準誤差クラスタリングでの結果}{34}{section.B.2}%
+\contentsline {section}{\numberline {B.3}実数アウトカムでの分析結果}{35}{section.B.3}%
+\contentsline {section}{\numberline {B.4}処置定義の変更による感度分析}{37}{section.B.4}%
+\contentsline {section}{\numberline {B.5}他の期間設定での分析結果}{37}{section.B.5}%
+\contentsline {section}{\numberline {B.6}プラセボテストの詳細}{38}{section.B.6}%
+\contentsline {chapter}{\numberline {付録C}診療行為コード一覧表}{40}{appendix.C}%
+\contentsline {chapter}{参考文献}{41}{appendix*.2}%

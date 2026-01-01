@@ -964,23 +964,262 @@ DID推定の結果、定額負担の増額は許可病床200床以上病院の�
 検証が必要である。
 
 %==================================================
-% 付録
+% Appendix
 %==================================================
 \appendix
 
-\chapter{表・図の補足}
-\label{app:figtab}
+%==================================================
+% A. データ構築の詳細
+%==================================================
+\chapter{データ構築の詳細}
+\label{chap:app_data}
 
-\section{イベントスタディ係数表、プレトレンドF-test}
-\label{app:eventstudy_tables}
+\section{サンプル選択の詳細プロセス}
+\label{sec:app_data_sample}
+本研究の分析サンプルは、全国健康保険協会(協会けんぽ)のレセプトデータから構築された。具体的なサンプル選択プロセスは以下の通りである。
+まず「レセプト」テーブルにおいて点数表コードの値が"1"(医科)であるレセプトの中から2016年4月～2020年3月のうち、いずれかの月で
+「レセプト診療行為」テーブルにおいて「外来診療料」「データ提出加算1(200床以上)」「データ提出加算2(200床以上)」
+「データ提出加算3(200床以上)」「データ提出加算4(200床以上)」が記録されているかどうかを医療機関IDごとに集計し、記録があれば1、
+そうでなければ0の値を取る許可病床200床以上フラグを作成した。なお、診療行為について「外来診療料」は一般病床200床以上の病院が
+再診時に算定し「データ提出加算1(200床以上)」「データ提出加算2(200床以上)」「データ提出加算3(200床以上)」「データ提出加算4(200床以上)」
+は許可病床200床以上の病院が入院時に算定するものである。次に許可病床200床以上の病院について、2015年4月〜2024年3月の各年月で
+紹介状のない外来初診を示す診療行為コードのいずれかを記録していれば1、そうでなければ0をとる紹介状なし初診外来選定療養費徴収
+フラグのデータセットを作成した。なお、具体的な紹介状のない外来初診を示す診療行為コードについてはD.1 診療行為コード一覧表を参照されたい。
+そこから2022年10月の制度改定以前の期間(2015年4月〜2022年9月)の月単位での選定療養費徴収割合が1割以下かつ2022年10月の制度
+改定以降2024年3月まですべての月で選定療養費を徴収している病院に処置群フラグを割り当て、不規則な徴収パターンのある病院は除外し
+期間内に一度も選定療養費の徴収のない病院を対照群とした。
+最終的な分析対象サンプル数は1,545病院、観測数は154,886（病院$\times$月）である。
 
+\section{変数の分布}
+\label{sec:app_data_dist}
+本節では、本研究の主要な分析に使用したアウトカム変数の分布について図示する。
+以下の各図（Figure \ref{fig:hist_shoshin}〜Figure \ref{fig:hist_total}）は、いずれも左側に実数スケール、右側に対数
+スケールを用いたヒストグラムを示している。
 
-\chapter{ロバストネスチェック}
-\label{app:robustness}
+\subsection*{初診外来件数の分布}
+Figure \ref{fig:hist_shoshin} に初診外来件数の分布を示す。初診外来件数の実数スケールでの分布は低水準の観測値に強く集中しつつ、右裾の長い分布を示している。
+多くの医療機関では月間の初診外来件数は比較的少数にとどまる一方で一部の医療機関では非常に多くの初診患者を受け入れていることがわかる。
+一方で対数変換後の分布では右裾の歪みが緩和され単峰で比較的滑らかな形状となっている。
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth]{figures/figure_A2a_hist_shoshin.png}
+  \caption{初診外来件数の分布（左：実数スケール、右：対数スケール）}
+  \label{fig:hist_shoshin}
+\end{figure}
 
-\chapter{使用データ・コード一覧}
-\label{app:data_code_list}
+\subsection*{再診外来件数の分布}
+Figure \ref{fig:hist_saishin} に再診外来件数の分布を示す。
+再診外来患者数の実数スケールでの分布は初診外来と同様に右裾の長い形状を持つが分布の中心はより高い水準に位置している。
+一方対数変換後の分布はほぼ対称的で単峰的な形状を示しており、再診外来患者数が医療機関規模に応じて比較的連続的に
+分布していることがわかる。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth]{figures/figure_A2b_hist_saishin.png}
+  \caption{再診外来件数の分布（左：実数スケール、右：対数スケール）}
+  \label{fig:hist_saishin}
+\end{figure}
+
+\subsection*{総外来件数の分布}
+Figure \ref{fig:hist_total} に総外来件数の分布を示す。
+総外来患者数の実数データでの分布は最も広い範囲に分布しておりきわめて長い右裾を持つ。
+総外来患者数が非常に多い医療機関が存在する一方で多くの医療機関では比較的低水準にとどまっていることが確認できる。
+一方対数変換後の分布では極端な外れ値の影響が大きく抑えられ、おおむね正規分布に近い形状となっている。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth]{figures/figure_A2c_hist_total.png}
+  \caption{総外来件数の分布（左：実数スケール、右：対数スケール）}
+  \label{fig:hist_total}
+\end{figure}
+
+\section{外部データとの比較}
+\label{sec:app_data_ext}
+本研究で使用したサンプルの代表性を確認するため、厚生労働省「医療施設調査」との比較を試みたが、本稿執筆時点では比較可能なデータセットが未入手であるため、本節での詳細な議論は割愛する。
+
+%==================================================
+% B. 識別戦略と推定手法の頑健性
+%==================================================
+\chapter{頑健性確認}
+\label{chap:app_robustness}
+
+本節では、主分析に関する追加分析結果を示す。
+
+\section{異なる固定効果仕様でのDID結果}
+\label{sec:app_robust_fe}
+地域特有のトレンドやショック（都道府県ごとの感染拡大状況の違い等）を制御するため、ベースラインモデル（病院固定効果および時間固定効果）に加え、都道府県$\times$月次固定効果、
+郵便番号$\times$月次固定効果を導入したモデルで推定を行った。
+Table \ref{tab:robustness_fe} の通り初診外来への受診抑制効果（約-12.3\%〜-12.6\%）は安定しており、結果は頑健である。
+
+\begin{table}[H]
+  \centering
+  \caption{異なる固定効果仕様でのDID推定結果}
+  \label{tab:robustness_fe}
+  \footnotesize
+  \begin{tabular}{lccc}
+    \toprule
+    & (1) & (2) & (3) \\
+    Outcome (Log) & Base (Hosp+Month) & Pref $\times$ Month FE & Zip $\times$ Month FE \\
+    \midrule
+    \textbf{Panel A: First Visits} & & & \\
+    DID Term & -0.123$^{***}$ & -0.125$^{***}$ & -0.126$^{***}$ \\
+             & (0.010) & (0.011) & (0.011) \\
+    \addlinespace
+    \textbf{Panel B: Return Visits} & & & \\
+    DID Term & -0.017$^{**}$ & -0.016$^{*}$ & -0.016$^{*}$ \\
+             & (0.008) & (0.008) & (0.009) \\
+    \addlinespace
+    \textbf{Panel C: Total Outpatients} & & & \\
+    DID Term & -0.040$^{***}$ & -0.040$^{***}$ & -0.040$^{***}$ \\
+             & (0.008) & (0.008) & (0.008) \\
+    \midrule
+    Hospital FE & Yes & Yes & Yes \\
+    Month FE & Yes & No & No \\
+    Pref $\times$ Month FE & No & Yes & No \\
+    Zip $\times$ Month FE & No & No & Yes \\
+    Observations & 154,886 & 154,886 & 154,886 \\
+    \bottomrule
+  \end{tabular}
+  \begin{tablenotes}
+    \item \scriptsize 注: カッコ内は病院レベルでクラスタリングした標準誤差。$^{***}$ p$<$0.01, $^{**}$ p$<$0.05, $^{*}$ p$<$0.1。
+  \end{tablenotes}
+\end{table}
+
+\section{異なる標準誤差クラスタリングでの結果}
+\label{sec:app_robust_cluster}
+本文では病院レベルでのクラスタリング標準誤差を用いたが、ここでは都道府県レベルでのクラスタリングを行った結果を示す。
+Table \ref{tab:robust_cluster} に示す通り、都道府県レベルでクラスタリングを行っても初診外来および総外来の係数の有意性は1\%水準で維持されている。
+一方で再診外来については有意水準が低下した（p=0.062）。
+
+\begin{table}[H]
+  \centering
+  \caption{標準誤差のクラスタリングレベル変更による比較}
+  \label{tab:robust_cluster}
+  \footnotesize
+  \begin{tabular}{lcc}
+    \toprule
+    & (1) & (2) \\
+    Outcome (Log) & Cluster: Hospital & Cluster: Prefecture \\
+    \midrule
+    \textbf{First Visits} & -0.123$^{***}$ & -0.123$^{***}$ \\
+    (SE) & (0.010) & (0.016) \\
+    \addlinespace
+    \textbf{Return Visits} & -0.017$^{**}$ & -0.017$^{*}$ \\
+    (SE) & (0.008) & (0.009) \\
+    \addlinespace
+    \textbf{Total Outpatients} & -0.040$^{***}$ & -0.040$^{***}$ \\
+    (SE) & (0.008) & (0.009) \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{実数アウトカムでの分析結果}
+\label{sec:app_robust_level}
+被説明変数の対数変換を行わず、実数値を用いて各種の推定を行なった。
+Figure \ref{fig:robust_level_es} および Table \ref{tab:robust_level} に示す通り、初診外来件数については統計的に有意な減少
+（1病院あたり月平均36.2人の減少）が確認された。一方、再診外来については有意な変化は見られなかった。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{figures/figure_C4_level_combined.png}
+  \caption{実数アウトカムを用いたイベントスタディ}
+  \label{fig:robust_level_es}
+\end{figure}
+
+\begin{table}[H]
+  \centering
+  \caption{実数アウトカムに対するDID推定結果}
+  \label{tab:robust_level}
+  \footnotesize
+  \begin{tabular}{lccc}
+    \toprule
+    & (1) & (2) & (3) \\
+    Outcome (N) & First Visits & Return Visits & Total Outpatients \\
+    \midrule
+    DID Term & -36.23$^{***}$ & 10.91 & -25.32$^{**}$ \\
+             & (2.79) & (8.84) & (10.28) \\
+    \midrule
+    Observations & 154,886 & 154,886 & 154,886 \\
+    Adj. R-squared & 0.894 & 0.986 & 0.983 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{処置定義の変更による感度分析}
+\label{sec:app_robust_def}
+処置群の定義について、制度改定前の期間(2015年4月〜2022年9月)における徴収率の基準値を変更しても結果が変わらないことを確認した
+（Figure \ref{fig:robust_sensitivity}）。なお、図中のStrictは改訂前期間における徴収率が5\%未満、Pureは0\%であることを意味している。
+いずれの定義においても、初診外来への効果は-12\%前後で安定的である。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/figure_C2_sensitivity_combined.png}
+  \caption{処置定義の変更による感度分析}
+  \label{fig:robust_sensitivity}
+\end{figure}
+
+\section{他の期間設定での分析結果}
+\label{sec:app_robust_period}
+COVID-19の影響が強かった2020年を除外し、2021年以降のデータのみを用いて分析を行った。
+Figure \ref{fig:robust_period}で示されている通り、この期間設定では長期トレンドと比較して減少幅はやや小さくなるものの（-4.2\%）、
+初診外来に対する負の効果は依然として統計的に有意である。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{figures/figure_C3_period_combined.png}
+  \caption{分析期間を変更した場合のイベントスタディ（2021年以降）}
+  \label{fig:robust_period}
+\end{figure}
+
+\section{プラセボテストの詳細}
+\label{sec:app_robust_placebo}
+処置時期以前の時期の中でもコロナ禍の影響を受けない2019年4月を偽の処置時期としたプラセボテストを実施した。
+分析の結果、初診外来に対する係数は $+0.015$ (p=0.023) と正の値を示したが、係数の絶対値は主分析の約1/10と非常に小さく、
+再診および総外来については有意ではなかった。これは主分析の結果が長期間続く減少トレンドによるものではないことを
+示している。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/figure_C1_placebo_combined.png}
+  \caption{偽の処置時点を2019年4月としたプラセボテストの結果}
+  \label{fig:robust_placebo}
+\end{figure}
+
+%==================================================
+% C. 診療行為コード一覧表
+%==================================================
+\chapter{診療行為コード一覧表}
+\label{chap:app_definitions}
+
+本研究において、初診および再診、紹介状なし初診外来に対する選定療養費の算定を識別するために用いた主要な診療行為コードの一覧を以下に示す。
+
+\begin{table}[H]
+  \centering
+  \caption{使用した主要診療行為コード}
+  \label{tab:code_list}
+  \footnotesize
+  \begin{tabular}{lll}
+    \toprule
+    コード & 名称 & 対象変数 \\
+    \midrule
+    111000110 & 初診料 & 初診外来件数 \\
+    112007410 & 再診料 & 再診外来件数 \\
+    112011310 & 外来診療料 & 再診外来件数 \\
+    112012510 & 初診料（文書による紹介がない患者） & 紹介状なし初診外来件数 \\
+    112012610 & 初診料（同一日複数科受診時の２科目・文書による紹介がない患者） & 紹介状なし初診外来件数 \\
+    111014310 & 初診料（文書による紹介がない患者）（情報通信機器） & 紹介状なし初診外来件数 \\
+    111014610 & 初診料（同一日２科目・注２から４に規定する場合）（情報通信機器） & 紹介状なし初診外来件数 \\
+    111015370 & （選）病床数が２００以上の病院初診（２００点減算） & 紹介状なし初診外来件数 \\
+    113044670 & （選）病床数が２００以上の病院初診（医学管理等）（２００点減算） & 紹介状なし初診外来件数 \\
+    111015470 & （選）病床数が２００以上の病院初診（１８８点減算） & 紹介状なし初診外来件数 \\
+    111015570 & （選）病床数が２００以上の病院初診（１４６点減算） & 紹介状なし初診外来件数 \\
+    111015670 & （選）病床数が２００以上の病院初診（１２７点減算） & 紹介状なし初診外来件数 \\
+    111015770 & （選）病床数が２００以上の病院初診（１０８点減算） & 紹介状なし初診外来件数 \\
+    111015870 & （選）病床数が２００以上の病院初診（９４点減算） & 紹介状なし初診外来件数 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
 
 
 %==================================================

@@ -236,6 +236,35 @@ INPUT ./figures/figure4c_matrix_combined.png
 INPUT ./figures/figure4c_matrix_combined.png
 INPUT ./figures/figure4c_matrix_combined.png
 INPUT extractbb -B cropbox -O figures/figure4c_matrix_combined.png
+INPUT ./figures/figure_A2a_hist_shoshin.png
+INPUT ./figures/figure_A2a_hist_shoshin.png
+INPUT ./figures/figure_A2a_hist_shoshin.png
+INPUT extractbb -B cropbox -O figures/figure_A2a_hist_shoshin.png
+INPUT ./figures/figure_A2b_hist_saishin.png
+INPUT ./figures/figure_A2b_hist_saishin.png
+INPUT ./figures/figure_A2b_hist_saishin.png
+INPUT extractbb -B cropbox -O figures/figure_A2b_hist_saishin.png
+INPUT ./figures/figure_A2c_hist_total.png
+INPUT ./figures/figure_A2c_hist_total.png
+INPUT ./figures/figure_A2c_hist_total.png
+INPUT extractbb -B cropbox -O figures/figure_A2c_hist_total.png
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-v.tfm
+INPUT ./figures/figure_C4_level_combined.png
+INPUT ./figures/figure_C4_level_combined.png
+INPUT ./figures/figure_C4_level_combined.png
+INPUT extractbb -B cropbox -O figures/figure_C4_level_combined.png
+INPUT ./figures/figure_C2_sensitivity_combined.png
+INPUT ./figures/figure_C2_sensitivity_combined.png
+INPUT ./figures/figure_C2_sensitivity_combined.png
+INPUT extractbb -B cropbox -O figures/figure_C2_sensitivity_combined.png
+INPUT ./figures/figure_C3_period_combined.png
+INPUT ./figures/figure_C3_period_combined.png
+INPUT ./figures/figure_C3_period_combined.png
+INPUT extractbb -B cropbox -O figures/figure_C3_period_combined.png
+INPUT ./figures/figure_C1_placebo_combined.png
+INPUT ./figures/figure_C1_placebo_combined.png
+INPUT ./figures/figure_C1_placebo_combined.png
+INPUT extractbb -B cropbox -O figures/figure_C1_placebo_combined.png
 INPUT ./main.bbl
 INPUT ./main.bbl
 INPUT main.bbl
