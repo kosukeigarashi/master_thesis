@@ -229,13 +229,26 @@ INPUT ./figures/figure4b_heterogeneity_size.png
 INPUT ./figures/figure4b_heterogeneity_size.png
 INPUT ./figures/figure4b_heterogeneity_size.png
 INPUT extractbb -B cropbox -O figures/figure4b_heterogeneity_size.png
-INPUT ./figures/figure3_event_study.png
-INPUT ./figures/figure3_event_study.png
-INPUT ./figures/figure3_event_study.png
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
 INPUT ./figures/figure4c_matrix_combined.png
 INPUT ./figures/figure4c_matrix_combined.png
 INPUT ./figures/figure4c_matrix_combined.png
 INPUT extractbb -B cropbox -O figures/figure4c_matrix_combined.png
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib9.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy9.tfm
+INPUT ./figures/figure3_event_study.png
+INPUT ./figures/figure3_event_study.png
+INPUT ./figures/figure3_event_study.png
+INPUT ./figures/figure4c_matrix_combined.png
+INPUT ./figures/figure4c_matrix_combined.png
+INPUT ./figures/figure4c_matrix_combined.png
 INPUT ./figures/figure_A2a_hist_shoshin.png
 INPUT ./figures/figure_A2a_hist_shoshin.png
 INPUT ./figures/figure_A2a_hist_shoshin.png
