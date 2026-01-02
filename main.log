@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.4.13)  2 JAN 2026 18:36
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.4.13)  3 JAN 2026 00:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -485,13 +485,13 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 
 ]
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 191.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 162.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 191.
+(Font)              scaled to size 9.24683pt on input line 162.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 191.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 162.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 191.
+(Font)              scaled to size 9.24683pt on input line 162.
 
 
 [2]
@@ -499,9 +499,9 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 [3]
 第2章
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 217.
+(Font)              scaled to size 11.09619pt on input line 228.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 217.
+(Font)              scaled to size 11.09619pt on input line 228.
 
 
 [4
@@ -534,15 +534,15 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 
 [13]
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 519.
+(Font)              scaled to size 8.32214pt on input line 539.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 519.
+(Font)              scaled to size 8.32214pt on input line 539.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 5.5481pt on input line 546.
+(Font)              scaled to size 5.5481pt on input line 566.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 546.
+(Font)              scaled to size 7.39746pt on input line 566.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 5.5481pt on input line 546.
+(Font)              scaled to size 5.5481pt on input line 566.
 
 
 [14]
@@ -550,9 +550,9 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 [15]
 第5章
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 6.47278pt on input line 622.
+(Font)              scaled to size 6.47278pt on input line 642.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 4.62341pt on input line 622.
+(Font)              scaled to size 4.62341pt on input line 642.
 
 
 [16
@@ -561,42 +561,40 @@ LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
 
 [17]
 第6章
-File: figures/figure3_event_study.png Graphic file (type bmp)
-<figures/figure3_event_study.png>
-
-LaTeX Warning: Float too large for page by 84.77444pt on input line 673.
-
-
-LaTeX Warning: Reference `tab:did_results' on page 18 undefined on input line 697.
-
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 5.5481pt on input line 711.
 
 
 [18
 
 ]
+File: figures/figure3_event_study.png Graphic file (type bmp)
+<figures/figure3_event_study.png>
+
+
+LaTeX Warning: Float too large for page by 84.77444pt on input line 741.
+
+
 
 [19]
-LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 5.5481pt on input line 725.
-
 
 [20]
 LaTeX Font Info:    Font shape `JT2/mc/m/it' in size <8> not available
-(Font)              Font shape `JT2/mc/m/n' tried instead on input line 775.
+(Font)              Font shape `JT2/mc/m/n' tried instead on input line 792.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 775.
+(Font)              scaled to size 7.39746pt on input line 792.
 LaTeX Font Info:    Font shape `JY2/mc/m/it' in size <8> not available
-(Font)              Font shape `JY2/mc/m/n' tried instead on input line 775.
+(Font)              Font shape `JY2/mc/m/n' tried instead on input line 792.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 775.
+(Font)              scaled to size 7.39746pt on input line 792.
 LaTeX Font Info:    Font shape `JT2/mc/m/it' in size <10> not available
-(Font)              Font shape `JT2/mc/m/n' tried instead on input line 810.
+(Font)              Font shape `JT2/mc/m/n' tried instead on input line 827.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 810.
+(Font)              scaled to size 9.24683pt on input line 827.
 LaTeX Font Info:    Font shape `JY2/mc/m/it' in size <10> not available
-(Font)              Font shape `JY2/mc/m/n' tried instead on input line 810.
+(Font)              Font shape `JY2/mc/m/n' tried instead on input line 827.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 810.
+(Font)              scaled to size 9.24683pt on input line 827.
 File: figures/figure4a_heterogeneity_region.png Graphic file (type bmp)
 <figures/figure4a_heterogeneity_region.png>
 
@@ -612,7 +610,7 @@ File: figures/figure4b_heterogeneity_size.png Graphic file (type bmp)
 File: figures/figure4c_matrix_combined.png Graphic file (type bmp)
 <figures/figure4c_matrix_combined.png>
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 899.
+(Font)              scaled to size 8.32214pt on input line 917.
 
 
 [24]
@@ -620,7 +618,7 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 [25]
 第7章
 
-LaTeX Warning: Reference `tab:did_results' on page 26 undefined on input line 927.
+LaTeX Warning: Reference `tab:did_results' on page 26 undefined on input line 945.
 
 File: figures/figure3_event_study.png Graphic file (type bmp)
 <figures/figure3_event_study.png>
@@ -629,7 +627,7 @@ File: figures/figure3_event_study.png Graphic file (type bmp)
 [26
 
 ]
-Overfull \vbox (87.17459pt too high) has occurred while \output is active []
+Overfull \vbox (11.8985pt too high) has occurred while \output is active []
 
 
 
@@ -670,13 +668,13 @@ File: figures/figure_A2c_hist_total.png Graphic file (type bmp)
 [35]
 付録B
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <8> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 1152.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 1169.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 1152.
+(Font)              scaled to size 7.39746pt on input line 1169.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <8> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 1152.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 1169.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 1152.
+(Font)              scaled to size 7.39746pt on input line 1169.
 
 
 [36
@@ -737,15 +735,15 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3F3BD693F4223B224025A88934D946B2;5976.
+(rerunfilecheck)             Checksum: C7B5C2EE23E972907C722AEF54C68E0E;5976.
  ) 
 Here is how much of TeX's memory you used:
- 11042 strings out of 473836
- 168816 string characters out of 5731190
+ 11044 strings out of 473836
+ 168882 string characters out of 5731190
  597236 words of memory out of 5000000
- 34121 multiletter control sequences out of 15000+600000
+ 34123 multiletter control sequences out of 15000+600000
  581233 words of font info for 140 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  72i,11n,79p,595b,569s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (47 pages, 204628 bytes).
+Output written on main.dvi (47 pages, 209616 bytes).
