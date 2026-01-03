@@ -1,19 +1,19 @@
 # Fdb version 4
-["bibtex main"] 1767367299.16522 "main.aux" "main.bbl" "main" 1767367301.64992 0
+["bibtex main"] 1767412277.53979 "main.aux" "main.bbl" "main" 1767412280.19949 0
   "./thesis.bib" 1766629036.12827 7131 3d6966c92715d112ee56ff6903d687bb ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1767367300.4628 28844 5148ba095fb63db398521801297c6528 "latex"
+  "main.aux" 1767412278.96138 30161 56d97052cf1adb800bac94a1e7565f1c "latex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["dvipdf"] 1767367300.63948 "main.dvi" "main.pdf" "main" 1767367301.65089 0
-  "main.dvi" 1767367300.46585 209616 e0ec1ddfd17103b5866399e0cbdd419d "latex"
+["dvipdf"] 1767412279.1261 "main.dvi" "main.pdf" "main" 1767412280.20041 0
+  "main.dvi" 1767412278.96438 215448 cab57a09ba732365ad48c593f9fe7d8a "latex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["latex"] 1767367299.25645 "/Users/igarashi_kosuke/Documents/Github/master_thesis/main.tex" "main.dvi" "main" 1767367301.64998 0
-  "/Users/igarashi_kosuke/Documents/Github/master_thesis/main.tex" 1767367297.30484 120611 531447e540392c4b4c45d89190d7beda ""
+["latex"] 1767412277.6112 "/Users/igarashi_kosuke/Documents/Github/master_thesis/main.tex" "main.dvi" "main" 1767412280.19956 0
+  "/Users/igarashi_kosuke/Documents/Github/master_thesis/main.tex" 1767412275.71028 124830 48377699c828d2c515fce865f52e2c55 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -123,6 +123,8 @@
   "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
   "/usr/local/texlive/2025/texmf-var/web2c/euptex/uplatex.fmt" 1744532195 3337453 f9af5d309ac66e8f0d61cc9dfa82e8c8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
+  "figures/figure1_manipulation_check_total.png" 1766902933 83875 cd43566a13b7ae038046464fc23f073f ""
+  "figures/figure2_trends_combined.png" 1766827395 122799 31f675ec07dc7df9273261ea9c0acbed ""
   "figures/figure3_event_study.png" 1766827674 139612 b0e5282d65dd9fd444c77ad7e5042b00 ""
   "figures/figure4a_heterogeneity_region.png" 1766827728 81819 3f66adc39c6cab74691e980a2580d6f1 ""
   "figures/figure4b_heterogeneity_size.png" 1766827765 84984 65e4b36aa87559f2ee3a0abf3d3f3895 ""
@@ -134,11 +136,11 @@
   "figures/figure_C2_sensitivity_combined.png" 1766826317 150798 02e7414854641db3900adb5cd6d63b32 ""
   "figures/figure_C3_period_combined.png" 1766826656 119284 692df356c2db39c520892d123992abfd ""
   "figures/figure_C4_level_combined.png" 1766826930 115354 28e64b692deb95eeac0185e2cdb67a25 ""
-  "main.aux" 1767367300.4628 28844 5148ba095fb63db398521801297c6528 "latex"
-  "main.bbl" 1767367299.25426 4964 70e6b0c8e5c76049316f3f8525d4021a "bibtex main"
-  "main.out" 1767367300.46561 5976 c7b5c2ee23e972907c722aef54c68e0e "latex"
-  "main.tex" 1767367297.30484 120611 531447e540392c4b4c45d89190d7beda ""
-  "main.toc" 1767367300.4658 8286 e0b7352e98e2f24da86a017378f6d4d3 "latex"
+  "main.aux" 1767412278.96138 30161 56d97052cf1adb800bac94a1e7565f1c "latex"
+  "main.bbl" 1767412277.60946 4964 70e6b0c8e5c76049316f3f8525d4021a "bibtex main"
+  "main.out" 1767412278.9641 6294 e1ce6f8ad32202a423a14d33adcaede5 "latex"
+  "main.tex" 1767412275.71028 124830 48377699c828d2c515fce865f52e2c55 ""
+  "main.toc" 1767412278.96432 8453 3ea591bc8efb7a4e37c90c87cb74b6a7 "latex"
   (generated)
   "main.aux"
   "main.dvi"
