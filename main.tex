@@ -641,7 +641,7 @@ Total & 265.7 & 1,224.9 & 1,490.6 & 13.2 & 154,886 \\
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.9\textwidth]{figures/figure2_trends_combined.png} % 群別のグラフ
+  \includegraphics[width=0.9\textwidth]{figures/figure1_manipulation_check_temp.png} % 群別のグラフ
   \caption{処置群と対照群における選定療養費徴収件数の推移}
   \label{fig:group_trend}
   \footnotesize{注: 実線は処置群、破線は対照群の平均値を示す。横軸に対して垂直な点線は制度改定時(2022年10月)を示す。}
@@ -1185,9 +1185,41 @@ DID推定の結果、定額負担の増額は許可病床200床以上病院の�
   \label{fig:hist_total}
 \end{figure}
 
-\section{外部データとの比較}
+\clearpage
+\section{サンプルの代表性}
 \label{sec:app_data_ext}
-本研究で使用したサンプルの代表性を確認するため、厚生労働省「医療施設調査」との比較を試みたが、本稿執筆時点では比較可能なデータセットが未入手であるため、本節での詳細な議論は割愛する。
+本研究において分析に利用したデータセットが全国の病院の分布を適切に反映しているかを確認するため、医療施設調査（令和6年動態調査）の集計結果との比較を行った。
+本研究の分析対象は、許可病床数が200床以上の病院である。そこで、医療施設調査の統計表から同様に病床規模が200床以上である病院を抽出し、地区ブロックごとの
+病院数およびその構成割合を算出した。表 \ref{tab:representativeness} にその比較結果を示す。
+本研究の分析用データセットに含まれる病院数は1,545施設であり、医療施設調査に基づく全国の該当病院数（2,347施設）の約65.8\%をカバーしている。
+地域別の構成割合について、全国・各地域いずれも両者の乖離は数ポイント以内に収まっており、少なくとも病院の地理的分布に関しては全国の母集団と非常に類似している。
+したがって本研究で使用したサンプルは地理的な偏りが小さく、全国規模の分析を行う上で一定の代表性を有していると言える。
+
+\begin{table}[htbp]
+\centering
+\caption{分析用データセットと全国統計（医療施設調査）の地域分布比較}
+\label{tab:representativeness}
+\begin{tabular}{lrrrr}
+\toprule
+ & \multicolumn{2}{c}{Analysis Dataset} & \multicolumn{2}{c}{Medical Facility Survey} \\
+ & \multicolumn{2}{c}{(本研究のデータ)} & \multicolumn{2}{c}{(医療施設調査)} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+Region & \multicolumn{1}{c}{Count} & \multicolumn{1}{c}{Share (\%)} & \multicolumn{1}{c}{Count} & \multicolumn{1}{c}{Share (\%)} \\
+(地区ブロック) & \multicolumn{1}{c}{(病院数)} & \multicolumn{1}{c}{(割合)} & \multicolumn{1}{c}{(病院数)} & \multicolumn{1}{c}{(割合)} \\
+\midrule
+1 北海道・東北 & 216 & 14.0 & 315 & 13.4 \\
+2 関東 & 402 & 26.0 & 656 & 28.0 \\
+3 中部 & 271 & 17.5 & 360 & 15.3 \\
+4 近畿 & 282 & 18.3 & 376 & 16.0 \\
+5 中国・四国 & 166 & 10.7 & 266 & 11.3 \\
+6 九州・沖縄 & 208 & 13.5 & 374 & 15.9 \\
+\midrule
+\textbf{Total} & \textbf{1,545} & \textbf{100.0} & \textbf{2,347} & \textbf{100.0} \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize 注: 医療施設調査の数値は令和6年調査において病床数200床以上の病院を集計したもの。} \\
+\multicolumn{5}{l}{\footnotesize 割合（Share）は各データソース内での構成比を示す。}
+\end{tabular}
+\end{table}
 
 %==================================================
 % B. 識別戦略と推定手法の頑健性
@@ -1206,7 +1238,7 @@ DID推定の結果、定額負担の増額は許可病床200床以上病院の�
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.85\textwidth]{figures/figure2_trends_combined.png} 
+  \includegraphics[width=0.75\textwidth]{figures/figure2_trends_combined.png} 
   \caption{処置群と対照群におけるアウトカム変数の推移（平均値）}
   \label{fig:raw_trends}
   \footnotesize{注: 縦軸は対数変換後の初診外来件数の平均値。上から順に初診外来件数、再診外来件数、総外来件数である。実線は処置群、破線は対照群を示す。横軸に対して垂直な実線は2022年10月を示す。}

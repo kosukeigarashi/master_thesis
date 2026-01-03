@@ -217,10 +217,10 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
-INPUT ./figures/figure2_trends_combined.png
-INPUT ./figures/figure2_trends_combined.png
-INPUT ./figures/figure2_trends_combined.png
-INPUT extractbb -B cropbox -O figures/figure2_trends_combined.png
+INPUT ./figures/figure1_manipulation_check_temp.png
+INPUT ./figures/figure1_manipulation_check_temp.png
+INPUT ./figures/figure1_manipulation_check_temp.png
+INPUT extractbb -B cropbox -O figures/figure1_manipulation_check_temp.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm
@@ -272,6 +272,7 @@ INPUT extractbb -B cropbox -O figures/figure_A2c_hist_total.png
 INPUT ./figures/figure2_trends_combined.png
 INPUT ./figures/figure2_trends_combined.png
 INPUT ./figures/figure2_trends_combined.png
+INPUT extractbb -B cropbox -O figures/figure2_trends_combined.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-v.tfm
 INPUT ./figures/figure_C4_level_combined.png
 INPUT ./figures/figure_C4_level_combined.png
