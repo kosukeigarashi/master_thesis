@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.4.13)  3 JAN 2026 14:50
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.4.13)  3 JAN 2026 18:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -202,12 +202,18 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count288
 \@lastruleclass=\count289
 \@thisrulewidth=\dimen194
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip58
+\bibsep=\skip59
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count290
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box72
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/here/here.sty) (/usr/local/texlive/2025/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count290
+\c@float@type=\count291
 \float@exts=\toks31
 \float@box=\box73
 \@float@everytoks=\toks32
@@ -241,16 +247,16 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
  (/usr/local/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count291
+\c@section@level=\count292
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count292
+\etb@tempcnta=\count293
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
 \@linkdim=\dimen195
-\Hy@linkcounter=\count293
-\Hy@pagecounter=\count294
+\Hy@linkcounter=\count294
+\Hy@pagecounter=\count295
  (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -258,7 +264,7 @@ Now handling font encoding PD1 ...
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count295
+\Hy@SavedSpaceFactor=\count296
  (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -271,7 +277,7 @@ Package hyperref Info: Plain pages OFF on input line 4172.
 Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count296
+\c@Hy@tempcnt=\count297
  (/usr/local/texlive/2025/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -283,7 +289,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/local/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count297
+\Fld@menulength=\count298
 \Field@Width=\dimen197
 \Fld@charsize=\dimen198
 Package hyperref Info: Hyper figures OFF on input line 6042.
@@ -297,18 +303,18 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count298
-\c@Item=\count299
-\c@Hfootnote=\count300
+\Hy@abspage=\count299
+\c@Item=\count300
+\c@Hfootnote=\count301
 )
 Package hyperref Info: Driver: hdvipdfm.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hdvipdfm.def
 File: hdvipdfm.def 2024-11-05 v7.01l Hyperref driver for dvipdfm
 \pdfm@box=\box75
-\c@Hy@AnnotLevel=\count301
-\HyField@AnnotCount=\count302
-\Fld@listcount=\count303
-\c@bookmark@seq@number=\count304
+\c@Hy@AnnotLevel=\count302
+\HyField@AnnotCount=\count303
+\Fld@listcount=\count304
+\c@bookmark@seq@number=\count305
  (/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
  (/usr/local/texlive/2025/texmf-dist/tex/latex/base/atveryend-ltx.sty
@@ -319,12 +325,12 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip58
+\Hy@SectionHShift=\skip60
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box76
-\beforetitleunit=\skip59
-\aftertitleunit=\skip60
+\beforetitleunit=\skip61
+\aftertitleunit=\skip62
 \ttl@plus=\dimen199
 \ttl@minus=\dimen256
 \ttl@toksa=\toks33
@@ -332,16 +338,16 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \titlewidthlast=\dimen258
 \titlewidthfirst=\dimen259
 )
-\c@theorem=\count305
-\c@lemma=\count306
-\c@proposition=\count307
-\c@definition=\count308
+\c@theorem=\count306
+\c@lemma=\count307
+\c@proposition=\count308
+\c@definition=\count309
  (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
 File: l3backend-dvipdfmx.def 2024-05-08 L3 backend support: dvipdfmx
-\g__graphics_track_int=\count309
+\g__graphics_track_int=\count310
 \l__pdf_internal_box=\box77
-\g__pdf_backend_annotation_int=\count310
-\g__pdf_backend_link_int=\count311
+\g__pdf_backend_annotation_int=\count311
+\g__pdf_backend_link_int=\count312
 ) (./main.aux
 
 LaTeX Warning: Label `sec:approach' multiply defined.
@@ -352,28 +358,28 @@ LaTeX Warning: Label `sec:heterogeneity' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
 
 *geometry* detected driver: dvipdfm
 *geometry* verbose mode - [ preamble ] result:
@@ -408,32 +414,32 @@ LaTeX Font Info:    ... okay on input line 79.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 79.
+Package hyperref Info: Link coloring OFF on input line 80.
 (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 86.
+(Font)              scaled to size 19.17792pt on input line 87.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 86.
+(Font)              scaled to size 19.17792pt on input line 87.
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <20.74> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 87.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 88.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 87.
+(Font)              scaled to size 19.17792pt on input line 88.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <20.74> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 87.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 88.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 87.
+(Font)              scaled to size 19.17792pt on input line 88.
 
 
 [1
 
 ]
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 111.
+(Font)              scaled to size 9.24683pt on input line 112.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 111.
+(Font)              scaled to size 9.24683pt on input line 112.
  (./main.toc
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
 (Font)              scaled to size 6.47278pt on input line 2.
@@ -462,26 +468,26 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 [2]
 第1章
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 133.
+(Font)              scaled to size 13.31541pt on input line 134.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 133.
+(Font)              scaled to size 13.31541pt on input line 134.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 133.
+(Font)              scaled to size 13.31541pt on input line 134.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 133.
+(Font)              scaled to size 13.31541pt on input line 134.
 
 
 [1
 
 ]
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 171.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 172.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 171.
+(Font)              scaled to size 9.24683pt on input line 172.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 171.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 172.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 171.
+(Font)              scaled to size 9.24683pt on input line 172.
 
 
 [2]
@@ -490,13 +496,13 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 
 [3]
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 237.
+(Font)              scaled to size 11.09619pt on input line 238.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 237.
+(Font)              scaled to size 11.09619pt on input line 238.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 237.
+(Font)              scaled to size 11.09619pt on input line 238.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 237.
+(Font)              scaled to size 11.09619pt on input line 238.
 
 
 [4]
@@ -505,16 +511,16 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 File: figures/figure1_manipulation_check_total.png Graphic file (type bmp)
 <figures/figure1_manipulation_check_total.png>
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 317.
+(Font)              scaled to size 8.32214pt on input line 318.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 317.
+(Font)              scaled to size 8.32214pt on input line 318.
 
 
 [6]
-第3章
-
 
 [7]
+第3章
+
 
 [8]
 
@@ -622,13 +628,19 @@ File: figures/figure4c_matrix_combined.png Graphic file (type bmp)
 
 [28]
 
-[29]
+[29] (./main.bbl
+
+[30
+
+])
+
+[31]
 A
 File: figures/figure_A2a_hist_shoshin.png Graphic file (type bmp)
 <figures/figure_A2a_hist_shoshin.png>
 
 
-[30
+[32
 
 ]
 File: figures/figure_A2b_hist_saishin.png Graphic file (type bmp)
@@ -637,65 +649,50 @@ File: figures/figure_A2c_hist_total.png Graphic file (type bmp)
 <figures/figure_A2c_hist_total.png>
 
 
-[31]
+[33]
 
-[32]
+[34]
 B
 File: figures/figure2_trends_combined.png Graphic file (type bmp)
 <figures/figure2_trends_combined.png>
 
 
-[33
+[35
 
 ]
 
-[34]
+[36]
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <8> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 1263.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 1273.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 1263.
+(Font)              scaled to size 7.39746pt on input line 1273.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <8> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 1263.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 1273.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 1263.
+(Font)              scaled to size 7.39746pt on input line 1273.
 File: figures/figure_C4_level_combined.png Graphic file (type bmp)
 <figures/figure_C4_level_combined.png>
 
 
-[35]
+[37]
 
-[36]
+[38]
 File: figures/figure_C2_sensitivity_combined.png Graphic file (type bmp)
 <figures/figure_C2_sensitivity_combined.png>
 File: figures/figure_C3_period_combined.png Graphic file (type bmp)
 <figures/figure_C3_period_combined.png>
 
 
-[37]
+[39]
 
-[38]
+[40]
 File: figures/figure_C1_placebo_combined.png Graphic file (type bmp)
 <figures/figure_C1_placebo_combined.png>
 
 C
 
 
-[39]
-
-[40] (./main.bbl
-LaTeX Font Info:    Font shape `JT2/gt/m/it' in size <10> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 11.
-LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 11.
-LaTeX Font Info:    Font shape `JY2/gt/m/it' in size <10> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 11.
-LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 11.
-
-
-[41
-
-])
+[41]
 
 [42] (./main.aux)
  ***********
@@ -708,15 +705,15 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F4FFDF65CF8CFD29BB7D821B76F4474F;6286.
+(rerunfilecheck)             Checksum: D0B085DAB17D60BBF66B55677CDDC437;6208.
  ) 
 Here is how much of TeX's memory you used:
- 11067 strings out of 473836
- 169809 string characters out of 5731190
- 597888 words of memory out of 5000000
- 34143 multiletter control sequences out of 15000+600000
- 581233 words of font info for 140 fonts, out of 8000000 for 9000
+ 11444 strings out of 473836
+ 174909 string characters out of 5731190
+ 603662 words of memory out of 5000000
+ 34515 multiletter control sequences out of 15000+600000
+ 581401 words of font info for 141 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 72i,11n,79p,595b,569s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,11n,79p,595b,601s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (45 pages, 218156 bytes).
+Output written on main.dvi (45 pages, 223224 bytes).

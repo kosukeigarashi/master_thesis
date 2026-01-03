@@ -1,115 +1,90 @@
-\begin{thebibliography}{10}
 
-\bibitem{Acton1973}
-Jan~Paul Acton.
-\newblock Demand for health care when time prices vary more than money prices.
-\newblock Technical Report R-1189-OEO/NYC, The RAND Corporation, 1973.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  This bbl file is created by jecon.bst ver.6.6
+%  The latest jecon.bst is available at
+%  <https://github.com/ShiroTakeda/jecon-bst>
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\bibitem{Arrow1963}
-Kenneth~J. Arrow.
-\newblock Uncertainty and the welfare economics of medical care.
-\newblock {\em The American Economic Review}, 53(5):941--973, 1963.
+%%% Definition of \bysame
+\ifx\undefined\bysame%
+\newcommand{\bysame}{\hskip.3em \leavevmode\rule[.5ex]{2.5em}{.3pt}\hskip0.5em}
+\fi
 
-\bibitem{Bhattacharya1996}
-Jayanta Bhattacharya, William~B. Vogt, Aki Yoshikawa, and Toshitaka Nakahara.
-\newblock The utilization of outpatient medical services in japan.
-\newblock {\em The Journal of Human Resources}, 31(2):450--476, 1996.
+%%% Definition of \bysamejp
+\ifx\undefined\bysamejp%
+\newcommand{\bysamejp}{\hskip.2em \leavevmode\rule[.7ex]{2.5em}{.3pt}\hskip0.3em}
+\fi
 
-\bibitem{BrotGoldberg2017}
-Zarek~C. Brot-Goldberg, Amitabh Chandra, Benjamin~R. Handel, and Jonathan~T. Kolstad.
-\newblock What does a deductible do? the impact of cost-sharing on health care prices, quantities, and spending dynamics.
-\newblock {\em The Quarterly Journal of Economics}, 132(3):1261--1318, 2017.
+\makeatletter
+\@ifundefined{ifNAT@openbib}{\@latex@error{Package 'natbib' is not loaded! Please load Package 'natbib' in your preamble.\MessageBreak Additionally, if you use url field in your bib record entry, please also load Package 'hyperref' or 'pxjahyper', 'url' package.}\@ehc}{}\relax
+\makeatother
 
-\bibitem{Finkelstein2012}
-Amy Finkelstein, Sarah Taubman, Bill Wright, Mira Bernstein, Jonathan Gruber, Joseph~P. Newhouse, Heidi Allen, and Katherine Baicker.
-\newblock The oregon health insurance experiment: Evidence from the first year.
-\newblock {\em The Quarterly Journal of Economics}, 127(3):1057--1106, 2012.
+\begin{thebibliography}{xxx}
 
-\bibitem{Grossman1972}
-Michael Grossman.
-\newblock On the concept of health capital and the demand for health.
-\newblock {\em Journal of Political Economy}, 80(2):223--255, 1972.
+\harvarditem[Acton]{Acton}{1973}{Acton1973}
+Acton, Jan~Paul (1973) ``Demand for Health Care When Time Prices Vary More Than Money Prices,'' Report R-1189-OEO/NYC, RAND Corporation, Santa Monica, CA, URL: \url{https://www.rand.org/pubs/reports/R1189.html}.
 
-\bibitem{Iba2023}
-Arisa Iba, Takehiro Sugiyama, Yuta Taniguchi, Ai~Suzuki, Taeko Watanabe, Hiroyasu Iso, and Nanako Tamiya.
-\newblock Changes in referral rates after the mandate of charging additional fees for non-referral first visits: A controlled interrupted time-series analysis.
-\newblock {\em Journal of Epidemiology}, 33(12):615--623, 2023.
-\newblock Advance online publication.
+\harvarditem[Arrow]{Arrow}{1978}{Arrow1963}
+Arrow, Kenneth~J (1978) ``Uncertainty and the welfare economics of medical care,'' in  \textit{Uncertainty in Economics}, pp. 345--375: Elsevier.
 
-\bibitem{IizukaShigeoka2022}
-Toshiaki Iizuka and Hitoshi Shigeoka.
-\newblock Is zero a special price? evidence from child healthcare.
-\newblock {\em American Economic Journal: Applied Economics}, 14(4):381--410, 2022.
+\harvarditem[Bhattacharya et~al.]{Bhattacharya, Vogt, Yoshikawa and Nakahara}{1996}{Bhattacharya1996}
+Bhattacharya, Jayanta, William~B Vogt, Aki Yoshikawa, and Toshitaka Nakahara (1996) ``The utilization of outpatient medical services in {Japan},'' \textit{Journal of Human Resources}, pp. 450--476.
 
-\bibitem{Kobayashi2019}
-Daisuke Kobayashi and et~al.
-\newblock Impact of the surcharge on patients without a referral for large hospitals: A descriptive study using claims data.
-\newblock {\em Health Policy}, 2019.
-\newblock (Descriptive Analysis referenced in MHLW reports).
+\harvarditem[Brot-Goldberg et~al.]{Brot-Goldberg, Chandra, Handel and Kolstad}{2017}{BrotGoldberg2017}
+Brot-Goldberg, Zarek~C, Amitabh Chandra, Benjamin~R Handel, and Jonathan~T Kolstad (2017) ``What does a deductible do? {The} impact of cost-sharing on health care prices, quantities, and spending dynamics,'' \textit{The Quarterly Journal of Economics}, Vol. 132, No. 3, pp. 1261--1318.
 
-\bibitem{Manning1987}
-Willard~G. Manning, Joseph~P. Newhouse, Naihua Duan, Emmett~B. Keeler, and Arleen Leibowitz.
-\newblock Health insurance and the demand for medical care: Evidence from a randomized experiment.
-\newblock {\em The American Economic Review}, 77(3):251--277, 1987.
+\harvarditem[Finkelstein et~al.]{Finkelstein et~al.}{2012}{Finkelstein2012}
+Finkelstein, Amy, Sarah Taubman, Bill Wright et~al. (2012) ``The {Oregon} health insurance experiment: Evidence from the first year,'' \textit{The Quarterly Journal of Economics}, Vol. 127, No. 3, pp. 1057--1106.
 
-\bibitem{Shigeoka2014}
-Hitoshi Shigeoka.
-\newblock The effect of patient cost sharing on utilization, health, and risk protection.
-\newblock {\em The American Economic Review}, 104(7):2152--2184, 2014.
+\harvarditem[Grossman]{Grossman}{1972}{Grossman1972}
+Grossman, Michael (1972) ``On the concept of health capital and the demand for health,'' \textit{Journal of Political Economy}, Vol. 80, No. 2, pp. 223--255.
 
-\bibitem{Tay2003}
-Abigail Tay.
-\newblock Assessing competition in hospital care markets: The importance of accounting for quality differentiation.
-\newblock {\em The RAND Journal of Economics}, 34(4):786--814, 2003.
+\harvarditem[Iba et~al.]{Iba, Sugiyama, Taniguchi, Suzuki, Watanabe, Iso and Tamiya}{2025}{Iba2023}
+Iba, Arisa, Takehiro Sugiyama, Yuta Taniguchi, Ai~Suzuki, Taeko Watanabe, Hiroyasu Iso, and Nanako Tamiya (2025) ``Changes in referral rates after the mandate of charging additional fees for non-referral first visits: A controlled interrupted time-series analysis,'' \textit{Journal of Epidemiology}, p. JE20250285.
 
-\bibitem{Izumida2004}
-泉田 信行.
-\newblock 患者の受診パターンの変化に関する分析.
-\newblock {\em 医療と社会}, 14(3):1--20, 2004.
+\harvarditem[Iizuka and Shigeoka]{Iizuka and Shigeoka}{2022}{IizukaShigeoka2022}
+Iizuka, Toshiaki and Hitoshi Shigeoka (2022) ``Is zero a special price? {Evidence} from child health care,'' \textit{American Economic Journal: Applied Economics}, Vol. 14, No. 4, pp. 381--410.
 
-\bibitem{Yamamoto2002}
-山本 克也.
-\newblock 患者の診療機関選択と診療費.
-\newblock {\em 社会保障研究}, 38(1):25--38, 2002.
+\harvarditem[泉田信行]{泉田信行}{2004}{Izumida2004}
+泉田信行 (2004) 「患者の受診パターンの変化に関する分析」，『医療と社会』，第14巻，第3号，3\_1--3\_20頁．
 
-\bibitem{MHLW2015}
-厚生労働省.
-\newblock 紹介状なしの大病院受診時に係る選定療養について.
-\newblock 中央社会保険医療協議会 総-3, 2015.
+\harvarditem[河口洋行・菅原琢磨]{河口洋行・菅原琢磨}{2015}{KawaguchiSugahara2015}
+河口洋行・菅原琢磨 (2015) 「大病院の外来受診に関する仮想的効用値の測定に関する研究」，『成城大学経済研究』，第210号，163--196頁．
 
-\bibitem{MHLW2020}
-厚生労働省.
-\newblock 医療機能の分化・連携の経緯と外来機能の明確化・かかりつけ医機能の強化に向けた検討の進め方について.
-\newblock 第73回社会保障審議会医療部会 資料1-1, 2020.
+\harvarditem[{厚生労働省}]{{厚生労働省}}{2015}{MHLW2015}
+{厚生労働省} (2015) 「外来医療（その２）　紹介状なしの大病院受診時に係る選定療養について」，中央社会保険医療協議会 総会（第314回）資料 総-3，Available at: \url{https://www.mhlw.go.jp/file/05-Shingikai-12404000-Hokenkyoku-Iryouka/0000098761.pdf} (Accessed: 2025-01-03)．
 
-\bibitem{Tsuchikura2015}
-土倉 幸大.
-\newblock 日本における持続可能な医療の創出.
-\newblock {\em 香川大学経済政策研究}, 2015.
+\harvarditem[{厚生労働省}]{{厚生労働省}}{2020}{MHLW2020}
+ \bysamejp{}  (2020) 「医療機能の分化・連携の経緯と外来機能の明確化・かかりつけ医機能の強化に向けた検討の進め方について」，第73回社会保障審議会医療部会 資料1-1，Available at: \url{https://www.mhlw.go.jp/content/12601000/000589754.pdf} (Accessed: 2026-01-03)．
 
-\bibitem{KawaguchiSugahara2015}
-河口 洋行 and 菅原 琢磨.
-\newblock 大病院の外来受診に関する仮想的効用値の測定に関する研究.
-\newblock {\em 成城大学経済研究}, (210):163--196, 2015.
+\harvarditem[Manning et~al.]{Manning, Newhouse, Duan, Keeler and Leibowitz}{1987}{Manning1987}
+Manning, Willard~G, Joseph~P Newhouse, Naihua Duan, Emmett~B Keeler, and Arleen Leibowitz (1987) ``Health insurance and the demand for medical care: Evidence from a randomized experiment,'' \textit{The American Economic Review}, pp. 251--277.
 
-\bibitem{Sugahara2015Rep}
-菅原 琢磨.
-\newblock 病院外来受診時の一定定額自己負担制度導入に関する調査研究.
-\newblock Technical report, 厚生労働科学研究成果データベース, 2015.
+\harvarditem[大久保豪]{大久保豪}{2021}{Okubo2021}
+大久保豪 (2021) 「日本, ドイツ, フランス, イギリスにおける患者自己負担制度の違いについて」，『医療と社会』，第31巻，第1号，45--59頁．
 
-\bibitem{Okubo2021}
-大久保 豪.
-\newblock 日本, ドイツ, フランス, イギリスにおける患者自己負担制度の違いについて.
-\newblock {\em 医療と社会}, 31(1):45--59, 2021.
+\harvarditem[Shigeoka]{Shigeoka}{2014}{Shigeoka2014}
+Shigeoka, Hitoshi (2014) ``The effect of patient cost sharing on utilization, health, and risk protection,'' \textit{American Economic Review}, Vol. 104, No. 7, pp. 2152--2184.
 
-\bibitem{Yuda2023}
-湯田 道生.
-\newblock 公的医療制度における自己負担率と医療利用および健康.
-\newblock {\em フィナンシャル・レビュー}, (151):154--180, 2023.
+\harvarditem[菅原琢磨]{菅原琢磨}{2013}{Sugahara2015Rep}
+菅原琢磨 (2013) 「病院外来受診時の一定定額自己負担制度導入に関する調査研究」，厚生労働科学研究成果データベース（研究課題・総括），URL：\url{https://mhlw-grants.niph.go.jp/project/22279}，厚生労働科学研究費補助金（厚生労働科学特別研究）課題番号：H25-特別-指定-032．
 
-\bibitem{Yagi2008}
-八木 麻衣子.
-\newblock 医療機関選択に寄与する情報因子の検討.
-\newblock {\em 立教ビジネスデザイン研究}, 5:45--56, 2008.
+\harvarditem[Tay]{Tay}{2003}{Tay2003}
+Tay, Abigail (2003) ``Assessing competition in hospital care markets: {The} importance of accounting for quality differentiation,'' \textit{RAND Journal of Economics}, pp. 786--814.
+
+\harvarditem[土倉幸大]{土倉幸大}{2015}{Tsuchikura2015}
+土倉幸大 (2015) 「日本における持続可能な医療の創出」，『香川大学経済政策研究』，第11巻，139--157頁，通巻第12号．
+
+\harvarditem[八木麻衣子]{八木麻衣子}{2008}{Yagi2008}
+八木麻衣子 (2008) 「医療機関選択に寄与する情報因子の検討」，『立教ビジネスデザイン研究』，第5巻，45--56頁．
+
+\harvarditem[山本克也]{山本克也}{2002}{Yamamoto2002}
+山本克也 (2002) 「患者の診療機関選択と診療費」，『季刊社会保障研究』，第38巻，第1号，25--38頁．
+
+\harvarditem[湯田道生]{湯田道生}{2023}{Yuda2023}
+湯田道生 (2023) 「公的医療制度における自己負担率と医療利用および健康」，『フィナンシャル・レビュー』，第151巻，154--180頁．
 
 \end{thebibliography}
+

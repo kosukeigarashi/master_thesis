@@ -59,6 +59,8 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/natbib/natbib.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/natbib/natbib.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/here/here.sty
@@ -257,6 +259,10 @@ INPUT ./figures/figure3_event_study.png
 INPUT ./figures/figure4c_matrix_combined.png
 INPUT ./figures/figure4c_matrix_combined.png
 INPUT ./figures/figure4c_matrix_combined.png
+INPUT ./main.bbl
+INPUT ./main.bbl
+INPUT main.bbl
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT ./figures/figure_A2a_hist_shoshin.png
 INPUT ./figures/figure_A2a_hist_shoshin.png
 INPUT ./figures/figure_A2a_hist_shoshin.png
@@ -290,9 +296,6 @@ INPUT ./figures/figure_C1_placebo_combined.png
 INPUT ./figures/figure_C1_placebo_combined.png
 INPUT ./figures/figure_C1_placebo_combined.png
 INPUT extractbb -B cropbox -O figures/figure_C1_placebo_combined.png
-INPUT ./main.bbl
-INPUT ./main.bbl
-INPUT main.bbl
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out

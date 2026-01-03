@@ -1,50 +1,61 @@
 This is upBibTeX, Version 0.99d-j0.36-u2.00 (utf8.uptex) (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-The style file: plain.bst
+The style file: jecon.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated glb_str_ptr (elt_size=4) to 30 items from 20.
+Reallocated global_strs (elt_size=200001) to 30 items from 20.
+Reallocated glb_str_end (elt_size=4) to 30 items from 20.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: thesis.bib
-Warning--there's a number but no volume in KawaguchiSugahara2015
-Warning--there's a number but no volume in Yuda2023
-You've used 22 entries,
-            2118 wiz_defined-function locations,
-            656 strings with 7958 characters,
-and the built_in function-call counts, 6838 in all, are:
-= -- 695
-> -- 292
-< -- 1
-+ -- 121
-- -- 96
-* -- 503
-:= -- 1180
-add.period$ -- 68
-call.type$ -- 22
-change.case$ -- 115
-chr.to.int$ -- 0
-cite$ -- 24
-duplicate$ -- 227
-empty$ -- 537
-format.name$ -- 96
-if$ -- 1373
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 21 entries,
+            8865 wiz_defined-function locations,
+            1836 strings with 18085 characters,
+and the built_in function-call counts, 37955 in all, are:
+= -- 7087
+> -- 860
+< -- 53
++ -- 281
+- -- 317
+* -- 1467
+:= -- 4599
+add.period$ -- 11
+call.type$ -- 21
+change.case$ -- 149
+chr.to.int$ -- 21
+cite$ -- 21
+duplicate$ -- 543
+empty$ -- 1657
+format.name$ -- 370
+if$ -- 10588
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 18
-newline$ -- 115
-num.names$ -- 44
-pop$ -- 88
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 90
+num.names$ -- 198
+pop$ -- 749
 preamble$ -- 1
-purify$ -- 92
+purify$ -- 149
 quote$ -- 0
-skip$ -- 148
+skip$ -- 3750
 stack$ -- 0
-substring$ -- 504
-swap$ -- 21
-text.length$ -- 1
+substring$ -- 3264
+swap$ -- 161
+text.length$ -- 73
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 88
-warning$ -- 2
-while$ -- 76
-width$ -- 24
-write$ -- 244
-is.kanji.str$ -- 0
-(There were 2 warnings)
+type$ -- 254
+warning$ -- 0
+while$ -- 184
+width$ -- 0
+write$ -- 362
+is.kanji.str$ -- 675

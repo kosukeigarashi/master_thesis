@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {2.2.2}徴収の義務化：2016年改革}{5}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}2022年の制度改革：対象の大幅拡大}{5}{subsection.2.2.3}%
 \contentsline {section}{\numberline {2.3}理論的枠組みと仮説}{6}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}情報の非対称性と不確実性}{6}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.1}情報の非対称性と不確実性}{7}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}時間価格と金銭価格のトレードオフ}{7}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}仮説の提示}{7}{subsection.2.3.3}%
 \contentsline {chapter}{\numberline {第3章}先行研究}{8}{chapter.3}%
@@ -72,18 +72,17 @@
 \contentsline {section}{\numberline {7.3}政策的含意}{27}{section.7.3}%
 \contentsline {section}{\numberline {7.4}本研究の限界と今後の課題}{27}{section.7.4}%
 \contentsline {chapter}{\numberline {第8章}結論}{28}{chapter.8}%
-\contentsline {chapter}{Appendix}{30}{appendix*.2}%
-\contentsline {chapter}{\numberline {A}データ構築の詳細}{30}{appendix.A}%
-\contentsline {section}{\numberline {A.1}サンプル選択の詳細プロセス}{30}{section.A.1}%
-\contentsline {section}{\numberline {A.2}変数の分布}{30}{section.A.2}%
-\contentsline {section}{\numberline {A.3}サンプルの代表性}{33}{section.A.3}%
-\contentsline {chapter}{\numberline {B}識別戦略と推定手法の頑健性}{33}{appendix.B}%
-\contentsline {section}{\numberline {B.1}平行トレンド仮定の視覚的確認}{33}{section.B.1}%
-\contentsline {section}{\numberline {B.2}異なる固定効果仕様でのDID結果}{35}{section.B.2}%
-\contentsline {section}{\numberline {B.3}異なる標準誤差クラスタリングでの結果}{35}{section.B.3}%
-\contentsline {section}{\numberline {B.4}実数アウトカムでの分析結果}{35}{section.B.4}%
-\contentsline {section}{\numberline {B.5}処置定義の変更による感度分析}{37}{section.B.5}%
-\contentsline {section}{\numberline {B.6}他の期間設定での分析結果}{37}{section.B.6}%
-\contentsline {section}{\numberline {B.7}プラセボテストの詳細}{39}{section.B.7}%
-\contentsline {chapter}{\numberline {C}診療行為コード一覧表}{40}{appendix.C}%
-\contentsline {chapter}{参考文献}{41}{appendix*.3}%
+\contentsline {chapter}{Appendix}{32}{appendix*.3}%
+\contentsline {chapter}{\numberline {A}データ構築の詳細}{32}{appendix.A}%
+\contentsline {section}{\numberline {A.1}サンプル選択の詳細プロセス}{32}{section.A.1}%
+\contentsline {section}{\numberline {A.2}変数の分布}{32}{section.A.2}%
+\contentsline {section}{\numberline {A.3}サンプルの代表性}{35}{section.A.3}%
+\contentsline {chapter}{\numberline {B}識別戦略と推定手法の頑健性}{35}{appendix.B}%
+\contentsline {section}{\numberline {B.1}平行トレンド仮定の視覚的確認}{35}{section.B.1}%
+\contentsline {section}{\numberline {B.2}異なる固定効果仕様でのDID結果}{37}{section.B.2}%
+\contentsline {section}{\numberline {B.3}異なる標準誤差クラスタリングでの結果}{37}{section.B.3}%
+\contentsline {section}{\numberline {B.4}実数アウトカムでの分析結果}{37}{section.B.4}%
+\contentsline {section}{\numberline {B.5}処置定義の変更による感度分析}{39}{section.B.5}%
+\contentsline {section}{\numberline {B.6}他の期間設定での分析結果}{39}{section.B.6}%
+\contentsline {section}{\numberline {B.7}プラセボテストの詳細}{41}{section.B.7}%
+\contentsline {chapter}{\numberline {C}診療行為コード一覧表}{42}{appendix.C}%
