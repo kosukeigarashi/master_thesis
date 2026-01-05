@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.4.13)  5 JAN 2026 13:36
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.4.13)  5 JAN 2026 15:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -348,14 +348,7 @@ File: l3backend-dvipdfmx.def 2024-05-08 L3 backend support: dvipdfmx
 \l__pdf_internal_box=\box77
 \g__pdf_backend_annotation_int=\count311
 \g__pdf_backend_link_int=\count312
-) (./main.aux
-
-LaTeX Warning: Label `sec:approach' multiply defined.
-
-
-LaTeX Warning: Label `sec:heterogeneity' multiply defined.
-
-)
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
@@ -571,26 +564,26 @@ LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
 File: figures/figure3_event_study.png Graphic file (type bmp)
 <figures/figure3_event_study.png>
 LaTeX Font Info:    Font shape `JT2/mc/m/it' in size <8> not available
-(Font)              Font shape `JT2/mc/m/n' tried instead on input line 820.
+(Font)              Font shape `JT2/mc/m/n' tried instead on input line 819.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 820.
+(Font)              scaled to size 7.39746pt on input line 819.
 LaTeX Font Info:    Font shape `JY2/mc/m/it' in size <8> not available
-(Font)              Font shape `JY2/mc/m/n' tried instead on input line 820.
+(Font)              Font shape `JY2/mc/m/n' tried instead on input line 819.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 820.
+(Font)              scaled to size 7.39746pt on input line 819.
 
 
 [18]
 
 [19]
 LaTeX Font Info:    Font shape `JT2/mc/m/it' in size <10> not available
-(Font)              Font shape `JT2/mc/m/n' tried instead on input line 855.
+(Font)              Font shape `JT2/mc/m/n' tried instead on input line 853.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 855.
+(Font)              scaled to size 9.24683pt on input line 853.
 LaTeX Font Info:    Font shape `JY2/mc/m/it' in size <10> not available
-(Font)              Font shape `JY2/mc/m/n' tried instead on input line 855.
+(Font)              Font shape `JY2/mc/m/n' tried instead on input line 853.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 855.
+(Font)              scaled to size 9.24683pt on input line 853.
 File: figures/figure4a_heterogeneity_region.png Graphic file (type bmp)
 <figures/figure4a_heterogeneity_region.png>
 
@@ -606,7 +599,7 @@ File: figures/figure4b_heterogeneity_size.png Graphic file (type bmp)
 File: figures/figure4c_matrix_combined.png Graphic file (type bmp)
 <figures/figure4c_matrix_combined.png>
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 945.
+(Font)              scaled to size 8.32214pt on input line 943.
 
 第7章
 
@@ -627,7 +620,7 @@ File: figures/figure4c_matrix_combined.png Graphic file (type bmp)
 
 [27]
 
-LaTeX Warning: Reference `tab:main_results' on page 28 undefined on input line 1056.
+LaTeX Warning: Reference `tab:main_results' on page 28 undefined on input line 1054.
 
 
 
@@ -673,13 +666,13 @@ File: figures/figure2_trends_combined.png Graphic file (type bmp)
 
 [37]
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <8> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 1276.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 1272.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 1276.
+(Font)              scaled to size 7.39746pt on input line 1272.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <8> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 1276.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 1272.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 1276.
+(Font)              scaled to size 7.39746pt on input line 1272.
 File: figures/figure_C4_level_combined.png Graphic file (type bmp)
 <figures/figure_C4_level_combined.png>
 
@@ -714,19 +707,16 @@ L3 programming layer <2025-01-18>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 3D6EC5E2E4B4D9A4533F7AD8981E473E;6284.
  ) 
 Here is how much of TeX's memory you used:
- 11442 strings out of 473836
- 174885 string characters out of 5731190
- 603687 words of memory out of 5000000
- 34513 multiletter control sequences out of 15000+600000
+ 11444 strings out of 473836
+ 174922 string characters out of 5731190
+ 602714 words of memory out of 5000000
+ 34515 multiletter control sequences out of 15000+600000
  581401 words of font info for 141 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 72i,11n,79p,595b,603s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,12n,79p,595b,603s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (46 pages, 223896 bytes).
+Output written on main.dvi (46 pages, 223060 bytes).
