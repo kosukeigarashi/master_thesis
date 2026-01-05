@@ -1,19 +1,19 @@
 # Fdb version 4
-["bibtex main"] 1767433238.68372 "main.aux" "main.bbl" "main" 1767433241.50116 0
+["bibtex main"] 1767577085.40446 "main.aux" "main.bbl" "main" 1767587790.53315 0
   "./jecon.bst" 1767424629.20478 122258 89d9395615f7f0e0eb85d52d5a9b7e86 ""
-  "./thesis.bib" 1767433236.56918 7845 0ec4985709411a62d2454d7b84af7cf8 ""
-  "main.aux" 1767433240.206 31359 f231907253cba005ec84c7b913465369 "latex"
+  "./thesis.bib" 1767437180.38202 7865 98158cccdc7922cb47d4343dcbd1ba4a ""
+  "main.aux" 1767587788.99897 31293 f59ff26909bee36f206f53f65cba8ec8 "latex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["dvipdf"] 1767433240.37823 "main.dvi" "main.pdf" "main" 1767433241.50254 0
-  "main.dvi" 1767433240.20916 223224 7fac8a2738838d25ea5559c910a396a5 "latex"
+["dvipdf"] 1767587789.19782 "main.dvi" "main.pdf" "main" 1767587790.53411 0
+  "main.dvi" 1767587789.00216 223896 035d5b83804279e01d83d7395fd7b58a "latex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["latex"] 1767433238.77212 "/Users/igarashi_kosuke/Documents/Github/master_thesis/main.tex" "main.dvi" "main" 1767433241.50123 0
-  "/Users/igarashi_kosuke/Documents/Github/master_thesis/main.tex" 1767433240.67475 126594 b7e0eb38ec02d8277335e99d26e039fc ""
+["latex"] 1767587787.48289 "/Users/igarashi_kosuke/Documents/Github/master_thesis/main.tex" "main.dvi" "main" 1767587790.53321 0
+  "/Users/igarashi_kosuke/Documents/Github/master_thesis/main.tex" 1767587787.25926 127359 df49223c07e85b6bdfce53cb3ec79929 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -125,25 +125,25 @@
   "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
   "/usr/local/texlive/2025/texmf-var/web2c/euptex/uplatex.fmt" 1744532195 3337453 f9af5d309ac66e8f0d61cc9dfa82e8c8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "figures/figure1_manipulation_check_temp.png" 1766827355 62459 ee4e1080cab9163f38f63fec585142fa ""
-  "figures/figure1_manipulation_check_total.png" 1766902933 83875 cd43566a13b7ae038046464fc23f073f ""
-  "figures/figure2_trends_combined.png" 1766827395 122799 31f675ec07dc7df9273261ea9c0acbed ""
-  "figures/figure3_event_study.png" 1766827674 139612 b0e5282d65dd9fd444c77ad7e5042b00 ""
-  "figures/figure4a_heterogeneity_region.png" 1766827728 81819 3f66adc39c6cab74691e980a2580d6f1 ""
-  "figures/figure4b_heterogeneity_size.png" 1766827765 84984 65e4b36aa87559f2ee3a0abf3d3f3895 ""
-  "figures/figure4c_matrix_combined.png" 1766827847 147776 227a6a20898593c203d72436b6434de3 ""
-  "figures/figure_A2a_hist_shoshin.png" 1766825748 135410 e5e3a3e1f322a0a03eb7ca5f462d5597 ""
-  "figures/figure_A2b_hist_saishin.png" 1766825783 147385 cfad585676168386dabbcafb0ac7b73f ""
-  "figures/figure_A2c_hist_total.png" 1766825829 149132 4b208f05a78c19d6a2b981e50997848c ""
-  "figures/figure_C1_placebo_combined.png" 1766826170 110272 171b682b191a3dbd8cb3279f1d05e33b ""
-  "figures/figure_C2_sensitivity_combined.png" 1766826317 150798 02e7414854641db3900adb5cd6d63b32 ""
-  "figures/figure_C3_period_combined.png" 1766826656 119284 692df356c2db39c520892d123992abfd ""
-  "figures/figure_C4_level_combined.png" 1766826930 115354 28e64b692deb95eeac0185e2cdb67a25 ""
-  "main.aux" 1767433240.206 31359 f231907253cba005ec84c7b913465369 "latex"
-  "main.bbl" 1767433238.77023 6872 4f39e80638d9758f2c73a7746f8db9ec "bibtex main"
-  "main.out" 1767433240.20884 6208 d0b085dab17d60bbf66b55677cddc437 "latex"
-  "main.tex" 1767433240.67475 126594 b7e0eb38ec02d8277335e99d26e039fc ""
-  "main.toc" 1767433240.20907 8394 be081c9e91beb65b42c6d645863e2dfb "latex"
+  "figures/figure1_manipulation_check_final.png" 1767469500 41858 2522804ef77c94cb916c40c44841872e ""
+  "figures/figure1_manipulation_check_total.png" 1767469650 64850 8be30ec1c108bfdacdfe301fd5cb29b2 ""
+  "figures/figure2_trends_combined.png" 1767469696 107255 e451684b372827f021b892d06cdf6eef ""
+  "figures/figure3_event_study.png" 1767469922 118414 f29d291e6efb9166af3dcd364e80dbc7 ""
+  "figures/figure4a_heterogeneity_region.png" 1767469956 93880 54ec5e2629af7e1f71579f8cb647c2fd ""
+  "figures/figure4b_heterogeneity_size.png" 1767470002 117408 28e44ae53445bf9c2d1188cf9f621d18 ""
+  "figures/figure4c_matrix_combined.png" 1767470044 115547 7f987109f68b3c3b5b17e86f1e27f04d ""
+  "figures/figure_A2a_hist_shoshin.png" 1767465158 56440 d8303062cd5dc2404225b48556c765ef ""
+  "figures/figure_A2b_hist_saishin.png" 1767465190 59816 66611d8137c33bc971ef9e8acfba464b ""
+  "figures/figure_A2c_hist_total.png" 1767465228 59289 094b7187307c642976467a9bfd78f033 ""
+  "figures/figure_C1_placebo_combined.png" 1767468236 97760 fec64371ea954f1cfa71e18964e9a035 ""
+  "figures/figure_C2_sensitivity_combined.png" 1767468896 110135 acf7de7aaa66100fd0d3db22fde15316 ""
+  "figures/figure_C3_period_combined.png" 1767469098 105736 f0a86df8af19028416058ced10b45798 ""
+  "figures/figure_C4_level_combined.png" 1767469360 99703 34db1b601d297cc7b447dcc073e31fb0 ""
+  "main.aux" 1767587788.99897 31293 f59ff26909bee36f206f53f65cba8ec8 "latex"
+  "main.bbl" 1767577085.48381 6368 035971b166c17f7361a705947c4795d6 "bibtex main"
+  "main.out" 1767587789.00186 6284 3d6ec5e2e4b4d9a4533f7ad8981e473e "latex"
+  "main.tex" 1767587787.25926 127359 df49223c07e85b6bdfce53cb3ec79929 ""
+  "main.toc" 1767587789.0021 8447 e5920772e469a8941123d6d38c1cefc7 "latex"
   (generated)
   "main.aux"
   "main.dvi"

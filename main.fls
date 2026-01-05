@@ -219,10 +219,10 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
-INPUT ./figures/figure1_manipulation_check_temp.png
-INPUT ./figures/figure1_manipulation_check_temp.png
-INPUT ./figures/figure1_manipulation_check_temp.png
-INPUT extractbb -B cropbox -O figures/figure1_manipulation_check_temp.png
+INPUT ./figures/figure1_manipulation_check_final.png
+INPUT ./figures/figure1_manipulation_check_final.png
+INPUT ./figures/figure1_manipulation_check_final.png
+INPUT extractbb -B cropbox -O figures/figure1_manipulation_check_final.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm
