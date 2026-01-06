@@ -73,18 +73,18 @@
 \contentsline {section}{\numberline {7.3}政策的含意}{28}{section.7.3}%
 \contentsline {section}{\numberline {7.4}本研究の限界と今後の課題}{29}{section.7.4}%
 \contentsline {chapter}{\numberline {第8章}結論}{30}{chapter.8}%
-\contentsline {chapter}{参考文献}{32}{chapter.8}%
-\contentsline {chapter}{Appendix}{34}{appendix*.3}%
-\contentsline {chapter}{\numberline {A}データ構築の詳細}{34}{appendix.A}%
-\contentsline {section}{\numberline {A.1}サンプル選択の詳細プロセス}{34}{section.A.1}%
-\contentsline {section}{\numberline {A.2}変数の分布}{34}{section.A.2}%
-\contentsline {section}{\numberline {A.3}サンプルの代表性}{37}{section.A.3}%
-\contentsline {chapter}{\numberline {B}識別戦略と推定手法の頑健性}{37}{appendix.B}%
-\contentsline {section}{\numberline {B.1}平行トレンド仮定の視覚的確認}{37}{section.B.1}%
-\contentsline {section}{\numberline {B.2}異なる固定効果仕様でのDID結果}{38}{section.B.2}%
-\contentsline {section}{\numberline {B.3}異なる標準誤差クラスタリングでの結果}{39}{section.B.3}%
-\contentsline {section}{\numberline {B.4}実数アウトカムでの分析結果}{39}{section.B.4}%
-\contentsline {section}{\numberline {B.5}処置定義の変更による感度分析}{41}{section.B.5}%
-\contentsline {section}{\numberline {B.6}他の期間設定での分析結果}{41}{section.B.6}%
-\contentsline {section}{\numberline {B.7}プラセボテストの詳細}{43}{section.B.7}%
-\contentsline {chapter}{\numberline {C}診療行為コード一覧表}{44}{appendix.C}%
+\contentsline {chapter}{参考文献}{33}{chapter*.2}%
+\contentsline {chapter}{Appendix}{35}{appendix*.4}%
+\contentsline {chapter}{\numberline {A}データ構築の詳細}{35}{appendix.A}%
+\contentsline {section}{\numberline {A.1}サンプル選択の詳細プロセス}{35}{section.A.1}%
+\contentsline {section}{\numberline {A.2}変数の分布}{35}{section.A.2}%
+\contentsline {section}{\numberline {A.3}サンプルの代表性}{38}{section.A.3}%
+\contentsline {chapter}{\numberline {B}識別戦略と推定手法の頑健性}{38}{appendix.B}%
+\contentsline {section}{\numberline {B.1}平行トレンド仮定の視覚的確認}{38}{section.B.1}%
+\contentsline {section}{\numberline {B.2}異なる固定効果仕様でのDID結果}{39}{section.B.2}%
+\contentsline {section}{\numberline {B.3}異なる標準誤差クラスタリングでの結果}{40}{section.B.3}%
+\contentsline {section}{\numberline {B.4}実数アウトカムでの分析結果}{40}{section.B.4}%
+\contentsline {section}{\numberline {B.5}処置定義の変更による感度分析}{42}{section.B.5}%
+\contentsline {section}{\numberline {B.6}他の期間設定での分析結果}{42}{section.B.6}%
+\contentsline {section}{\numberline {B.7}プラセボテストの詳細}{44}{section.B.7}%
+\contentsline {chapter}{\numberline {C}診療行為コード一覧表}{45}{appendix.C}%
