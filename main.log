@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.4.13)  6 JAN 2026 13:10
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.4.13)  6 JAN 2026 16:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -522,10 +522,10 @@ LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
 [8]
 
 [9]
-第4章
-
 
 [10]
+第4章
+
 
 [11]
 
@@ -545,14 +545,13 @@ File: figures/figure1_manipulation_check_final.png Graphic file (type bmp)
 <figures/figure1_manipulation_check_final.png>
 
 第5章
-
-
-[15]
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
 (Font)              scaled to size 6.47278pt on input line 693.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
 (Font)              scaled to size 4.62341pt on input line 693.
 
+
+[15]
 
 [16]
 第6章
@@ -576,9 +575,6 @@ LaTeX Font Info:    Font shape `JY2/mc/m/it' in size <8> not available
 (Font)              Font shape `JY2/mc/m/n' tried instead on input line 843.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
 (Font)              scaled to size 7.39746pt on input line 843.
-
-
-[20]
 LaTeX Font Info:    Font shape `JT2/mc/m/it' in size <10> not available
 (Font)              Font shape `JT2/mc/m/n' tried instead on input line 877.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
@@ -591,12 +587,16 @@ File: figures/figure4a_heterogeneity_region.png Graphic file (type bmp)
 <figures/figure4a_heterogeneity_region.png>
 
 
+[20]
+
 [21]
 File: figures/figure4b_heterogeneity_size.png Graphic file (type bmp)
 <figures/figure4b_heterogeneity_size.png>
 
 
 [22]
+
+[23]
 File: figures/figure4c_matrix_combined.png Graphic file (type bmp)
 <figures/figure4c_matrix_combined.png>
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
@@ -604,8 +604,6 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 
 第7章
 
-
-[23]
 
 [24]
 File: figures/figure3_event_study.png Graphic file (type bmp)
@@ -622,10 +620,6 @@ File: figures/figure4c_matrix_combined.png Graphic file (type bmp)
 [27]
 
 [28]
-
-LaTeX Warning: Reference `tab:main_results' on page 29 undefined on input line 1078.
-
-
 
 [29]
 第8章
@@ -673,13 +667,13 @@ File: figures/figure2_trends_combined.png Graphic file (type bmp)
 
 [39]
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <8> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 1306.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 1311.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 1306.
+(Font)              scaled to size 7.39746pt on input line 1311.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <8> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 1306.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 1311.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 1306.
+(Font)              scaled to size 7.39746pt on input line 1311.
 File: figures/figure_C4_level_combined.png Graphic file (type bmp)
 <figures/figure_C4_level_combined.png>
 
@@ -710,20 +704,16 @@ pLaTeX2e <2023-02-14u04>+1, based on
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 40D0F8637A92C1CE86240CA93E4D5E5F;6346.
+(rerunfilecheck)             Checksum: 14A31D4A74A0EC34947B95EDB789781E;6362.
  ) 
 Here is how much of TeX's memory you used:
- 11448 strings out of 473836
- 174986 string characters out of 5731190
- 601822 words of memory out of 5000000
- 34519 multiletter control sequences out of 15000+600000
+ 11447 strings out of 473836
+ 174968 string characters out of 5731190
+ 603841 words of memory out of 5000000
+ 34518 multiletter control sequences out of 15000+600000
  581708 words of font info for 142 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  72i,12n,79p,595b,595s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (48 pages, 228112 bytes).
+Output written on main.dvi (48 pages, 227968 bytes).
