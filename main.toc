@@ -81,7 +81,7 @@
 \contentsline {section}{\numberline {A.3}サンプルの代表性}{37}{section.A.3}%
 \contentsline {chapter}{\numberline {B}識別戦略と推定手法の頑健性}{37}{appendix.B}%
 \contentsline {section}{\numberline {B.1}平行トレンド仮定の視覚的確認}{37}{section.B.1}%
-\contentsline {section}{\numberline {B.2}異なる固定効果仕様でのDID結果}{39}{section.B.2}%
+\contentsline {section}{\numberline {B.2}異なる固定効果仕様でのDID結果}{38}{section.B.2}%
 \contentsline {section}{\numberline {B.3}異なる標準誤差クラスタリングでの結果}{39}{section.B.3}%
 \contentsline {section}{\numberline {B.4}実数アウトカムでの分析結果}{39}{section.B.4}%
 \contentsline {section}{\numberline {B.5}処置定義の変更による感度分析}{41}{section.B.5}%
