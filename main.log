@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.4.13)  6 JAN 2026 16:56
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.4.13)  11 JAN 2026 00:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -544,6 +544,8 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 File: figures/figure1_manipulation_check_final.png Graphic file (type bmp)
 <figures/figure1_manipulation_check_final.png>
 
+
+[15]
 第5章
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
 (Font)              scaled to size 6.47278pt on input line 693.
@@ -551,22 +553,23 @@ LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
 (Font)              scaled to size 4.62341pt on input line 693.
 
 
-[15]
-
 [16]
 第6章
+
+
+[17]
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
 (Font)              scaled to size 5.5481pt on input line 762.
 
 
-[17]
+[18]
 File: figures/figure3_event_study.png Graphic file (type bmp)
 <figures/figure3_event_study.png>
 
 
-[18]
-
 [19]
+
+[20]
 LaTeX Font Info:    Font shape `JT2/mc/m/it' in size <8> not available
 (Font)              Font shape `JT2/mc/m/n' tried instead on input line 843.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
@@ -587,118 +590,119 @@ File: figures/figure4a_heterogeneity_region.png Graphic file (type bmp)
 <figures/figure4a_heterogeneity_region.png>
 
 
-[20]
-
 [21]
+
+[22]
 File: figures/figure4b_heterogeneity_size.png Graphic file (type bmp)
 <figures/figure4b_heterogeneity_size.png>
 
 
-[22]
-
 [23]
 File: figures/figure4c_matrix_combined.png Graphic file (type bmp)
 <figures/figure4c_matrix_combined.png>
+
+
+[24]
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 967.
+(Font)              scaled to size 8.32214pt on input line 966.
 
 第7章
 
 
-[24]
+[25]
 File: figures/figure3_event_study.png Graphic file (type bmp)
 <figures/figure3_event_study.png>
 
 
-[25]
-
 [26]
+
+[27]
 File: figures/figure4c_matrix_combined.png Graphic file (type bmp)
 <figures/figure4c_matrix_combined.png>
 
 
-[27]
-
 [28]
 
 [29]
+
+[30]
 第8章
 
 
-[30]
-
 [31]
 
-[32
-
-] (./main.bbl
+[32]
 
 [33
 
+] (./main.bbl
+
+[34
+
 ])
 
-[34]
+[35]
 A
 File: figures/figure_A2a_hist_shoshin.png Graphic file (type bmp)
 <figures/figure_A2a_hist_shoshin.png>
 
 
-[35
+[36
 
 ]
 File: figures/figure_A2b_hist_saishin.png Graphic file (type bmp)
 <figures/figure_A2b_hist_saishin.png>
 
 
-[36]
+[37]
 File: figures/figure_A2c_hist_total.png Graphic file (type bmp)
 <figures/figure_A2c_hist_total.png>
 
 
-[37]
+[38]
 B
 File: figures/figure2_trends_combined.png Graphic file (type bmp)
 <figures/figure2_trends_combined.png>
 
 
-[38
+[39
 
 ]
 
-[39]
+[40]
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <8> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 1311.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 1309.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 1311.
+(Font)              scaled to size 7.39746pt on input line 1309.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <8> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 1311.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 1309.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 1311.
+(Font)              scaled to size 7.39746pt on input line 1309.
 File: figures/figure_C4_level_combined.png Graphic file (type bmp)
 <figures/figure_C4_level_combined.png>
 
 
-[40]
-
 [41]
+
+[42]
 File: figures/figure_C2_sensitivity_combined.png Graphic file (type bmp)
 <figures/figure_C2_sensitivity_combined.png>
 File: figures/figure_C3_period_combined.png Graphic file (type bmp)
 <figures/figure_C3_period_combined.png>
 
 
-[42]
-
 [43]
+
+[44]
 File: figures/figure_C1_placebo_combined.png Graphic file (type bmp)
 <figures/figure_C1_placebo_combined.png>
 
 C
 
 
-[44]
+[45]
 
-[45] (./main.aux)
+[46] (./main.aux)
  ***********
 pLaTeX2e <2023-02-14u04>+1, based on
 LaTeX2e <2024-11-01> patch level 2
@@ -710,10 +714,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  11447 strings out of 473836
  174968 string characters out of 5731190
- 603841 words of memory out of 5000000
+ 602843 words of memory out of 5000000
  34518 multiletter control sequences out of 15000+600000
  581708 words of font info for 142 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  72i,12n,79p,595b,595s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (48 pages, 227968 bytes).
+Output written on main.dvi (49 pages, 227532 bytes).
