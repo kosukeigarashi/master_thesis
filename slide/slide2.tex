@@ -1,0 +1,362 @@
+\documentclass[aspectratio=169]{beamer}
+% 注意: XeLaTeXを使う場合、[dvipdfmx]は決して入れてはいけません
+
+% ---------------------------------------------------
+% パッケージ設定
+% ---------------------------------------------------
+\usetheme{sintef}
+
+% --- 日本語環境設定 (XeLaTeX用) ---
+\usepackage{xeCJK}
+
+% TeX Live 2025に標準搭載されているフォントを指定します
+% ※もしエラーが出る場合は "Hiragino Kaku Gothic ProN" (Mac標準) に変えてください
+\setCJKmainfont{Hiragino Kaku Gothic ProN}
+\setCJKsansfont{Hiragino Kaku Gothic ProN}
+\setCJKmonofont{Hiragino Kaku Gothic ProN}
+
+% --- 数式・フォント設定 ---
+\usepackage{amsfonts,amsmath,oldgerm}
+\usepackage{booktabs} 
+\usepackage{graphicx} % [dvipdfmx]は不要
+\usepackage{here}
+
+% 数式用フォント設定
+\usefonttheme[onlymath]{serif}
+
+% ---------------------------------------------------
+% タイトルページ設定
+% ---------------------------------------------------
+% ロゴ画像の指定
+\titlebackground*{XMU-assets/XMU-logo-negative.png} 
+
+\title{紹介状を持たない患者に対する\\選定療養費徴収義務化が\\外来患者の受診行動に与えた影響}
+\subtitle{The Impact of the Mandatory Charge of Additional Fees for\\Non-Referral Patients on Outpatients' Behavior}
+
+\author{五十嵐 康佑}
+\date{令和8年1月6日}
+
+% ---------------------------------------------------
+% ドキュメント開始
+% ---------------------------------------------------
+\begin{document}
+
+% タイトルスライド
+\maketitle
+
+% 目次スライド
+\begin{frame}{目次}
+    \tableofcontents
+\end{frame}
+
+% ===================================================
+% 1. サマリー
+% ===================================================
+\section{サマリー}
+
+\begin{frame}{サマリー (1/2): 研究の概要}
+    \begin{itemize}
+        \item \textbf{研究目的}
+            \begin{itemize}
+                \item 大病院への患者集中を是正するための「選定療養費徴収義務化」(2022年10月改定) の政策効果を検証。
+                \item 追加負担が患者の受診行動に与える因果効果を推定。
+            \end{itemize}
+        \item \textbf{データと手法}
+            \begin{itemize}
+                \item 協会けんぽレセプトデータ (2015--2023年度)
+                \item DID (差の差分析) および イベントスタディ
+            \end{itemize}
+        \item \textbf{主な結果}
+            \begin{itemize}
+                \item \textbf{初診外来:} 約12.5\%の有意な減少 $\rightarrow$ 軽症患者の行動変容、価格メカニズムが機能。
+                \item \textbf{再診・総外来:} 減少は限定的 (再診 -2.8\%, 総外来 -4.3\%) $\rightarrow$ 高いスイッチングコストを示唆。
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{サマリー (2/2): 動態と政策的含意}
+    \begin{itemize}
+        \item \textbf{時系列的な変化 (イベントスタディ)}
+            \begin{itemize}
+                \item 制度改正直後に急激な減少、その後は横ばい傾向。
+            \end{itemize}
+        \item \textbf{異質性分析}
+            \begin{itemize}
+                \item 診療科数が多く総外来件数が多い病院ほど、受診抑制効果が小さい。
+                \item 代替医療機関が見つけにくい環境では需要の価格弾力性が低下。
+            \end{itemize}
+        \item \textbf{結論・含意}
+            \begin{itemize}
+                \item 医療機関の機能分化は一定程度進んだが、価格メカニズムのみによる誘導には限界あり。
+                \item 「かかりつけ医機能の法制化」など、制度的介入の必要性が示唆される。
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+% ===================================================
+% 2. モチベーション
+% ===================================================
+\section{モチベーション}
+
+\begin{frame}{背景: 日本の医療制度と課題}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \textbf{フリーアクセス制度}
+            \begin{itemize}
+                \item 患者が医療機関を自由に選択可能
+                \item 日本の高い保健衛生水準を支える基盤
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \textbf{生じている問題}
+            \begin{itemize}
+                \item \textbf{大病院への患者集中}:
+                    \begin{itemize}
+                        \item 軽症患者の流入
+                        \item 医療資源の非効率な使用
+                        \item 勤務医の過重労働、長い待ち時間
+                    \end{itemize}
+            \end{itemize}
+        \end{column}
+    \end{columns}
+    \vspace{1em}
+    \textbf{対策:} 2016年より「紹介状なしの大病院受診」に対する選定療養費徴収を義務化。
+\end{frame}
+
+\begin{frame}{情報の非対称性とリサーチクエスチョン}
+    \begin{itemize}
+        \item \textbf{理論的課題: 情報の非対称性}
+            \begin{itemize}
+                \item 患者は自身の重症度を正確に判断できない。
+                \item 「価格ペナルティ(選定療養費)」があっても、安心感を求めて大病院を選び続ける可能性。
+                \item 制度が意図通りに機能分化を達成するかは自明ではない。
+            \end{itemize}
+        \item \textbf{Research Questions}
+            \begin{enumerate}
+                \item 選定療養費の徴収義務化は、対象病院における\textbf{初診・再診外来件数}を有意に減少させたか？
+                \item 制度の効果は\textbf{病院の属性}によってどのように異なるか？
+            \end{enumerate}
+    \end{itemize}
+\end{frame}
+
+% ===================================================
+% 3. 先行研究
+% ===================================================
+\section{先行研究}
+
+\begin{frame}{先行研究と本研究の位置づけ}
+    \begin{itemize}
+        \item \textbf{医療需要の価格弾力性}
+            \begin{itemize}
+                \item RAND HIE, Oregon HIE (海外), Shigeoka(2014), Iizuka and Shigeoka(2022) (日本)
+                \item 一般に医療需要は価格に感応的だが、救急医療などでは非弾力的。
+            \end{itemize}
+        \item \textbf{病院選択行動}
+            \begin{itemize}
+                \item Acton(1973), Tay(2003): 患者は質のためならコスト(時間・金銭)を支払う傾向。
+            \end{itemize}
+        \item \textbf{選定療養費に関する研究}
+            \begin{itemize}
+                \item 菅原(2013): コンジョイント分析によるシミュレーション。
+                \item Iba et al.(2025): 茨城県のデータで紹介率上昇を確認。
+            \end{itemize}
+        \item \textbf{本研究の貢献}: 全国規模のレセプトデータを用い、2022年改定を自然実験として因果効果を推定。
+    \end{itemize}
+\end{frame}
+
+% ===================================================
+% 4. データ
+% ===================================================
+\section{データ}
+
+\begin{frame}{データセットと変数}
+    \begin{itemize}
+        \item \textbf{データソース}: 協会けんぽ レセプトデータ
+        \item \textbf{期間}: 2015年度 〜 2023年度
+        \item \textbf{分析単位}: 病院 $\times$ 月 のパネルデータ
+        \item \textbf{サンプル制限}: 許可病床200床以上の病院
+            \begin{itemize}
+                \item \footnotesize{※協会けんぽデータの制約上、一般病床200床以上を厳密に識別できないため許可病床で代理}
+            \end{itemize}
+    \end{itemize}
+    \vspace{1em}
+    \begin{table}[]
+        \centering
+        \small
+        \begin{tabular}{ll}
+            \toprule
+            \textbf{種類} & \textbf{変数名} \\
+            \midrule
+            アウトカム & $\ln(\text{初診外来件数})$, $\ln(\text{再診外来件数})$, $\ln(\text{総外来件数})$ \\
+            コントロール & 診療科数 \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+% ===================================================
+% 5. 手法
+% ===================================================
+\section{手法}
+
+\begin{frame}{実証戦略: 処置群の特定}
+    \begin{itemize}
+        \item \textbf{課題}: レセプトデータ上では、各病院が制度の義務化対象か直接は不明。
+        \item \textbf{識別方法}:
+            \begin{itemize}
+                \item 「紹介状なし初診」に対する選定療養費算定コードの記録を利用。
+                \item 2022年10月の制度改定後、\textbf{継続的に徴収を行っている病院}を介入群(Treatment)と定義。
+                \item それ以外を対照群(Control)とする。
+            \end{itemize}
+    \end{itemize}
+    % ここに「選定療養費徴収件数が爆発的に増加している図」を入れると効果的です
+    \begin{figure}[h]
+        \centering
+        % \includegraphics[height=3cm]{figures/descriptive_trend.png} 
+        \framebox[0.7\textwidth][c]{\rule{0pt}{2.5cm}（図：2022年10月以降の選定療養費算定件数の急増トレンド）}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{推定モデル}
+    \textbf{1. Two-Way Fixed Effects (TWFE) DID}
+    \begin{equation*}
+        \ln Y_{it} = \gamma (\text{Treat}_i \cdot \text{Post}_{it}) + \beta X_{it} + \alpha_i + \delta_t + \epsilon_{it}
+    \end{equation*}
+    \begin{itemize}
+        \item $\text{Treat}_i$: 処置群ダミー, $\text{Post}_{it}$: 2022年10月以降ダミー
+        \item $\alpha_i$: 病院固定効果, $\delta_t$: 月次固定効果
+    \end{itemize}
+
+    \vspace{1em}
+    \textbf{2. Event Study Model}
+    \begin{equation*}
+        \ln Y_{it} = \sum_{k=-12, k \neq -1}^{17} \beta_k \cdot \mathbf{1}(t = E_i + k) \cdot \text{Treat}_i + \theta X_{it} + \alpha_i + \delta_t + \epsilon_{it}
+    \end{equation*}
+    \begin{itemize}
+        \item 平行トレンド仮定の検証および動的な効果の推定。
+    \end{itemize}
+\end{frame}
+
+% ===================================================
+% 6. 結果
+% ===================================================
+\section{結果}
+
+\begin{frame}{分析結果: DID推定 (平均処置効果)}
+    \begin{table}[h]
+        \centering
+        \caption{選定療養費徴収義務化の因果効果 (ATT)}
+        \begin{tabular}{lccc}
+            \toprule
+             & (1) 初診外来 & (2) 再診外来 & (3) 総外来 \\
+            \midrule
+            \textbf{ATT} & \textbf{-0.125***} & \textbf{-0.028**} & \textbf{-0.043***} \\
+             & (0.012) & (0.011) & (0.010) \\
+            \midrule
+            Obs & 15,469 & 15,469 & 15,469 \\
+            Hospital FE & Yes & Yes & Yes \\
+            Month FE & Yes & Yes & Yes \\
+            \bottomrule
+            \multicolumn{4}{r}{\footnotesize *** p$<$0.01, ** p$<$0.05, * p$<$0.1 (数値は例)}
+        \end{tabular}
+    \end{table}
+    \begin{itemize}
+        \item 初診外来は約12.5\%の減少。再診・総外来への影響は限定的。
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{分析結果: イベントスタディ (初診外来)}
+    % 初診外来のイベントスタディ図
+    \begin{figure}[h]
+        \centering
+        % \includegraphics[width=0.7\textwidth]{figures/event_study_shoshin.png}
+        \framebox[0.8\textwidth][c]{\rule{0pt}{5cm}（図：初診外来のイベントスタディ結果）}
+        \caption{初診外来件数への動的な効果}
+    \end{figure}
+    \begin{itemize}
+        \item 改定直後($t=0, 1$)に急減し、その後は低水準で横ばい。
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{分析結果: 異質性分析}
+    \begin{itemize}
+        \item \textbf{分析軸}: 診療科数 $\times$ 総外来件数（病院規模のプロキシ）
+        \item \textbf{結果の概要}:
+            \begin{itemize}
+                \item 総外来件数が\textbf{少ない}病院ほど、処置効果（減少幅）が大きい。
+                \item 総外来件数が\textbf{多い}（大規模な）病院では、効果が小さい。
+            \end{itemize}
+    \end{itemize}
+    \vspace{0.5em}
+    \begin{figure}[h]
+        \centering
+        % \includegraphics[width=0.6\textwidth]{figures/heterogeneity.png}
+        \framebox[0.6\textwidth][c]{\rule{0pt}{3cm}（図：異質性分析の結果グラフ）}
+    \end{figure}
+\end{frame}
+
+% ===================================================
+% 7. 解釈と考察
+% ===================================================
+\section{解釈と考察}
+
+\begin{frame}{結果の解釈}
+    \begin{itemize}
+        \item \textbf{初診への強い効果 (-12.5\%)}
+            \begin{itemize}
+                \item 制度周知により、軽症患者が診療所・クリニックへ移動または受診控え。
+                \item 直後の減少＋横ばい $\rightarrow$ 新たな価格水準への迅速な適応。
+            \end{itemize}
+        \item \textbf{再診・総外来への限定的な効果}
+            \begin{itemize}
+                \item 再診は選定療養費の設定額が初診より低い。
+                \item 治療継続中の患者にとって、病院変更の\textbf{スイッチングコスト}が高い。
+                \item 総外来件数は再診の割合が大きいため、再診の結果に引張られた。
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{異質性の要因と政策的含意}
+    \begin{itemize}
+        \item \textbf{異質性のメカニズム}
+            \begin{itemize}
+                \item \textbf{中規模病院 (効果大)}: 地域内に代替となる診療所が見つかりやすい。
+                \item \textbf{大規模病院 (効果小)}: 「ここしか治療できない」と患者が考える、あるいは地域独占的であり、代替機関がないため需要が非弾力的。
+            \end{itemize}
+        \item \textbf{政策的含意}
+            \begin{itemize}
+                \item 価格メカニズムによる誘導には限界がある（特に大規模病院や再診）。
+                \item 金銭的インセンティブだけでなく、\textbf{「かかりつけ医機能の法制化」}など、患者フローを構造的に変える制度的介入が必要。
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+% ===================================================
+% 8. 限界・今後
+% ===================================================
+\section{限界・今後}
+
+\begin{frame}{本研究の限界と今後の課題}
+    \begin{itemize}
+        \item \textbf{データの限界 (協会けんぽ)}
+            \begin{itemize}
+                \item 高齢者、大企業従業員の情報が含まれていない（一般化の課題）。
+            \end{itemize}
+        \item \textbf{平行トレンド仮定}
+            \begin{itemize}
+                \item イベントスタディにおいて、プレトレンドで係数が正の傾向 $\rightarrow$ 処置後の負へのシフトは確認できるが、厳密な仮定の充足には課題。
+            \end{itemize}
+        \item \textbf{今後の修正分析案}
+            \begin{itemize}
+                \item モデルの改善: 診療科数 $\times$ 年月ダミーのコントロール。
+                \item ロバストネスチェック: IPW-DID, PSM-DID, Synthetic DID の適用による平行トレンド問題への対処。
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+% ===================================================
+% 終了
+% ===================================================
+\backmatter
+
+\end{document}
