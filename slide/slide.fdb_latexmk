@@ -4,8 +4,8 @@
   (generated)
   "slide.pdf"
   (rewritten before read)
-["latex"] 1768395719.3316 "/Users/igarashi_kosuke/Documents/Github/master_thesis/slide/slide.tex" "slide.dvi" "slide" 1768395719.99135 2
-  "/Users/igarashi_kosuke/Documents/Github/master_thesis/slide/slide.tex" 1768395718.27883 14937 11a773c82ce9aff0e121c707ebc83e20 ""
+["latex"] 1768729219.22116 "/Users/igarashi_kosuke/Documents/Github/master_thesis/slide/slide.tex" "slide.dvi" "slide" 1768729219.86686 2
+  "/Users/igarashi_kosuke/Documents/Github/master_thesis/slide/slide.tex" 1768729218.24451 18333 d4beb982e211f991db1ecb62a8b6983f ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss10.tfm" 1136768653 1316 b636689f1933f24d1294acdf6041daaa ""
@@ -185,12 +185,12 @@
   "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
   "/usr/local/texlive/2025/texmf-var/web2c/euptex/uplatex.fmt" 1744532195 3337453 f9af5d309ac66e8f0d61cc9dfa82e8c8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "XMU-assets/XMU-negative.png" 1767616469.53197 409975 5b69a3bea448a8502ebe50c1472c850c ""
-  "XMU-assets/XMU.png" 1767616471.58597 193140 c8a1c6d7fa1b69f4603a59920adf094e ""
-  "beamerthemesintef.sty" 1767616437.35745 9523 712c22c69151325ae9849f3faee0db9a ""
+  "XMU-assets/XMU-negative.png" 1768397680.48124 82323 0d53f2d0ac86ede02c136cd6575d26fc ""
+  "XMU-assets/XMU.png" 1768397874.70985 330832 464d66f9ed622ae80b1a18505d55c682 ""
+  "beamerthemesintef.sty" 1768728284.05994 9469 3fb0cf6ac496d888d2f55fb286c5e87e ""
   "sintefcolor.sty" 1767616442.33074 993 c5eba4a91956ec95e329aecca4ca55a5 ""
   "slide.aux" 0 -1 0 "latex"
-  "slide.tex" 1768395718.27883 14937 11a773c82ce9aff0e121c707ebc83e20 ""
+  "slide.tex" 1768729218.24451 18333 d4beb982e211f991db1ecb62a8b6983f ""
   (generated)
   "slide.aux"
   "slide.dvi"

@@ -32,15 +32,19 @@
 \usetikzlibrary{positioning}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{arydshln} % 点線の罫線（\cdashline）用
+\usepackage[table]{xcolor}
+
 
 % --- Title background (theme provides \titlebackground) ---
 \titlebackground*{XMU-assets/XMU-logo-negative.png}
 
 % --- Meta (edit as needed) ---
-\title{紹介状のない大病院外来受診に対する\\選定療養費徴収義務化の政策効果}
-\subtitle{協会けんぽレセプトデータによるDID・イベントスタディ分析}
-\author{（氏名）}
-\date{（発表日）}
+\title{紹介状を持たない患者に対する\\選定療養費徴収義務化が外来患者の受診行動に与えた影響}
+\author{五十嵐 康佑}
+\date{2026年1月20日}
 
 \begin{document}
 
@@ -56,83 +60,169 @@
 \section{サマリー}
 \begin{frame}{サマリー}
 \small
-「本研究は、大病院への患者集中を是正するため2022年10月に導入された「紹介状のない大病院外来受診に対する選定療養費徴収義務化」の政策効果を検証した。協会けんぽのレセプトデータを用いたDIDおよびイベントスタディ分析により、追加負担が患者の受診行動に与えた因果効果を推定した。分析の結果、選定療養費の徴収義務化は初診外来件数を約12.5\%有意に減少させた。これは紹介状を持たない軽症患者が追加負担を回避し受診行動を変容させたことを示し、価格メカニズムの有効性を裏付けている。一方、再診外来件数および総外来件数への影響はそれぞれ約2.8\%、約4.3\%の減少に留まり効果は限定的であった。これは再診患者にとって診療所・クリニックへ移動するスイッチングコストが高いことを示唆している。イベントスタディ分析では初診外来件数と総外来件数について制度改正直後の急激な減少とその後の横ばい傾向が確認された。異質性分析では診療科数が多く総外来件数が多い病院ほど受診抑制効果が小さいことが示され、代替的な医療機関を見つけにくい環境では需要の価格弾力性が低下する可能性が示された。以上より、選定療養費の徴収義務化は医療機関の機能分化を一定程度推進したが、価格メカニズムによる誘導には限界があり、かかりつけ医機能の法制化など制度的介入の必要性が示唆される。」
+\textbf{研究目的とデータ・手法}
+\begin{itemize}
+  \item 目的：2022年10月導入の「紹介状なし大病院外来に対する選定療養費・徴収義務化」が、大病院への患者集中をどの程度是正したかを検証
+  \item データ：協会けんぽレセプトデータ(2015〜2023年度)を用いて病院×月単位のパネルデータを作成
+  \item 手法：DID+イベントスタディ
+\end{itemize}
+\textbf{分析結果(DID)}
+\begin{itemize}
+  \item 初診外来件数：選定療養費徴収義務化により\textbf{約12.5\%有意に減少}
+  \item 再診外来件数：選定療養費徴収義務化により\textbf{約2.8\%有意に減少}
+  \item 総外来件数：選定療養費徴収義務化により\textbf{約4.3\%有意に減少}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{サマリー}
+\small
+\textbf{分析結果(イベントスタディ・異質性分析)}
+\begin{itemize}
+  \item イベントスタディ：初診・総外来で制度改正直後に急減し、その後は横ばい傾向
+  \item 異質性分析：総外来件数が多い病院ほど政策効果が小さい
+\end{itemize}
+\textbf{結論}
+\begin{itemize}
+  \item 本制度により医療機関の機能分化は一定進んだが、価格メカニズムのみでは限界がある
+  \item かかりつけ医機能の法制化など制度的介入の必要性が示唆される
+\end{itemize}
 \end{frame}
 
 % 3. Motivation
 \section{モチベーション}
-
-\begin{frame}{制度説明：選定療養費（2016年～）}
-\begin{itemize}
-  \item 2016年：一定の大病院で紹介状なし受診に追加負担（選定療養費）
-  \item 2022年10月：紹介状なし大病院外来受診に対する「徴収義務化」が導入（拡大・強化）
-\end{itemize}
-\end{frame}
-
 \begin{frame}{日本の医療制度：フリーアクセスと問題}
 \begin{itemize}
   \item フリーアクセス：患者が医療機関を自由に選択可能
   \item 問題：軽症でも大病院を選好しやすく、医療資源の非効率な使用を招きうる
 \end{itemize}
-
 \vspace{1ex}
-\begin{figure}
-\centering
-\begin{tikzpicture}
-  \node[draw, rounded corners, align=center, minimum width=0.42\linewidth, minimum height=1.0cm] (a)
-    {患者\\（自由選択）};
-  \node[draw, rounded corners, align=center, right=1.2cm of a, minimum width=0.42\linewidth, minimum height=1.0cm] (b)
-    {大病院\\（高度医療資源）};
-  \draw[->, thick] (a) -- node[above, align=center] {軽症でも集中} (b);
-\end{tikzpicture}
-\caption{フリーアクセスと患者集中（概念図）}
+\begin{figure}[h] % 図の環境を開始
+        \centering     % 中央揃え
+        % width=0.8\textwidth でスライド横幅の80%の大きさに指定
+        \includegraphics[width=0.6\textwidth]{freeacess_problem.jpg}
+        \caption{フリーアクセスと医療資源の非効率な使用} % キャプション（不要なら削除）
 \end{figure}
 \end{frame}
 
-\begin{frame}{情報の非対称性と制度効果}
+\begin{frame}{選定療養費制度（2016年～）}
+\textbf{選定療養とは}：\\
+保険外併用療養のうち、将来的な保険導入を前提としないもので、患者の選択により特別の料金を支払うことで保険外の診療と保険診療を併用するもの
 \begin{itemize}
-  \item 医療サービスでは情報の非対称性が大きく、患者は病状の軽重を正確に判断しにくい
-  \item 価格ペナルティがあっても大病院を選び続ける可能性
-  \item よって、選定療養費が意図する機能分化を達成しているかは自明でない
+  \item 2016年以前：一般病床200床以上の病院において任意で選定療養費を徴収可能
+  \item 2016年：一定の大病院で選定療養費の徴収義務化スタート
+  \item 2022年10月：制度対象病院の拡大と選定療養費額の引き上げ、徴収強制力の強化
+\end{itemize}
+\end{frame}
+
+\begin{frame}{選定療養費制度（2016年～）}
+現行制度の対象病院および選定療養費額については以下の通り。
+\begin{itemize}
+  \item 対象病院：特定機能病院、一般病床200床以上の地域医療支援病院、一般病床200床以上の紹介受診重点医療機関
+  \item 選定療養費額
+\end{itemize}
+% preamble（必要なら追加）
+\definecolor{myblue}{RGB}{0,92,160}        % 線・文字の青
+\definecolor{myblueLight}{RGB}{230,243,255} % 薄い背景
+
+\begin{table}[t]
+\centering
+\renewcommand{\arraystretch}{1.55}
+\setlength{\tabcolsep}{6pt}
+\arrayrulecolor{myblue} % 罫線を青に
+\begin{tabular}{|>{\centering\arraybackslash}m{1.5cm}
+                |>{\centering\arraybackslash}m{1.5cm}
+                |>{\centering\arraybackslash}m{3.4cm}|}
+\hline
+\rowcolor{myblueLight}
+\multirow{2}{*}{\large\color{myblue}\bfseries 初診}
+  & \large\color{myblue}\bfseries 医科
+  & \large\bfseries 7,000円以上 \\ \cdashline{2-3}
+\rowcolor{myblueLight}
+  & \large\color{myblue}\bfseries 歯科
+  & \large\bfseries 5,000円以上 \\ \hline
+
+\rowcolor{myblueLight}
+\multirow{2}{*}{\large\color{myblue}\bfseries 再診}
+  & \large\color{myblue}\bfseries 医科
+  & \large\bfseries 3,000円以上 \\ \cdashline{2-3}
+\rowcolor{myblueLight}
+  & \large\color{myblue}\bfseries 歯科
+  & \large\bfseries 1,900円以上 \\ \hline
+\end{tabular}
+\arrayrulecolor{black} % 以降の表に影響させない
+\end{table}
+\end{frame}
+
+{
+\setbeamertemplate{footline}{}
+\begin{frame}{選定療養費制度（2016年～）}
+現行制度における保険給付範囲からの控除については以下の通り。
+\begin{figure}[h] % 図の環境を開始
+        \centering     % 中央揃え
+        % width=0.8\textwidth でスライド横幅の80%の大きさに指定
+        \includegraphics[width=0.7\textwidth]{deduction.png}
+        \par\vspace{1ex} % 少し間隔を空ける
+        \scriptsize{出所：厚生労働省 令和４年度診療報酬改定の概要 外来I (\url{https://www.mhlw.go.jp/content/12400000/000920428.pdf})}
+\end{figure}
+→選定療養費を徴収しないと保険給付額の減少により病院側が損。
+\end{frame}
+}
+
+\begin{frame}{制度施行状況}
+2016年に徴収義務化がスタートしたものの、選定療養費の徴収が本格的にスタートしたのは2022年10月改定から
+\vspace{1ex}
+\begin{figure}[h] % 図の環境を開始
+        \centering     % 中央揃え
+        % width=0.8\textwidth でスライド横幅の80%の大きさに指定
+        \includegraphics[width=0.6\textwidth]{figures/figure1_manipulation_check_total.png}
+        \caption{選定療養費徴収件数推移} % キャプション（不要なら削除）
+\end{figure}
+\end{frame}
+
+\begin{frame}{情報の非対称性と政策効果}
+\begin{itemize}
+  \item 医療サービス市場における情報の非対称性から、患者は自身の病状に関する判断を正確にできない
+  \item 大病院志向が強ければ、7,000円以上の選定療養費があったとしても大病院を選び続ける可能性がある
+  \item よって、選定療養費制度の目的である医療機関の機能分化を達成しているかは自明ではない
 \end{itemize}
 \end{frame}
 
 \begin{frame}{リサーチクエスチョン}
 \begin{itemize}
-  \item RQ1：徴収義務化は対象病院の
+  \item RQ1(政策の有効性)：選定療養費の徴収義務化は対象病院において
   \begin{itemize}
     \item 初診外来件数・再診外来件数を有意に減少させたか？
     \item 総外来件数にどのような影響を与えたか？
   \end{itemize}
-  \item RQ2：効果は病院属性によってどのように異なるか？
+  \item RQ2(効果の異質性)：政策効果は病院の属性によってどのように異なるか？
 \end{itemize}
 \end{frame}
 
 % 4. Literature
 \section{先行研究}
-
-\begin{frame}{先行研究（要点）}
-\begin{itemize}
-  \item 医療需要の価格弾力性：海外（RAND HIE, Oregon HIE）、日本（Shigeoka 2014；Iizuka \& Shigeoka 2022）
-  \item 病院選択：Acton (1973), Tay (2003)（時間・金銭コストを払ってでも質を選好）
-  \item 選定療養費：菅原(2013)（コンジョイントによるシミュレーション）、Iba et al.(2025)（紹介率の上昇）
-\end{itemize}
-
-\vspace{1ex}
-\begin{table}
-\centering
-\small
-\begin{tabular}{lll}
-\toprule
-領域 & 代表研究 & 本研究との関係 \\
-\midrule
-価格弾力性 & RAND / Oregon / Shigeoka & 追加負担が需要に与える影響 \\
-病院選択 & Acton / Tay & 質・費用のトレードオフ \\
-選定療養費 & 菅原 / Iba et al. & 制度が機能分化を促すか \\
-\bottomrule
-\end{tabular}
-\caption{先行研究整理（仮表）}
-\end{table}
+\begin{frame}{先行研究}
+    \small % 文字サイズを少し小さくして収まりを良くする
+    \begin{itemize}
+        \item \textbf{1. 医療サービス需要の価格弾力性}
+            \begin{itemize}
+                \item \textbf{海外:} RAND HIE, Oregon HIE 等
+                \item \textbf{日本:} 湯田 (2023) 等
+            \end{itemize}
+        \vspace{0.5em} % 行間調整
+        
+        \item \textbf{2. 医療機関選択}
+            \begin{itemize}
+                \item \textbf{Acton (1973):} 保険により金銭価格が低くなれば、時間的コストが需要決定の主要因となる。
+                \item \textbf{Tay (2003):} 患者は質を強く選好し、多少遠くても質を重視して医療機関を選択する傾向がある。
+            \end{itemize}
+        \vspace{0.5em}
+        
+        \item \textbf{3. 選定療養費制度の評価}
+            \begin{itemize}
+                \item \textbf{菅原 (2013) 等:} アンケート調査に基づき、定額自己負担の導入が受診行動に与える影響をシミュレーション。
+                \item \textbf{Iba et al. (2025):} 茨城県のデータ（国保・後期）を用い、地域医療支援病院において紹介率が有意に上昇したことを報告。
+            \end{itemize}
+    \end{itemize}
 \end{frame}
 
 % 5. Data

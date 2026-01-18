@@ -276,10 +276,8 @@
       \usebeamercolor[fg]{normal text}
       \centering
       \ifstrequal{#1}{notitle}{}{
-        \Huge \inserttitle
-        \vspace{5mm}
+        \Huge \textsl{\\発表は以上となります。}
       }
-      \Large \textsl{\\Thank you for listening! \\ Any questions?}
     \end{minipage}
   \end{frame}
 \endgroup
@@ -301,7 +299,7 @@
 
 % automate subtitle of each frame
 \makeatletter
-    \pretocmd\beamer@checkframetitle{\framesubtitle{\thesection \, \secname}}
+    % \pretocmd\beamer@checkframetitle{\framesubtitle{\thesection \, \secname}}
 \makeatother
 
 % avoid numbering of frames that are breaked into multiply slides
