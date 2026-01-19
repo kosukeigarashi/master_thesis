@@ -1,0 +1,240 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=25mm]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{amsmath}
+
+% --- Japanese (XeLaTeX) ---
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setCJKmainfont{Hiragino Mincho ProN}
+\setCJKsansfont{Hiragino Sans}
+
+% (B) XeLaTeX想定（日本語が必要なら下を使い、上のbxjsclsは外す）
+% \usepackage{fontspec}
+% \usepackage{xeCJK}
+% \setCJKmainfont{Hiragino Mincho ProN}
+% \setCJKsansfont{Hiragino Sans}
+
+% --- Formatting ---
+\setlist[itemize]{leftmargin=*, itemsep=0.2em, topsep=0.3em}
+\setlist[enumerate]{leftmargin=*, itemsep=0.2em, topsep=0.3em}
+
+\title{発表メモ（流れ確認用）：\\紹介状を持たない患者に対する選定療養費徴収義務化が外来患者の受診行動に与えた影響}
+\author{五十嵐康佑}
+\date{2026年1月20日}
+
+\begin{document}
+\maketitle
+
+\section*{発表の狙い（20--25分）}
+\begin{itemize}
+  \item 2022年10月の制度改定（選定療養費の徴収義務化の強化）を自然実験とみなし、
+        大病院外来への患者集中がどの程度是正されたかを検証する。
+  \item 結果の要点：初診への効果が最も大きく、再診・総外来への効果は限定的。
+        改定直後の減少が中心で、その後は横ばい傾向。
+\end{itemize}
+
+\section{導入（タイトル・全体像）}
+\subsection*{最初に伝える一言}
+\begin{itemize}
+  \item 「本日は、紹介状を持たない患者に対する選定療養費の徴収義務化が、
+        外来患者の受診行動に与えた影響を報告します。」
+  \item 「2022年10月の制度改定を境に、対象病院での外来件数がどう変化したかを見ます。」
+\end{itemize}
+
+\section{サマリー}
+\subsection*{研究目的とデータ・手法}
+\begin{itemize}
+  \item 目的：2022年10月導入の「紹介状なし大病院外来に対する選定療養費・徴収義務化」が、
+        大病院への患者集中をどの程度是正したかを検証する。
+  \item データ：協会けんぽレセプト（2015--2023年度）より、病院$\times$月のパネルデータを構築。
+  \item 手法：TWFE DID とイベントスタディ。
+\end{itemize}
+
+\subsection*{主要結果（DID）}
+\begin{itemize}
+  \item 初診外来件数：およそ \(-12.5\%\)（有意）
+  \item 再診外来件数：およそ \(-2.8\%\)（有意）
+  \item 総外来件数：およそ \(-4.3\%\)（有意）
+\end{itemize}
+
+\subsection*{主要結果（動学・異質性）}
+\begin{itemize}
+  \item イベントスタディ：初診・総外来で改定直後に急減、その後は横ばい傾向。
+  \item 異質性：総外来件数が多い病院ほど政策効果が小さい（示唆）。
+\end{itemize}
+
+\subsection*{結論（先出し）}
+\begin{itemize}
+  \item 本制度により機能分化は一定進んだが、価格メカニズムのみでは限界。
+  \item かかりつけ医機能の制度化等、制度的介入の必要性が示唆される。
+\end{itemize}
+
+\section{モチベーション}
+\subsection{フリーアクセスと医療資源の非効率}
+\begin{itemize}
+  \item 日本の医療制度はフリーアクセス：患者が医療機関を自由に選択可能。
+  \item 軽症でも大病院を選好しやすく、医療資源の非効率な使用（混雑、待ち時間、勤務医負担など）を招きうる。
+\end{itemize}
+
+\subsection{選定療養費制度（2016年--）と2022年10月改定の位置づけ}
+\begin{itemize}
+  \item 2016年以前：一般病床200床以上の病院において任意で選定療養費を徴収可能。
+  \item 2016年：一定の大病院で徴収義務化がスタート。
+  \item 2022年10月：対象病院の拡大、金額引き上げ、徴収強制力の強化（保険給付範囲からの控除）。
+  \item この改定以降、徴収が本格化した点が自然実験としての根拠となる。
+\end{itemize}
+
+\subsection{情報の非対称性と政策効果の非自明性}
+\begin{itemize}
+  \item 医療市場では情報の非対称性が大きく、患者は病状判断を正確にできない。
+  \item 大病院志向が強い場合、7,000円以上の負担があっても大病院を選ぶ可能性。
+  \item よって、制度目的（機能分化）を達成しているかは自明ではない。
+\end{itemize}
+
+\subsection{リサーチクエスチョン}
+\begin{itemize}
+  \item RQ1（政策の有効性）：
+        徴収義務化は初診・再診・総外来件数を有意に減少させたか？
+  \item RQ2（異質性）：
+        政策効果は病院属性（例：規模）によりどう異なるか？
+\end{itemize}
+
+\section{先行研究（位置づけ）}
+\begin{itemize}
+  \item 医療サービス需要の価格弾力性：RAND HIE等（海外）、日本では湯田（2023）等。
+  \item 医療機関選択：Acton（1973）、Tay（2003）など（時間コスト・質選好）。
+  \item 選定療養費制度の評価：
+        アンケートに基づくシミュレーション（菅原（2013）等）や、
+        地域限定データを用いた実証（Iba et al.（2025）等）。
+  \item 本研究の貢献：
+        2022年10月改定を境とした政策ショックを用い、病院$\times$月パネルで外来件数への影響を検証する点。
+\end{itemize}
+
+\section{データ}
+\begin{itemize}
+  \item 協会けんぽレセプト（2015--2023年度）を利用し、病院$\times$月のパネルデータを構築。
+  \item 分析対象：許可病床200床以上の病院に限定（一般病床200床以上の識別が困難な制約のため）。
+  \item アウトカム（対数）：$\ln(\text{初診外来件数})$, $\ln(\text{再診外来件数})$, $\ln(\text{総外来件数})$。
+  \item コントロール：診療科数。
+  \item サンプル規模：病院数 1,546、総観測数 154,698。
+\end{itemize}
+
+\section{手法}
+\subsection{実証戦略の概要}
+\begin{itemize}
+  \item 2022年10月の制度改定を自然実験とみなし、改定前後の差をDIDで推定。
+  \item 処置群・対照群は、レセプト上の「選定療養費徴収実績」に基づき定義する。
+\end{itemize}
+
+\subsection{処置群・対照群の定義}
+\begin{itemize}
+  \item 処置群：処置前期間に徴収している月の割合が1割未満、処置後は全月で徴収している病院。
+  \item 対照群：データ期間を通じて一度も徴収実績がない病院。
+\end{itemize}
+
+\subsection{TWFE DID}
+\[
+\ln Y_{it} = \gamma(\text{Treat}_i \cdot \text{Post}_{it}) + \beta X_{it} + \alpha_i + \delta_t + \varepsilon_{it}
+\]
+\begin{itemize}
+  \item $Y_{it}$：初診／再診／総外来（対数）
+  \item $X_{it}$：診療科数
+  \item $\alpha_i$：病院固定効果、$\delta_t$：月固定効果
+  \item 標準誤差：病院レベルでクラスタ化
+\end{itemize}
+
+\subsection{イベントスタディ}
+\[
+\ln Y_{it} = \beta^{pre}\mathbf{1}(t < E_i-12)\text{Treat}_i
++ \sum_{k=-12,\,k\neq -1}^{17} \beta_k \mathbf{1}(t=E_i+k)\text{Treat}_i
++ \theta X_{it} + \alpha_i + \delta_t + \varepsilon_{it}
+\]
+\begin{itemize}
+  \item $k=-1$（改定直前）を基準月として除外。
+  \item 改定前の係数で平行トレンドの妥当性を点検しつつ、改定後の動学効果を確認する。
+\end{itemize}
+
+\section{結果}
+\subsection{DID：平均処置効果（ATT）}
+\begin{itemize}
+  \item 初診外来件数：\(-12.5\%\) 程度の有意な減少。
+  \item 再診外来件数：\(-2.8\%\) 程度の有意な減少。
+  \item 総外来件数：\(-4.3\%\) 程度の有意な減少。
+  \item 総じて、政策効果は初診で大きい。
+\end{itemize}
+
+\subsection{イベントスタディ：動学的処置効果}
+\begin{itemize}
+  \item 初診：改定後1--3ヶ月で減少トレンド、その後は特定のトレンドなし。
+  \item 再診：改定後1--3ヶ月で減少トレンド、その後は0近傍で横ばい。
+  \item 総外来：改定後1--3ヶ月で減少トレンド、その後は特定のトレンドなし。
+  \item 改定直後のショックが中心で、効果が持続的に拡大するパターンは弱い。
+\end{itemize}
+
+\subsection{異質性分析（診療科数 $\times$ 総外来件数）}
+\begin{itemize}
+  \item 総外来件数が少ない病院ほど政策効果が大きいことが示唆される。
+  \item 大規模（総外来が多い）病院では効果が小さい。
+\end{itemize}
+
+\section{解釈}
+\subsection{初診外来件数への効果}
+\begin{itemize}
+  \item 平均的には約12.5\%減少したが、減少傾向は改定後3ヶ月程度まで。
+  \item 直後は医療機関からの周知・心理的インパクトにより、診療所への移動や受診控えが生じた可能性。
+  \item 4ヶ月以降は患者が新たな価格水準に適応し、効果が薄れた可能性。
+\end{itemize}
+
+\subsection{再診外来件数・総外来件数への効果}
+\begin{itemize}
+  \item 再診は約2.8\%減少、総外来は約4.3\%減少。
+  \item 再診に課される選定療養費は初診より低い。
+  \item 再診患者は医療機関変更のスイッチングコストが高いと考えられる。
+  \item 総外来は再診比率が高く、再診の動きに引っ張られる。
+\end{itemize}
+
+\subsection{異質性の解釈}
+\begin{itemize}
+  \item 総外来件数が少ない（中規模）病院：地域内で代替医療機関を見つけやすく、価格上昇に反応しやすい。
+  \item 総外来件数が多い病院：代替先が見つかりにくく、患者の強い選好があるため、政策効果が薄い可能性。
+\end{itemize}
+
+\section{結論}
+\subsection{分析結果の要点}
+\begin{itemize}
+  \item 徴収義務化は初診外来を有意に減少（約\(-12.5\%\)）。
+  \item 再診・総外来への効果は限定的（スイッチングコスト等）。
+  \item 価格メカニズムのみでは限界があり、制度的介入の検討が必要。
+\end{itemize}
+
+\subsection{政策的含意}
+\begin{itemize}
+  \item 価格メカニズムによる誘導には一定の限界がある。
+  \item かかりつけ医機能の法制化など、非価格的な制度設計の併用が必要ではないか。
+\end{itemize}
+
+\section{限界と今後の課題}
+\subsection{協会けんぽデータに由来する限界}
+\begin{itemize}
+  \item 加入者の偏り：65歳以上、高所得層（大企業等）の情報が含まれない。
+  \item 患者の所得・傷病等の属性を直接分析に用いていないため、
+        行動変容した患者像が特定できない。
+  \item 今後はNDB等での検証が望まれる。
+\end{itemize}
+
+\subsection{平行トレンドと修正分析案}
+\begin{itemize}
+  \item イベントスタディでは処置前係数に変動があり、平行トレンド仮定が厳密には成立していない可能性。
+  \item ただし処置直後に係数が負へシフトしており、受診抑制効果そのものは否定されない。
+  \item 係数が過小推定の恐れがあるため、Synthetic DID等の頑健性検証が今後の課題。
+\end{itemize}
+
+\section*{発表の締め}
+\begin{itemize}
+  \item 「以上です。ご清聴ありがとうございました。」
+\end{itemize}
+
+\end{document}
