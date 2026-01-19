@@ -4,11 +4,12 @@
   (generated)
   "slide.pdf"
   (rewritten before read)
-["latex"] 1768826379.59172 "/Users/igarashi_kosuke/Documents/Github/master_thesis/slide/slide.tex" "slide.dvi" "slide" 1768826380.21051 2
-  "/Users/igarashi_kosuke/Documents/Github/master_thesis/slide/slide.tex" 1768826378.61353 22311 83a65283d16a7b49d7ebe8546b071af9 ""
+["latex"] 1768841786.81929 "/Users/igarashi_kosuke/Documents/Github/master_thesis/slide/slide.tex" "slide.dvi" "slide" 1768841787.48859 2
+  "/Users/igarashi_kosuke/Documents/Github/master_thesis/slide/slide.tex" 1768841785.78547 22269 7ecfd20588492d7c6be89b596ba829b3 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss10.tfm" 1136768653 1316 b636689f1933f24d1294acdf6041daaa ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmss10.tfm" 1254269338 11176 53ebf7a171df1f9447b387b178768bb5 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-h.tfm" 1522271273 812 52bd92aa20c58a398601cda6dd62c8d1 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm" 1522271273 536 5f2475e9deb198c23894800d3c5eed00 ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -163,6 +164,8 @@
   "/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-dvips.def" 1716410060 35454 e0048b54d7d6f7c79a7bd63a786c3eee ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty" 1738271527 6565 f51d809db6193fae7b06c1bc26ca8f75 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty" 1724879202 9783 ab4bee47700c04aadedb8da27591b0ab ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/lm/lmodern.sty" 1616454256 1608 b00724785a9e9c599e5181bb8729160b ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmss.fd" 1616454256 1641 f48673bce41ac279099d0c9523459753 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty" 1601326656 1090 bae35ef70b3168089ef166db3e66f5b2 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty" 1673816307 373 00b204b1d7d095b892ad31a7494b0373 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty" 1601326656 21013 f4ff83d25bb56552493b030f27c075ae ""
@@ -187,10 +190,10 @@
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "XMU-assets/XMU-negative.png" 1768397680.48124 82323 0d53f2d0ac86ede02c136cd6575d26fc ""
   "XMU-assets/XMU.png" 1768397874.70985 330832 464d66f9ed622ae80b1a18505d55c682 ""
-  "beamerthemesintef.sty" 1768728284.05994 9469 3fb0cf6ac496d888d2f55fb286c5e87e ""
+  "beamerthemesintef.sty" 1768837113.50067 9460 928bc7d96fc7f4d2804ea8061090b2e0 ""
   "sintefcolor.sty" 1767616442.33074 993 c5eba4a91956ec95e329aecca4ca55a5 ""
   "slide.aux" 0 -1 0 "latex"
-  "slide.tex" 1768826378.61353 22311 83a65283d16a7b49d7ebe8546b071af9 ""
+  "slide.tex" 1768841785.78547 22269 7ecfd20588492d7c6be89b596ba829b3 ""
   (generated)
   "slide.aux"
   "slide.dvi"

@@ -325,6 +325,13 @@ INPUT ./sintefcolor.sty
 INPUT sintefcolor.sty
 INPUT XMU-assets/XMU-negative.png
 INPUT XMU-assets/XMU.png
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/lmodern.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/lmodern.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmss.fd
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmss.fd
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmss.fd
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmss10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty

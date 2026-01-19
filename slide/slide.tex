@@ -14,6 +14,8 @@
 \usetheme{sintef}
 
 % --- Japanese / fonts (XeLaTeX) ---
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
 \usepackage{fontspec}
 \usepackage{xeCJK}
 % If you get font errors, comment out the next two lines and set fonts available on your machine.
@@ -376,7 +378,7 @@ Adj. $R^2$ & 0.944 & 0.982 & 0.980 \\
 \end{figure}
 \begin{itemize}
   \item 改定後1～3ヶ月：減少トレンド
-  \item それ以降：横ばい
+  \item それ以降：特定のトレンドなし
 \end{itemize}
 \end{frame}
 
@@ -391,7 +393,7 @@ Adj. $R^2$ & 0.944 & 0.982 & 0.980 \\
 \end{figure}
 \begin{itemize}
   \item 改定後1～3ヶ月：減少トレンド
-  \item それ以降：横ばい
+  \item それ以降：0近傍で横ばい
 \end{itemize}
 \end{frame}
 
@@ -406,7 +408,7 @@ Adj. $R^2$ & 0.944 & 0.982 & 0.980 \\
 \end{figure}
 \begin{itemize}
   \item 改定後1～3ヶ月：減少トレンド
-  \item それ以降：横ばい
+  \item それ以降：特定のトレンドなし
 \end{itemize}
 \end{frame}
 
@@ -474,11 +476,16 @@ Adj. $R^2$ & 0.944 & 0.982 & 0.980 \\
 \begin{itemize}
   \item 分析結果
   \begin{itemize}
-    \item 
+    \item 徴収義務化は初診外来を有意に減少（約$-12.5\%$）
+    \item 再診・総外来への効果は限定的（スイッチングコスト等）
+    \item 価格メカニズムのみでは限界 $\Rightarrow$ 制度的介入の検討が必要
   \end{itemize}
-  \item 徴収義務化は初診外来を有意に減少（約$-12.5\%$）
-  \item 再診・総外来への効果は限定的（スイッチングコスト等）
-  \item 価格メカニズムのみでは限界 $\Rightarrow$ 制度的介入の検討が必要
+  \vspace{2em}
+  \item 政策的含意
+  \begin{itemize}
+    \item 分析結果から価格メカニズムによる誘導には限界がある
+    \item かかりつけ医機能の法制化も含めた制度的介入が必要ではないか
+  \end{itemize}
 \end{itemize}
 \end{frame}
 
@@ -487,34 +494,30 @@ Adj. $R^2$ & 0.944 & 0.982 & 0.980 \\
 
 \begin{frame}{限界：協会けんぽデータ}
 \begin{itemize}
-  \item 高齢者の情報が含まれていない
-  \item 大企業等の従業員とその家族の情報が含まれていない
+  \item 加入者の偏り：以下の情報が含まれていない
+  \begin{itemize}
+    \item 65歳以上の高齢者
+    \item 大企業等の従業員とその家族
+  \end{itemize}
+  →対象母集団の偏りに留意が必要
+  \vspace{1em}
+  \item 所得や傷病等の患者の属性を分析に用いていない\\
+  →選定療養費導入によって行動を変えた患者の属性は不明
 \end{itemize}
-
-\vspace{1ex}
-\begin{figure}
-\centering
-\begin{tikzpicture}
-  \node[draw, rounded corners, align=left, minimum width=0.92\linewidth, minimum height=1.1cm] {
-  対象母集団の偏り（年齢・企業規模）に留意が必要};
-\end{tikzpicture}
-\caption{データ制約（模式図）}
-\end{figure}
+\vspace{2em}
+$\therefore$ NDBを用いたさらなる検証が待たれる
 \end{frame}
 
-\begin{frame}{限界：平行トレンド／今後の修正分析}
+\begin{frame}{限界：平行トレンド／修正分析案}
 \begin{itemize}
-  \item 平行トレンド仮定
+  \item 平行トレンド仮定が厳密には成り立っていない
   \begin{itemize}
-    \item イベントスタディから仮定が満たされていない可能性
-    \item 介入直後の負へのシフトから、受診抑制効果の可能性は否定されない
+    \item イベントスタディから処置前期間のトレンドに変動がある
+    \item 処置前の多くの期間で係数が正であるのに対し、処置直後は負にシフトしていることから受診抑制効果があったことは否定されない
+    \item 係数が過小に推定されているおそれがある
   \end{itemize}
-  \item 今後（修正分析案）
-  \begin{itemize}
-    \item 診療科数と年月ダミーをコントロールに追加
-    \item IPW-DID / PSM-DID
-    \item Synthetic DID
-  \end{itemize}
+  \vspace{2em}
+  \item 今後の課題（修正分析案）：Synthetic DIDなど
 \end{itemize}
 \end{frame}
 
@@ -525,58 +528,51 @@ Adj. $R^2$ & 0.944 & 0.982 & 0.980 \\
 \begin{frame}{付録：データセット変数一覧（1/2）}
 \scriptsize
 \setlength{\tabcolsep}{4pt}
-\renewcommand{\arraystretch}{1.12}
+\renewcommand{\arraystretch}{1.2} % 少し行間を広げて読みやすくしました
 
-\begin{tabularx}{\textwidth}{@{}>{\ttfamily}p{3.2cm} X p{2.9cm}@{}}
+% 列構成を変更: 3列目を削除し、1列目を広げました
+\begin{tabularx}{\textwidth}{@{}>{\ttfamily}p{5.0cm} X @{}}
 \toprule
-変数名 & 内容 & 型・フォーマット \\
+\multicolumn{1}{l}{\textbf{変数名}} & \textbf{内容} \\ % ヘッダーを太字に
 \midrule
-hospital\_id & 病院ID & str19, \%19s \\
-ym\_tm & 年月（Stata月次date） & float, \%tm \\
-year & 年 &  \\
-prefecture & 都道府県コード &  \\
-niji\_area & 二次医療圏コード &  \\
-postal\_5 & 郵便番号（5桁） & str19, \%19s \\
-postal\_2 & 郵便番号上2桁（固定効果用） & str \\
+hospital\_id & 病院ID \\
+ym\_tm & 年月 \\
+year & 年 \\
+prefecture & 都道府県コード \\
+niji\_area & 二次医療圏コード \\
+postal\_5 & 郵便番号（5桁） \\
+postal\_2 & 郵便番号上2桁（固定効果用） \\
 \midrule
-shoshin\_outpatients & 初診外来件数（メインアウトカム候補） & int, \%10.0g \\
-saishin\_outpatients & 再診外来件数（＝総外来件数－初診外来件数） &  \\
-total\_outpatients & 総外来件数（2ndアウトカム候補） & int, \%10.0g \\
-no\_referral\_outpatients & 紹介状なし初診外来件数 & int, \%10.0g \\
-log\_shoshin\_outpatients & shoshin\_outpatientsの対数 & float, \%9.0g \\
-log\_saishin\_outpatients & saishin\_outpatientsの対数 &  \\
-log\_total\_outpatients & total\_outpatientsの対数（2ndアウトカム候補） & float, \%9.0g \\
+shoshin\_outpatients & 初診外来件数 \\
+saishin\_outpatients & 再診外来件数 \\
+total\_outpatients & 総外来件数 \\
+no\_referral\_outpatients & 紹介状なし初診外来件数 \\
+log\_shoshin\_outpatients & shoshin\_outpatientsの対数値 \\
+log\_saishin\_outpatients & saishin\_outpatientsの対数値 \\
+log\_total\_outpatients & total\_outpatientsの対数値 \\
 \bottomrule
 \end{tabularx}
-
-\vspace{1mm}
-{\tiny 注：表記は Stata の型・フォーマット（例：\%tm, \%10.0g）に基づく。}
 \end{frame}
 
 % ---------- Appendix (2/2) ----------
 \begin{frame}{付録：データセット変数一覧（2/2）}
 \scriptsize
 \setlength{\tabcolsep}{4pt}
-\renewcommand{\arraystretch}{1.12}
+\renewcommand{\arraystretch}{1.2}
 
-\begin{tabularx}{\textwidth}{@{}>{\ttfamily}p{3.2cm} X p{2.9cm}@{}}
+\begin{tabularx}{\textwidth}{@{}>{\ttfamily}p{5.0cm} X @{}}
 \toprule
-変数名 & 内容 & 型・フォーマット \\
+\multicolumn{1}{l}{\textbf{変数名}} & \textbf{内容} \\
 \midrule
-post & DID用：2022年10月以降=1 & byte, \%8.0g \\
-treated & 2022年10月から継続的に徴収=1 & float, \%9.0g \\
-event\_time & イベントスタディ用：2022年10月を0 & int, \%8.0g \\
-department\_count & 診療科数（コントロール） & byte, \%10.0g \\
+post & 処置後ダミー：2022年10月以降=1 \\
+treated & 処置群ダミー：2022年10月から継続的に徴収=1 \\
+event\_time & イベントスタディ用時間変数：2022年10月を0 \\
+department\_count & 診療科数 \\
 \midrule
-category & 病院分類：1=switcher, 2=Always treated, 3=irregular &  \\
-pre\_rate & Pre期間の算定（徴収）率 &  \\
-post\_rate & Post期間の算定（徴収）率 &  \\
-flag\_exclude & 除外病院フラグ &  \\
+pre\_rate & Pre期間の選定療養費徴収月数割合 \\
+post\_rate & Post期間の選定療養費徴収月数割合 \\
 \bottomrule
 \end{tabularx}
-
-\vspace{1mm}
-{\tiny 注：不規則徴収（irregular）の定義・除外基準は本文（データ作成）参照。}
 \end{frame}
 
 \backmatter
