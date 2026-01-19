@@ -27,6 +27,7 @@
 % --- Math / tables / figures ---
 \usepackage{amsmath, amssymb, bm}
 \usepackage{booktabs, threeparttable}
+\usepackage{tabularx}
 \usepackage{graphicx}
 \usepackage{tikz}
 \usetikzlibrary{positioning}
@@ -228,87 +229,62 @@
 % 5. Data
 \section{データ}
 
-\begin{frame}{データ：協会けんぽレセプト}
+\begin{frame}{データ}
 \begin{itemize}
-  \item 2015～2023年度のレセプトデータを利用
+  \item 2015～2023年度の協会けんぽレセプトデータを利用
   \item 病院$\times$月のパネルデータを構築
   \item 分析対象：許可病床200床以上の病院に限定
   \begin{itemize}
     \item 協会けんぽデータの制約上、一般病床200床以上の識別が困難
   \end{itemize}
 \end{itemize}
-
-\vspace{1ex}
-\begin{figure}
-\centering
-\begin{tikzpicture}
-  \node[draw, rounded corners, align=left, minimum width=0.92\linewidth, minimum height=1.2cm] {
-  単位：病院$\times$月\quad 期間：2015/04--2024/03（例）\\
-  主要変数：初診・再診・総外来件数（$\ln$）、診療科数、Treat推定フラグ};
-\end{tikzpicture}
-\caption{分析データの概要（模式図）}
-\end{figure}
-\end{frame}
-
-\begin{frame}{アウトカム・コントロール}
 \begin{itemize}
   \item アウトカム（対数変換）：
   \[
     \ln(\text{初診外来件数}),\ \ln(\text{再診外来件数}),\ \ln(\text{総外来件数})
   \]
   \item コントロール：診療科数
+  \item 最終的な分析サンプル
+  \begin{itemize}
+    \item 1,546
+    \item 総観測数：154,698
+  \end{itemize}
+  \item 変数詳細：Appendix
 \end{itemize}
-
-\vspace{1ex}
-\begin{table}
-\centering
-\small
-\begin{tabular}{lcc}
-\toprule
-変数 & 定義 & 備考 \\
-\midrule
-初診外来件数 & 月次初診件数 & $\ln(\cdot)$を使用 \\
-再診外来件数 & 月次再診件数 & $\ln(\cdot)$を使用 \\
-総外来件数 & 初診+再診 & $\ln(\cdot)$を使用 \\
-診療科数 & 診療科の数 & コントロール \\
-\bottomrule
-\end{tabular}
-\caption{主要変数（仮表）}
-\end{table}
 \end{frame}
 
 % 6. Methods
 \section{手法}
 
-\begin{frame}{実証戦略：介入群の同定}
+\begin{frame}{実証戦略}
+本研究では2022年10月の制度改定を自然実験とみなして分析を行う。
 \begin{itemize}
-  \item レセプトから「制度対象病院」を直接観測できない
-  \item 2022年10月以降に選定療養費（紹介状なし）徴収件数が急増することを利用
-  \item 診療行為コード（選定療養費）の記録に基づき、
+  \item 2022年10月から選定療養費の徴収件数が飛躍的に増大している。(下図)
+  \item 保険給付範囲からの控除により徴収強制力が強化
+\end{itemize}
+\vspace{1ex}
+\begin{figure}[h] % 図の環境を開始
+        \centering     % 中央揃え
+        % width=0.8\textwidth でスライド横幅の80%の大きさに指定
+        \includegraphics[width=0.5\textwidth]{figures/figure1_manipulation_check_total.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{実証戦略}
+\textbf{観測単位・期間・サンプル}
+\begin{itemize}
+  \item 医科・外来のレセプトに限定
+  \item 病院×月単位のパネルデータ(2015/4〜2024/3)を作成
+  \item サンプルに含まれる病院は許可病床200床以上と推定される病院のみ
   \begin{itemize}
-    \item 改定後に継続的に徴収している病院：介入群
-    \item そうでない病院：対照群
+    \item 協会けんぽデータの制約上、一般病床200床以上の識別が困難
   \end{itemize}
 \end{itemize}
-
-\vspace{1ex}
-\begin{figure}
-\centering
-\begin{tikzpicture}
-\begin{axis}[
-  width=0.92\linewidth, height=0.34\linewidth,
-  xlabel={年月（例）}, ylabel={徴収件数（例）},
-  xtick={1,2,3,4,5,6},
-  xticklabels={2022/04,2022/07,2022/10,2023/01,2023/04,2023/07},
-  x tick label style={font=\scriptsize},
-  y tick label style={font=\scriptsize},
-  grid=major
-]
-\addplot+[mark=*] coordinates {(1,50) (2,55) (3,60) (4,240) (5,260) (6,255)};
-\end{axis}
-\end{tikzpicture}
-\caption{選定療養費徴収件数の推移（模式図：2022/10で急増）}
-\end{figure}
+\textbf{処置群・対照群の定義}
+\begin{itemize}
+  \item {\color{red} 処置群}：処置前期間に選定療養費を徴収している月数の割合が1割未満\footnote{任意で徴収可能であるため。}、処置後はすべての月で選定療養費を徴収している病院群
+  \item {\color{blue} 対照群}：データ期間を通じて一度も選定療養費の徴収実績がない病院群
+\end{itemize}
 \end{frame}
 
 \begin{frame}{TWFE DID}
@@ -317,10 +293,21 @@
 + \beta X_{it} + \alpha_i + \delta_t + \epsilon_{it}
 \]
 \begin{itemize}
-  \item $Y_{it}$：初診・再診・総外来（対数）
-  \item $X_{it}$：診療科数
-  \item $\alpha_i$：病院固定効果，$\delta_t$：月固定効果
+  \item $\text{Treat}_i \cdot \text{Post}_{it}$：DID項
+  \item $Y_{it}$：アウトカム（対数）
+  \begin{itemize}
+    \item 初診外来件数
+    \item 再診外来件数
+    \item 総外来件数
+  \end{itemize}
+  \item $X_{it}$：
+  \begin{itemize}
+    \item 診療科数
+  \end{itemize}
+  \item $\alpha_i$：病院固定効果
+  \item $\delta_t$：月固定効果
 \end{itemize}
+{\tiny 標準誤差については病院レベルでのクラスターロバスト標準誤差を使用する。}
 \end{frame}
 
 \begin{frame}{イベントスタディ}
@@ -332,103 +319,120 @@
 \beta_k \cdot \mathbf{1}(t = E_i + k)\cdot \text{Treat}_i
 + \theta X_{it} + \alpha_i + \delta_t + \epsilon_{it}
 \]
-
-\vspace{0.5ex}
-\begin{figure}
-\centering
-\begin{tikzpicture}
-\begin{axis}[
-  width=0.92\linewidth, height=0.34\linewidth,
-  xlabel={イベント時間 $k$}, ylabel={係数（例）},
-  grid=major, xmin=-12, xmax=17
-]
-\addplot+[mark=*] coordinates {
-(-12,0.06) (-9,0.05) (-6,0.04) (-3,0.03) (0,-0.08) (3,-0.11) (6,-0.10) (9,-0.10) (12,-0.10) (15,-0.10) (17,-0.10)
-};
-\addplot+[domain=-12:17, samples=2] ({x},{0});
-\end{axis}
-\end{tikzpicture}
-\caption{イベントスタディ（模式図）}
-\end{figure}
+\begin{itemize}
+  \item $Y_{it}$, $X_{it}$, $\alpha_i$, $\delta_t$: 上ページと同じ
+  \item $\mathbf{1}(t = E_i + k)\cdot \text{Treat}_i$：処置群の病院において, 制度改定から$k$ヶ月経
+過した時点（$k$が負の場合は改定前）であることを示すダミー変数
+\end{itemize}
+制度改定直前($ = -1$)の月は分析の基準点として除外
 \end{frame}
 
 % 7. Results
 \section{結果}
 
 \begin{frame}{DID：平均処置効果（ATT）}
-\begin{itemize}
-  \item 初診：$\approx -12.5\%$（有意）
-  \item 再診：$\approx -2.8\%$
-  \item 総外来：$\approx -4.0\%$（約$-4.3\%$）
-\end{itemize}
-
 \vspace{1ex}
-\begin{table}
+\begin{table}[t]
 \centering
-\small
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+\caption{DID推定結果}\label{tab:did_slide}
 \begin{threeparttable}
 \begin{tabular}{lccc}
 \toprule
- & 初診（$\ln$） & 再診（$\ln$） & 総外来（$\ln$） \\
+ & 初診件数(対数) & 再診件数(対数) & 総外来件数(対数) \\
 \midrule
-$\text{Treat}\cdot\text{Post}$ & $-0.125^{***}$ & $-0.028^{***}$ & $-0.043^{***}$ \\
- & $(0.010)$ & $(0.008)$ & $(0.008)$ \\
-診療科数 & $0.016^{**}$ & $0.019^{***}$ & $0.018^{***}$ \\
- & $(0.007)$ & $(0.007)$ & $(0.007)$ \\
+$\text{Treat}_i \times \text{Post}_{it}$ & -0.1250*** & -0.0283*** & -0.0430*** \\
+診療科数 & 0.0163** & 0.0185*** & 0.0176*** \\
+\midrule
+Observations & 154,698 & 154,698 & 154,698 \\
+Adj. $R^2$ & 0.944 & 0.982 & 0.980 \\
 \bottomrule
 \end{tabular}
-\begin{tablenotes}\footnotesize
-\item 注：数値は仮。標準誤差は括弧内。$^{***}p<0.01$, $^{**}p<0.05$.
+\begin{tablenotes}[flushleft]
+\tiny
+\item 注：病院固定効果・月固定効果を含む。標準誤差は病院レベルでクラスタ化（表では省略）。
 \end{tablenotes}
 \end{threeparttable}
-\caption{TWFE DID推定（仮表）}
 \end{table}
+
+\begin{itemize}
+  \item 初診：約$-12.5\%$
+  \item 再診：約$-2.8\%$
+  \item 総外来：約$-4.0\%$（約$-4.3\%$）
+\end{itemize}
+→いずれも1\%水準で統計的に有意な結果
 \end{frame}
 
-\begin{frame}{イベントスタディ：改定後の動学効果}
+\begin{frame}{イベントスタディ：動学的処置効果}
+\vspace{2ex}
+  \hspace*{2em}1. 初診外来件数
+\vspace{1ex}
+\begin{figure}[h] % 図の環境を開始
+        \centering     % 中央揃え
+        % width=0.8\textwidth でスライド横幅の80%の大きさに指定
+        \includegraphics[width=0.7\textwidth]{figures/figure3-a_event_study_first.png}
+\end{figure}
 \begin{itemize}
   \item 改定後1～3ヶ月：減少トレンド
   \item それ以降：横ばい
 \end{itemize}
+\end{frame}
 
+\begin{frame}{イベントスタディ：動学的処置効果}
+\vspace{2ex}
+  \hspace*{2em}2. 再診外来件数
 \vspace{1ex}
-\begin{figure}
-\centering
-\begin{tikzpicture}
-\begin{axis}[
-  width=0.92\linewidth, height=0.34\linewidth,
-  xlabel={イベント時間（月）}, ylabel={係数（例）},
-  grid=major, xmin=-6, xmax=12
-]
-\addplot+[mark=*] coordinates {(-6,0.03) (-3,0.02) (-1,0.00) (0,-0.06) (1,-0.09) (2,-0.11) (3,-0.10) (6,-0.10) (9,-0.10) (12,-0.10)};
-\addplot+[domain=-6:12, samples=2] ({x},{0});
-\end{axis}
-\end{tikzpicture}
-\caption{改定後に急減し横ばい（模式図）}
+\begin{figure}[h] % 図の環境を開始
+        \centering     % 中央揃え
+        % width=0.8\textwidth でスライド横幅の80%の大きさに指定
+        \includegraphics[width=0.7\textwidth]{figures/figure3-b_event_study_return.png}
 \end{figure}
+\begin{itemize}
+  \item 改定後1～3ヶ月：減少トレンド
+  \item それ以降：横ばい
+\end{itemize}
+\end{frame}
+
+\begin{frame}{イベントスタディ：動学的処置効果}
+\vspace{2ex}
+  \hspace*{2em}3. 総外来件数
+\vspace{1ex}
+\begin{figure}[h] % 図の環境を開始
+        \centering     % 中央揃え
+        % width=0.8\textwidth でスライド横幅の80%の大きさに指定
+        \includegraphics[width=0.7\textwidth]{figures/figure3-c_event_study_total.png}
+\end{figure}
+\begin{itemize}
+  \item 改定後1～3ヶ月：減少トレンド
+  \item それ以降：横ばい
+\end{itemize}
 \end{frame}
 
 \begin{frame}{異質性分析：診療科数$\times$総外来件数}
 \begin{itemize}
-  \item 診療科数と総外来件数の2軸の異質性
-  \item 総外来件数が少ない病院ほど処置効果が大きいことが示唆
+  \item 診療科数と総外来件数の2軸による異質性分析
 \end{itemize}
-
 \vspace{1ex}
-\begin{table}
-\centering
-\small
-\begin{tabular}{lccc}
-\toprule
- & 総外来：低 & 中 & 高 \\
-\midrule
-診療科数：少 & $-0.16$ & $-0.13$ & $-0.10$ \\
-診療科数：中 & $-0.14$ & $-0.11$ & $-0.08$ \\
-診療科数：多 & $-0.12$ & $-0.09$ & $-0.05$ \\
-\bottomrule
-\end{tabular}
-\caption{異質性（初診の係数：仮）}
-\end{table}
+\begin{figure}[h] % 図の環境を開始
+        \centering     % 中央揃え
+        % width=0.8\textwidth でスライド横幅の80%の大きさに指定
+        \includegraphics[width=0.5\textwidth]{figures/figure4c_matrix_First.png}
+\end{figure}
+→総外来件数が少ない病院ほど政策効果が大きいことが示唆される。
+\end{frame}
+
+\begin{frame}{異質性分析：診療科数$\times$総外来件数}
+\begin{itemize}
+  \item すべてのアウトカムに対しての異質性分析の結果
+\end{itemize}
+\vspace{1ex}
+\begin{figure}[h] % 図の環境を開始
+        \centering     % 中央揃え
+        % width=0.8\textwidth でスライド横幅の80%の大きさに指定
+        \includegraphics[width=0.55\textwidth]{figures/figure4c_matrix_combined.png}
+\end{figure}
 \end{frame}
 
 % 8. Interpretation
@@ -501,6 +505,67 @@ $\text{Treat}\cdot\text{Post}$ & $-0.125^{***}$ & $-0.028^{***}$ & $-0.043^{***}
   \item 再診・総外来への効果は限定的（スイッチングコスト等）
   \item 価格メカニズムのみでは限界 $\Rightarrow$ 制度的介入の検討が必要
 \end{itemize}
+\end{frame}
+
+\appendix
+\section{付録}
+
+% ---------- Appendix (1/2) ----------
+\begin{frame}{付録：データセット変数一覧（1/2）}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.12}
+
+\begin{tabularx}{\textwidth}{@{}>{\ttfamily}p{3.2cm} X p{2.9cm}@{}}
+\toprule
+変数名 & 内容 & 型・フォーマット \\
+\midrule
+hospital\_id & 病院ID & str19, \%19s \\
+ym\_tm & 年月（Stata月次date） & float, \%tm \\
+year & 年 &  \\
+prefecture & 都道府県コード &  \\
+niji\_area & 二次医療圏コード &  \\
+postal\_5 & 郵便番号（5桁） & str19, \%19s \\
+postal\_2 & 郵便番号上2桁（固定効果用） & str \\
+\midrule
+shoshin\_outpatients & 初診外来件数（メインアウトカム候補） & int, \%10.0g \\
+saishin\_outpatients & 再診外来件数（＝総外来件数－初診外来件数） &  \\
+total\_outpatients & 総外来件数（2ndアウトカム候補） & int, \%10.0g \\
+no\_referral\_outpatients & 紹介状なし初診外来件数 & int, \%10.0g \\
+log\_shoshin\_outpatients & shoshin\_outpatientsの対数 & float, \%9.0g \\
+log\_saishin\_outpatients & saishin\_outpatientsの対数 &  \\
+log\_total\_outpatients & total\_outpatientsの対数（2ndアウトカム候補） & float, \%9.0g \\
+\bottomrule
+\end{tabularx}
+
+\vspace{1mm}
+{\tiny 注：表記は Stata の型・フォーマット（例：\%tm, \%10.0g）に基づく。}
+\end{frame}
+
+% ---------- Appendix (2/2) ----------
+\begin{frame}{付録：データセット変数一覧（2/2）}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.12}
+
+\begin{tabularx}{\textwidth}{@{}>{\ttfamily}p{3.2cm} X p{2.9cm}@{}}
+\toprule
+変数名 & 内容 & 型・フォーマット \\
+\midrule
+post & DID用：2022年10月以降=1 & byte, \%8.0g \\
+treated & 2022年10月から継続的に徴収=1 & float, \%9.0g \\
+event\_time & イベントスタディ用：2022年10月を0 & int, \%8.0g \\
+department\_count & 診療科数（コントロール） & byte, \%10.0g \\
+\midrule
+category & 病院分類：1=switcher, 2=Always treated, 3=irregular &  \\
+pre\_rate & Pre期間の算定（徴収）率 &  \\
+post\_rate & Post期間の算定（徴収）率 &  \\
+flag\_exclude & 除外病院フラグ &  \\
+\bottomrule
+\end{tabularx}
+
+\vspace{1mm}
+{\tiny 注：不規則徴収（irregular）の定義・除外基準は本文（データ作成）参照。}
 \end{frame}
 
 \backmatter
