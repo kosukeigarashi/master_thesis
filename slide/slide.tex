@@ -360,7 +360,7 @@ Adj. $R^2$ & 0.944 & 0.982 & 0.980 \\
 \begin{itemize}
   \item 初診：約$-12.5\%$
   \item 再診：約$-2.8\%$
-  \item 総外来：約$-4.0\%$（約$-4.3\%$）
+  \item 総外来：約$-4.3\%$
 \end{itemize}
 →いずれも1\%水準で統計的に有意な結果
 \end{frame}
@@ -438,32 +438,52 @@ Adj. $R^2$ & 0.944 & 0.982 & 0.980 \\
 % 8. Interpretation
 \section{解釈}
 
-\begin{frame}{解釈（初診）}
+\begin{frame}{解釈}
 \begin{itemize}
-  \item 制度変更直後：周知により受診控え・診療所への移動が発生
-  \item 数ヶ月後：患者が新たな価格水準に適応し、効果が横ばい化した可能性
+  \item 初診外来件数への効果
+  \begin{itemize}
+    \item 平均的には約12.5\%減少したものの減少傾向は制度改定から3ヶ月まで
+    \item 制度変更直後には医療機関からの周知などの効果で診療所・クリニックへの移動や受診控えが発生
+    \item 4ヶ月以降は患者が新たな価格水準に適応し、効果が薄くなった可能性
+  \end{itemize}
+   \vspace{1em}
+  \item 再診外来件数・総外来件数への効果
+  \begin{itemize}
+    \item 再診は平均的に約-2.8\%減少、総外来は約-4.3\%減少
+    \item 再診に課される選定療養費は初診よりも低い
+    \item 再診患者にとって医療機関変更はスイッチングコストが高い？
+    \item 総外来件数は再診比率が高く、再診に引っ張られた結果となった
+  \end{itemize}
 \end{itemize}
 \end{frame}
 
-\begin{frame}{解釈（再診・総外来／異質性／制度的介入）}
+\begin{frame}{解釈}
 \begin{itemize}
-  \item 再診・総外来への影響が小さい可能性
+  \item 異質性分析の結果から
   \begin{itemize}
-    \item 再診は初診より選定療養費が低い
-    \item 治療継続中の医療機関変更はスイッチングコストが高い
-    \item 総外来は再診比率が高く、再診の小さい変化に引っ張られる
+    \item 総外来件数が少ない(中規模)病院：地域内で代替となる医療機関が見つかりやすい
+    \item 総外来件数が多い病院：地域内で代替となる医療機関が見つかりにくく患者の強い選好があり、政策効果が薄いと考えられる
   \end{itemize}
-  \item 異質性の解釈
-  \begin{itemize}
-    \item 総外来が少ない（中規模）病院：代替機関が見つかりやすい可能性
-    \item 総外来が多い病院：代替がないと患者が考え移動が起きにくい可能性
-  \end{itemize}
-  \item 価格メカニズムのみでは限界 $\Rightarrow$ かかりつけ医機能の法制化等の制度的介入が必要
 \end{itemize}
 \end{frame}
 
-% 9. Limitations & Future
-\section{限界・今後}
+% 9. Conclusion
+\section{結論}
+
+\begin{frame}{結論}
+\begin{itemize}
+  \item 分析結果
+  \begin{itemize}
+    \item 
+  \end{itemize}
+  \item 徴収義務化は初診外来を有意に減少（約$-12.5\%$）
+  \item 再診・総外来への効果は限定的（スイッチングコスト等）
+  \item 価格メカニズムのみでは限界 $\Rightarrow$ 制度的介入の検討が必要
+\end{itemize}
+\end{frame}
+
+% 10. Limitations & Future
+\section{限界と今後の課題}
 
 \begin{frame}{限界：協会けんぽデータ}
 \begin{itemize}
@@ -495,15 +515,6 @@ Adj. $R^2$ & 0.944 & 0.982 & 0.980 \\
     \item IPW-DID / PSM-DID
     \item Synthetic DID
   \end{itemize}
-\end{itemize}
-\end{frame}
-
-% (Optional) Short conclusion slide (minimal, but useful for timing)
-\begin{frame}{結論}
-\begin{itemize}
-  \item 徴収義務化は初診外来を有意に減少（約$-12.5\%$）
-  \item 再診・総外来への効果は限定的（スイッチングコスト等）
-  \item 価格メカニズムのみでは限界 $\Rightarrow$ 制度的介入の検討が必要
 \end{itemize}
 \end{frame}
 

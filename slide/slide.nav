@@ -85,34 +85,39 @@
 \headcommand {\beamer@framepages {32}{32}}
 \headcommand {\beamer@sectionpages {30}{32}}
 \headcommand {\beamer@subsectionpages {30}{32}}
-\headcommand {\sectionentry {8}{限界・今後}{33}{限界・今後}{0}}
+\headcommand {\sectionentry {8}{結論}{33}{結論}{0}}
 \headcommand {\slideentry {8}{0}{1}{33/33}{}{0}}
 \headcommand {\beamer@framepages {33}{33}}
 \headcommand {\slideentry {8}{0}{2}{34/34}{}{0}}
 \headcommand {\beamer@framepages {34}{34}}
-\headcommand {\slideentry {8}{0}{3}{35/35}{}{0}}
+\headcommand {\beamer@sectionpages {33}{34}}
+\headcommand {\beamer@subsectionpages {33}{34}}
+\headcommand {\sectionentry {9}{限界と今後の課題}{35}{限界と今後の課題}{0}}
+\headcommand {\slideentry {9}{0}{1}{35/35}{}{0}}
 \headcommand {\beamer@framepages {35}{35}}
-\headcommand {\slideentry {8}{0}{4}{36/36}{}{0}}
+\headcommand {\slideentry {9}{0}{2}{36/36}{}{0}}
 \headcommand {\beamer@framepages {36}{36}}
-\headcommand {\gdef \insertmainframenumber {36}}
-\headcommand {\partentry {\translate {Appendix}}{1}}
-\headcommand {\beamer@partpages {1}{36}}
-\headcommand {\beamer@sectionpages {33}{36}}
-\headcommand {\beamer@subsectionpages {33}{36}}
-\headcommand {\beamer@appendixpages {37}}
-\headcommand {\beamer@sectionpages {37}{36}}
-\headcommand {\beamer@subsectionpages {37}{36}}
-\headcommand {\sectionentry {9}{付録}{37}{付録}{1}}
-\headcommand {\slideentry {9}{0}{1}{37/37}{}{1}}
+\headcommand {\slideentry {9}{0}{3}{37/37}{}{0}}
 \headcommand {\beamer@framepages {37}{37}}
-\headcommand {\slideentry {9}{0}{2}{38/38}{}{1}}
+\headcommand {\gdef \insertmainframenumber {37}}
+\headcommand {\partentry {\translate {Appendix}}{1}}
+\headcommand {\beamer@partpages {1}{37}}
+\headcommand {\beamer@sectionpages {35}{37}}
+\headcommand {\beamer@subsectionpages {35}{37}}
+\headcommand {\beamer@appendixpages {38}}
+\headcommand {\beamer@sectionpages {38}{37}}
+\headcommand {\beamer@subsectionpages {38}{37}}
+\headcommand {\sectionentry {10}{付録}{38}{付録}{1}}
+\headcommand {\slideentry {10}{0}{1}{38/38}{}{1}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\slideentry {9}{0}{3}{39/39}{}{1}}
+\headcommand {\slideentry {10}{0}{2}{39/39}{}{1}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\slideentry {9}{0}{4}{40/40}{}{1}}
+\headcommand {\slideentry {10}{0}{3}{40/40}{}{1}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\beamer@partpages {37}{40}}
-\headcommand {\beamer@subsectionpages {37}{40}}
-\headcommand {\beamer@sectionpages {37}{40}}
-\headcommand {\beamer@documentpages {40}}
-\headcommand {\gdef \inserttotalframenumber {40}}
+\headcommand {\slideentry {10}{0}{4}{41/41}{}{1}}
+\headcommand {\beamer@framepages {41}{41}}
+\headcommand {\beamer@partpages {38}{41}}
+\headcommand {\beamer@subsectionpages {38}{41}}
+\headcommand {\beamer@sectionpages {38}{41}}
+\headcommand {\beamer@documentpages {41}}
+\headcommand {\gdef \inserttotalframenumber {41}}

@@ -1,9 +1,0 @@
-\beamer@sectionintoc {1}{サマリー}{3}{0}{1}
-\beamer@sectionintoc {2}{モチベーション}{6}{0}{2}
-\beamer@sectionintoc {3}{先行研究}{14}{0}{3}
-\beamer@sectionintoc {4}{データ}{16}{0}{4}
-\beamer@sectionintoc {5}{手法}{18}{0}{5}
-\beamer@sectionintoc {6}{結果}{23}{0}{6}
-\beamer@sectionintoc {7}{解釈}{30}{0}{7}
-\beamer@sectionintoc {8}{限界・今後}{33}{0}{8}
-\beamer@sectionintoc {9}{付録}{37}{1}{9}
