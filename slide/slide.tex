@@ -120,7 +120,13 @@
 \begin{frame}{選定療養費制度（2016年～）}
 現行制度の対象病院および選定療養費額については以下の通り。
 \begin{itemize}
-  \item 対象病院：特定機能病院、一般病床200床以上の地域医療支援病院、一般病床200床以上の紹介受診重点医療機関
+  \item 対象病院
+  \begin{itemize}
+    \item 特定機能病院
+    \item 一般病床200床以上の地域医療支援病院
+    \item 一般病床200床以上の紹介受診重点医療機関
+  \end{itemize}
+  \vspace{1em}
   \item 選定療養費額
 \end{itemize}
 % preamble（必要なら追加）
@@ -132,26 +138,32 @@
 \renewcommand{\arraystretch}{1.55}
 \setlength{\tabcolsep}{6pt}
 \arrayrulecolor{myblue} % 罫線を青に
-\begin{tabular}{|>{\centering\arraybackslash}m{1.5cm}
-                |>{\centering\arraybackslash}m{1.5cm}
-                |>{\centering\arraybackslash}m{3.4cm}|}
-\hline
-\rowcolor{myblueLight}
-\multirow{2}{*}{\large\color{myblue}\bfseries 初診}
-  & \large\color{myblue}\bfseries 医科
-  & \large\bfseries {\color{red} 7,000円以上} \\ \cdashline{2-3}
-\rowcolor{myblueLight}
-  & \large\color{myblue}\bfseries 歯科
-  & \large\bfseries 5,000円以上 \\ \hline
 
-\rowcolor{myblueLight}
-\multirow{2}{*}{\large\color{myblue}\bfseries 再診}
-  & \large\color{myblue}\bfseries 医科
-  & \large\bfseries {\color{blue} 3,000円以上} \\ \cdashline{2-3}
-\rowcolor{myblueLight}
-  & \large\color{myblue}\bfseries 歯科
-  & \large\bfseries 1,900円以上 \\ \hline
-\end{tabular}
+% ▼▼▼ ここから \scalebox で囲む (0.8 = 80%の大きさ) ▼▼▼
+\scalebox{0.8}{
+    \begin{tabular}{|>{\centering\arraybackslash}m{1.5cm}
+                    |>{\centering\arraybackslash}m{1.5cm}
+                    |>{\centering\arraybackslash}m{3.4cm}|}
+    \hline
+    \rowcolor{myblueLight}
+    \multirow{2}{*}{\large\color{myblue}\bfseries 初診}
+      & \large\color{myblue}\bfseries 医科
+      & \large\bfseries {\color{red} 7,000円以上} \\ \cdashline{2-3}
+    \rowcolor{myblueLight}
+      & \large\color{myblue}\bfseries 歯科
+      & \large\bfseries 5,000円以上 \\ \hline
+
+    \rowcolor{myblueLight}
+    \multirow{2}{*}{\large\color{myblue}\bfseries 再診}
+      & \large\color{myblue}\bfseries 医科
+      & \large\bfseries {\color{blue} 3,000円以上} \\ \cdashline{2-3}
+    \rowcolor{myblueLight}
+      & \large\color{myblue}\bfseries 歯科
+      & \large\bfseries 1,900円以上 \\ \hline
+    \end{tabular}
+} 
+% ▲▲▲ ここまで (\scalebox の閉じカッコ) ▲▲▲
+
 \arrayrulecolor{black} % 以降の表に影響させない
 \end{table}
 \end{frame}

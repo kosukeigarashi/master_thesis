@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.4.13)  20 JAN 2026 10:40
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.4.13)  20 JAN 2026 11:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1794,7 +1794,7 @@ File: XMU-assets/XMU-negative.png Graphic file (type bmp)
 File: XMU-assets/XMU-negative.png Graphic file (type bmp)
 <XMU-assets/XMU-negative.png>
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <12> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 157.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 169.
 
 
 File: XMU-assets/XMU-negative.png Graphic file (type bmp)
@@ -1814,7 +1814,7 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 (xeCJK)                it.
 
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-71.
+83.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1831,7 +1831,7 @@ File: XMU-assets/XMU-negative.png Graphic file (type bmp)
 File: figures/figure1_manipulation_check_total.png Graphic file (type bmp)
 <figures/figure1_manipulation_check_total.png>
 
-Overfull \vbox (52.54588pt too high) detected at line 183
+Overfull \vbox (52.54588pt too high) detected at line 195
  []
 
 
@@ -1909,7 +1909,7 @@ File: XMU-assets/XMU-negative.png Graphic file (type bmp)
 File: figures/figure1_manipulation_check_total.png Graphic file (type bmp)
 <figures/figure1_manipulation_check_total.png>
 
-Overfull \vbox (8.53763pt too high) detected at line 273
+Overfull \vbox (8.53763pt too high) detected at line 285
  []
 
 
@@ -1922,7 +1922,7 @@ File: XMU-assets/XMU-negative.png Graphic file (type bmp)
 File: XMU-assets/XMU-negative.png Graphic file (type bmp)
 <XMU-assets/XMU-negative.png>
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 290.
+(Font)              <9> on input line 302.
 
 
 File: XMU-assets/XMU-negative.png Graphic file (type bmp)
@@ -1973,7 +1973,7 @@ File: XMU-assets/XMU-negative.png Graphic file (type bmp)
 File: figures/figure3-a_event_study_first.png Graphic file (type bmp)
 <figures/figure3-a_event_study_first.png>
 
-Overfull \vbox (8.08409pt too high) detected at line 383
+Overfull \vbox (8.08409pt too high) detected at line 395
  []
 
 
@@ -1988,7 +1988,7 @@ File: XMU-assets/XMU-negative.png Graphic file (type bmp)
 File: figures/figure3-b_event_study_return.png Graphic file (type bmp)
 <figures/figure3-b_event_study_return.png>
 
-Overfull \vbox (9.60013pt too high) detected at line 398
+Overfull \vbox (9.60013pt too high) detected at line 410
  []
 
 
@@ -2003,7 +2003,7 @@ File: XMU-assets/XMU-negative.png Graphic file (type bmp)
 File: figures/figure3-c_event_study_total.png Graphic file (type bmp)
 <figures/figure3-c_event_study_total.png>
 
-Overfull \vbox (9.35915pt too high) detected at line 413
+Overfull \vbox (9.35915pt too high) detected at line 425
  []
 
 
@@ -2020,9 +2020,9 @@ File: figures/figure4c_matrix_First.png Graphic file (type bmp)
 
 Missing character: There is no → ("2192) in font ec-lmss10!
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 426.
+(Font)              <14.4> on input line 438.
 
-Overfull \vbox (10.28621pt too high) detected at line 426
+Overfull \vbox (10.28621pt too high) detected at line 438
  []
 
 
@@ -2037,7 +2037,7 @@ File: XMU-assets/XMU-negative.png Graphic file (type bmp)
 File: figures/figure4c_matrix_combined.png Graphic file (type bmp)
 <figures/figure4c_matrix_combined.png>
 
-Overfull \vbox (11.73883pt too high) detected at line 438
+Overfull \vbox (11.73883pt too high) detected at line 450
  []
 
 
@@ -2124,7 +2124,7 @@ File: XMU-assets/XMU-negative.png Graphic file (type bmp)
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 525.
+(hyperref)                removing `\translate ' on input line 537.
 
 File: XMU-assets/XMU.png Graphic file (type bmp)
 <XMU-assets/XMU.png>
@@ -2159,7 +2159,7 @@ File: XMU-assets/XMU.png Graphic file (type bmp)
 
 LaTeX Font Warning: Font shape `TU/HiraginoKakuGothicProN(0)/m/sl' undefined
 (Font)              using `TU/HiraginoKakuGothicProN(0)/m/n' instead on input l
-ine 579.
+ine 591.
 
 
 
@@ -2192,7 +2192,7 @@ Package rerunfilecheck Info: File `slide.out' has not changed.
 Here is how much of TeX's memory you used:
  40422 strings out of 473832
  1025975 string characters out of 5729481
- 1528914 words of memory out of 5000000
+ 1529914 words of memory out of 5000000
  62633 multiletter control sequences out of 15000+600000
  663153 words of font info for 161 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

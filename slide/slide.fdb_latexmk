@@ -4,8 +4,8 @@
   (generated)
   "slide.pdf"
   (rewritten before read)
-["latex"] 1768873202.29901 "/Users/igarashi_kosuke/Documents/Github/master_thesis/slide/slide.tex" "slide.dvi" "slide" 1768873202.94671 2
-  "/Users/igarashi_kosuke/Documents/Github/master_thesis/slide/slide.tex" 1768873201.36202 22350 006ab13686abef19630c6bd7d0f509b9 ""
+["latex"] 1768875072.48602 "/Users/igarashi_kosuke/Documents/Github/master_thesis/slide/slide.tex" "slide.dvi" "slide" 1768875073.10993 2
+  "/Users/igarashi_kosuke/Documents/Github/master_thesis/slide/slide.tex" 1768875071.33907 22665 6b84f1db359455fdb72edcac4d7a427a ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss10.tfm" 1136768653 1316 b636689f1933f24d1294acdf6041daaa ""
@@ -193,7 +193,7 @@
   "beamerthemesintef.sty" 1768837113.50067 9460 928bc7d96fc7f4d2804ea8061090b2e0 ""
   "sintefcolor.sty" 1767616442.33074 993 c5eba4a91956ec95e329aecca4ca55a5 ""
   "slide.aux" 0 -1 0 "latex"
-  "slide.tex" 1768873201.36202 22350 006ab13686abef19630c6bd7d0f509b9 ""
+  "slide.tex" 1768875071.33907 22665 6b84f1db359455fdb72edcac4d7a427a ""
   (generated)
   "slide.aux"
   "slide.dvi"
