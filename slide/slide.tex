@@ -246,10 +246,11 @@
 \begin{frame}{データ}
 \begin{itemize}
   \item 2015～2023年度の協会けんぽレセプトデータを利用
-  \item 病院$\times$月のパネルデータを構築
+  \item 病院$\times$月単位のパネルデータを構築
   \item 分析対象：許可病床200床以上の病院に限定
   \begin{itemize}
     \item 協会けんぽデータの制約上、一般病床200床以上の識別が困難
+    \item 許可病床$ = $一般病床$+$療養病床$+$精神病床$+$…
   \end{itemize}
 \end{itemize}
 \begin{itemize}
@@ -489,13 +490,13 @@ Adj. $R^2$ & 0.944 & 0.982 & 0.980 \\
   \item 分析結果
   \begin{itemize}
     \item 徴収義務化は初診外来を有意に減少（約$-12.5\%$）
-    \item 再診・総外来への効果は限定的（スイッチングコスト等）
-    \item 価格メカニズムのみでは限界 $\Rightarrow$ 制度的介入の検討が必要
+    \item 再診・総外来への効果は限定的（選定療養費額やスイッチングコスト）
+    \item 政策効果の持続性が薄かったと考えられる
   \end{itemize}
   \vspace{2em}
   \item 政策的含意
   \begin{itemize}
-    \item 分析結果から価格メカニズムによる誘導には限界がある
+    \item 分析結果からは価格メカニズムによる誘導には限界があると言える
     \item かかりつけ医機能の法制化も含めた制度的介入が必要ではないか
   \end{itemize}
 \end{itemize}
@@ -520,7 +521,7 @@ Adj. $R^2$ & 0.944 & 0.982 & 0.980 \\
 $\therefore$ NDBを用いたさらなる検証が待たれる
 \end{frame}
 
-\begin{frame}{限界：平行トレンド／修正分析案}
+\begin{frame}{限界：平行トレンド}
 \begin{itemize}
   \item 平行トレンド仮定が厳密には成り立っていない
   \begin{itemize}
@@ -528,8 +529,22 @@ $\therefore$ NDBを用いたさらなる検証が待たれる
     \item 処置前の多くの期間で係数が正であるのに対し、処置直後は負にシフトしていることから受診抑制効果があったことは否定されない
     \item 係数が過小に推定されているおそれがある
   \end{itemize}
-  \vspace{2em}
-  \item 今後の課題（修正分析案）：Synthetic DIDなど
+  \vspace{1ex}
+\begin{figure}[h] % 図の環境を開始
+        \centering     % 中央揃え
+        % width=0.8\textwidth でスライド横幅の80%の大きさに指定
+        \includegraphics[width=0.5\textwidth]{figures/figure3-a_event_study_first.png}
+\end{figure}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{今後の課題}
+\begin{itemize}
+  \item 今後の課題（修正分析案）
+  \begin{itemize}
+    \item \textbf{IPW-DID}：共変量による重み付けによって観察可能な属性の違いに起因するバイアスを調整した上でDIDを実施
+    \item \textbf{Synthetic DID}：処置前期間のアウトカムパスを一致させるような重み付けを用いてDIDを実施
+  \end{itemize}
 \end{itemize}
 \end{frame}
 
@@ -585,6 +600,39 @@ pre\_rate & Pre期間の選定療養費徴収月数割合 \\
 post\_rate & Post期間の選定療養費徴収月数割合 \\
 \bottomrule
 \end{tabularx}
+\end{frame}
+
+\begin{frame}{付録：アウトカムの経時的変化}
+\vspace{2ex}
+  \hspace*{2em}1. 初診外来件数
+\vspace{1ex}
+\begin{figure}[h] % 図の環境を開始
+        \centering     % 中央揃え
+        % width=0.8\textwidth でスライド横幅の80%の大きさに指定
+        \includegraphics[width=0.7\textwidth]{figures/figure2-a_trend_first.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{付録：アウトカムの経時的変化}
+\vspace{2ex}
+  \hspace*{2em}2. 再診外来件数
+\vspace{1ex}
+\begin{figure}[h] % 図の環境を開始
+        \centering     % 中央揃え
+        % width=0.8\textwidth でスライド横幅の80%の大きさに指定
+        \includegraphics[width=0.7\textwidth]{figures/figure2-b_trend_return.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{付録：アウトカムの経時的変化}
+\vspace{2ex}
+  \hspace*{2em}3. 総外来件数
+\vspace{1ex}
+\begin{figure}[h] % 図の環境を開始
+        \centering     % 中央揃え
+        % width=0.8\textwidth でスライド横幅の80%の大きさに指定
+        \includegraphics[width=0.7\textwidth]{figures/figure2-c_trend_total.png}
+\end{figure}
 \end{frame}
 
 \backmatter
