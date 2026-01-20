@@ -66,8 +66,8 @@
 \textbf{研究目的とデータ・手法}
 \begin{itemize}
   \item 目的：2022年10月導入の「紹介状なし大病院外来に対する選定療養費・徴収義務化」が、大病院への患者集中をどの程度是正したかを検証
-  \item データ：協会けんぽレセプトデータ(2015〜2023年度)を用いて病院×月単位のパネルデータを作成
-  \item 手法：DID+イベントスタディ
+  \item データ：協会けんぽレセプトデータ(2015〜2023年度)を用いて病院$\times$月単位のパネルデータを作成
+  \item 手法：DID, イベントスタディ
 \end{itemize}
 \textbf{分析結果(DID)}
 \begin{itemize}
@@ -139,7 +139,7 @@
 \rowcolor{myblueLight}
 \multirow{2}{*}{\large\color{myblue}\bfseries 初診}
   & \large\color{myblue}\bfseries 医科
-  & \large\bfseries 7,000円以上 \\ \cdashline{2-3}
+  & \large\bfseries {\color{red} 7,000円以上} \\ \cdashline{2-3}
 \rowcolor{myblueLight}
   & \large\color{myblue}\bfseries 歯科
   & \large\bfseries 5,000円以上 \\ \hline
@@ -147,7 +147,7 @@
 \rowcolor{myblueLight}
 \multirow{2}{*}{\large\color{myblue}\bfseries 再診}
   & \large\color{myblue}\bfseries 医科
-  & \large\bfseries 3,000円以上 \\ \cdashline{2-3}
+  & \large\bfseries {\color{blue} 3,000円以上} \\ \cdashline{2-3}
 \rowcolor{myblueLight}
   & \large\color{myblue}\bfseries 歯科
   & \large\bfseries 1,900円以上 \\ \hline
@@ -167,7 +167,7 @@
         \par\vspace{1ex} % 少し間隔を空ける
         \scriptsize{出所：厚生労働省 令和４年度診療報酬改定の概要 外来I (\url{https://www.mhlw.go.jp/content/12400000/000920428.pdf})}
 \end{figure}
-→選定療養費を徴収しないと保険給付額の減少により病院側が損。
+→選定療養費を徴収しないと保険給付額の減少により病院側が損
 \end{frame}
 }
 
@@ -248,7 +248,7 @@
   \item コントロール：診療科数
   \item 最終的な分析サンプル
   \begin{itemize}
-    \item 1,546
+    \item 1,546病院
     \item 総観測数：154,698
   \end{itemize}
   \item 変数詳細：Appendix
@@ -276,7 +276,7 @@
 \textbf{観測単位・期間・サンプル}
 \begin{itemize}
   \item 医科・外来のレセプトに限定
-  \item 病院×月単位のパネルデータ(2015/4〜2024/3)を作成
+  \item 病院$\times$月単位のパネルデータ(2015/4〜2024/3)を作成
   \item サンプルに含まれる病院は許可病床200床以上と推定される病院のみ
   \begin{itemize}
     \item 協会けんぽデータの制約上、一般病床200床以上の識別が困難
@@ -284,7 +284,7 @@
 \end{itemize}
 \textbf{処置群・対照群の定義}
 \begin{itemize}
-  \item {\color{red} 処置群}：処置前期間に選定療養費を徴収している月数の割合が1割未満\footnote{任意で徴収可能であるため。}、処置後はすべての月で選定療養費を徴収している病院群
+  \item {\color{red} 処置群}：処置前期間に選定療養費を徴収している月数の割合が1割未満\footnote{一般病床200床以上であれば任意で徴収可能であるため。}、処置後はすべての月で選定療養費を徴収している病院群
   \item {\color{blue} 対照群}：データ期間を通じて一度も選定療養費の徴収実績がない病院群
 \end{itemize}
 \end{frame}
